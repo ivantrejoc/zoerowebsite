@@ -2,6 +2,8 @@ import { Box, useTheme } from "@mui/material";
 import mainBackground from "../assets/img/vector-103-stroke.png";
 import Header from "../components/header/Header.jsx";
 import HeroSection from "../components/heroSection/HeroSection.jsx";
+import { Typography } from "@mui/material";
+
 
 export default function Landing() {
   const theme = useTheme();
@@ -36,8 +38,35 @@ export default function Landing() {
         }}
       >
         <Header />
-        <HeroSection />        
+        <HeroSection />
       </Box>
+      <Box
+        id="header-container"
+        sx={{
+          display: "flex",
+          justifyContent: "start",
+          alignItems: "center",
+          flexDirection: "column",
+          position: "relative",                 
+          width: "100vw",
+          height: "100vh",
+          maxHeight: "100vh",
+          marginTop: "1vh"
+        }}>
+          <Box
+        id="title-container"
+        sx={{
+          display: "flex",
+          justifyContent: "start",
+          alignItems: "center",          
+          position: "relative",    
+          width: "100vw",
+          height: "10vh",
+          maxHeight: "100vh"                    
+        }}>
+          
+        </Box>
+           </Box>
     </Box>
   );
 }
