@@ -3,8 +3,9 @@ import { Box, useTheme } from "@mui/material";
 import mainBackground from "../assets/img/vector-103-stroke.png";
 import Header from "../components/header/Header.jsx";
 import HeroSection from "../components/heroSection/HeroSection.jsx";
-import { Typography } from "@mui/material";
-import ellipse from "../assets/img/ellipse-reasoning.svg";
+import ReasoningSection from "../components/reasoningSection/ReasoningSection.jsx";
+// import { Typography } from "@mui/material";
+
 
 export default function Landing() {
   const theme = useTheme();
@@ -39,9 +40,10 @@ export default function Landing() {
         }}
       >
         <Header />
-        <HeroSection />
+        <HeroSection />        
       </Box>
-      <Box
+      <ReasoningSection />
+      {/* <Box
         id="reasoning-container"
         sx={{
           display: "flex",
@@ -142,7 +144,7 @@ export default function Landing() {
             </Typography>
           </div>
         </Box>
-      </Box>
+      </Box> */}
     </Box>
   );
 }
