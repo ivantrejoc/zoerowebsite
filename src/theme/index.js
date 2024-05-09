@@ -60,17 +60,20 @@ export default createTheme({
   components: {
     MuiButton: {
       defaultProps: {
-        style: {
-          fill: "#121212",
+        style: {          
           strokeWidth: "6px",
-          stroke: "#22505D",
-          width: "27.125rem",
-          height: "6.125rem",
+          border: "solid 6px #22505D",
+          borderRadius: "10px",
+          background:"#121212" ,
+          width: "30.125rem",
+          height: "7.125rem",
           flexShrink: 0,
+          color: "#FFF",
+          fontFamily: "Urbanist",
           fontSize: "1.625rem",
           fontStyle: "normal",
           fontWeight: "700",
-          lineHeight: "112%" /* 1.82rem */
+          lineHeight: "112%" 
         }
       }
     }
