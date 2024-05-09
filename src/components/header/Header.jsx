@@ -1,5 +1,5 @@
 import { Box, Typography } from "@mui/material";
-import zoeroLogo from "../assets/img/zoero-logo.svg";
+import zoeroLogo from "../../assets/img/zoero-logo.svg";
 
 const Header = () => {
   return (
@@ -36,7 +36,7 @@ const Header = () => {
       <Typography
         variant="navLinks"
         sx={{
-          marginBottom: 0.25
+          marginBottom: 0.5
         }}
         component="a"
         href="#"
@@ -46,7 +46,7 @@ const Header = () => {
       <Typography
         variant="navLinks"
         sx={{
-          marginBottom: 0.25
+          marginBottom: 0.5
         }}
         component="a"
         href="#"
@@ -56,7 +56,7 @@ const Header = () => {
       <Typography
         variant="navLinks"
         sx={{
-          marginBottom: 0.25
+          marginBottom: 0.5
         }}
         component="a"
         href="#"

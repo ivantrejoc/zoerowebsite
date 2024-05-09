@@ -1,6 +1,7 @@
-import { Box, useTheme, Typography } from "@mui/material";
+import { Box, useTheme } from "@mui/material";
 import mainBackground from "../assets/img/vector-103-stroke.png";
-import Header from "../components/Header.jsx";
+import Header from "../components/header/Header.jsx";
+import HeroSection from "../components/heroSection/HeroSection.jsx";
 
 export default function Landing() {
   const theme = useTheme();
@@ -35,32 +36,7 @@ export default function Landing() {
         }}
       >
         <Header />
-        <Box
-          sx={{
-            display: "flex",
-            justifyContent: "start",
-            alignItems: "start",
-            flexDirection: "column",
-            position: "relative",
-            width: "90vw",
-            height: "65vh",
-            margin: "0 5vw 0 5vw",
-            maxHeight: "120vh"
-          }}
-        >
-          <Typography
-            variant="h1"
-            component="h1"
-            sx={{
-              width: "100%",
-              marginTop: "2vh",
-              whiteSpace: "pre-line"
-            }}
-          >
-            &nbsp;WE SOLVE THE &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;♦&nbsp;MILLENNIUM
-            &nbsp;&nbsp;&nbsp;&nbsp;EQUATIONS
-          </Typography>
-        </Box>
+        <HeroSection />        
       </Box>
     </Box>
   );
