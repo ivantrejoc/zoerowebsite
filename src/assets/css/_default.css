@@ -5,9 +5,14 @@
 
 #header{
   width: 100vw;
-  height: 20vh;
+  height: 23vh;
+  gap: 65vw;
   display: flex;
   flex-direction: row;
-  background: salmon;
+}
 
+#logo{
+  width: 7.36156rem;
+height: 1.339rem;
+flex-shrink: 0;
 }

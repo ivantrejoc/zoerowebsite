@@ -1,10 +1,10 @@
-import { Box, useTheme } from "@mui/material";
+import { Box, useTheme, Typography } from "@mui/material";
 import mainBackground from "../assets/img/vector-103-stroke.png";
-
+import zoeroLogo from "../assets/img/zoero-logo.svg";
 
 export default function Landing() {
   const theme = useTheme();
-console.log("LOS DETALLES DEL TEMA: ", theme);
+  console.log("LOS DETALLES DEL TEMA: ", theme);
   return (
     <Box
       id="main-body"
@@ -22,7 +22,7 @@ console.log("LOS DETALLES DEL TEMA: ", theme);
         id="header-container"
         sx={{
           display: "flex",
-          justifyContent: "center",
+          justifyContent: "start",
           alignItems: "center",
           flexDirection: "column",
           position: "relative",
@@ -33,7 +33,73 @@ console.log("LOS DETALLES DEL TEMA: ", theme);
           height: "100vh",
           maxHeight: "100vh"
         }}
-      ></Box>
+      >
+        <header id="header">
+          <Box
+            id="logo-container"
+            sx={{
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              position: "relative",
+              width: "20vw",
+              height: "100%",
+              maxHeight: "100%"
+            }}
+          >
+            <img id="logo" src={zoeroLogo} alt="zoero-logo" />
+          </Box>
+
+          <Box
+            id="logo-container"
+            sx={{
+              display: "flex",
+              flexDirection: "column",
+              justifyContent: "end",
+              alignItems: "end",
+              position: "relative",
+              width: "15vw",
+              height: "100%",
+              maxHeight: "100%",
+              paddingRight: "5vw"
+            }}
+          >
+            <Typography
+              variant="navLinks"
+              sx={{
+                marginBottom: 0.25
+              }}
+              component="a"
+              href="#"
+            >
+              REASONING
+            </Typography>
+            <Typography
+              variant="navLinks"
+              sx={{
+                marginBottom: 0.25
+              }}
+              component="a"
+              href="#"
+            >
+              EXPERIMENTS
+            </Typography>
+            <Typography
+              variant="navLinks"
+              sx={{
+                marginBottom: 0.25
+              }}
+              component="a"
+              href="#"
+            >
+              COEFFICIENTS
+            </Typography>
+            <Typography variant="navLinks" component="a" href="#">
+              LET’S SOLVE
+            </Typography>
+          </Box>
+        </header>
+      </Box>
     </Box>
   );
 }
