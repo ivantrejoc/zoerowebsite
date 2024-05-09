@@ -1,6 +1,7 @@
-import { Box, useTheme, Typography } from "@mui/material";
+import { Box, useTheme } from "@mui/material";
 import mainBackground from "../assets/img/vector-103-stroke.png";
-import zoeroLogo from "../assets/img/zoero-logo.svg";
+import { Header } from "../components/Header";
+// import zoeroLogo from "../assets/img/zoero-logo.svg";
 
 export default function Landing() {
   const theme = useTheme();
@@ -34,7 +35,8 @@ export default function Landing() {
           maxHeight: "100vh"
         }}
       >
-        <header id="header">
+<Header />    
+        {/* <header id="header">
           <Box
             id="logo-container"
             sx={{
@@ -98,7 +100,7 @@ export default function Landing() {
               LET’S SOLVE
             </Typography>
           </Box>
-        </header>
+        </header> */}
       </Box>
     </Box>
   );
