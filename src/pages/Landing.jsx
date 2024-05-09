@@ -1,11 +1,10 @@
-import { Box, useTheme } from "@mui/material";
+import { Box, useTheme, Typography } from "@mui/material";
 import mainBackground from "../assets/img/vector-103-stroke.png";
-import { Header } from "../components/Header";
-// import zoeroLogo from "../assets/img/zoero-logo.svg";
+import Header from "../components/Header.jsx";
 
 export default function Landing() {
   const theme = useTheme();
-  console.log("LOS DETALLES DEL TEMA: ", theme);
+
   return (
     <Box
       id="main-body"
@@ -35,72 +34,33 @@ export default function Landing() {
           maxHeight: "100vh"
         }}
       >
-<Header />    
-        {/* <header id="header">
-          <Box
-            id="logo-container"
+        <Header />
+        <Box
+          sx={{
+            display: "flex",
+            justifyContent: "start",
+            alignItems: "start",
+            flexDirection: "column",
+            position: "relative",
+            width: "90vw",
+            height: "65vh",
+            margin: "0 5vw 0 5vw",
+            maxHeight: "120vh"
+          }}
+        >
+          <Typography
+            variant="h1"
+            component="h1"
             sx={{
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
-              position: "relative",
-              width: "20vw",
-              height: "100%",
-              maxHeight: "100%"
+              width: "100%",
+              marginTop: "2vh",
+              whiteSpace: "pre-line"
             }}
           >
-            <img id="logo" src={zoeroLogo} alt="zoero-logo" />
-          </Box>
-
-          <Box
-            id="logo-container"
-            sx={{
-              display: "flex",
-              flexDirection: "column",
-              justifyContent: "end",
-              alignItems: "end",
-              position: "relative",
-              width: "15vw",
-              height: "100%",
-              maxHeight: "100%",
-              paddingRight: "5vw"
-            }}
-          >
-            <Typography
-              variant="navLinks"
-              sx={{
-                marginBottom: 0.25
-              }}
-              component="a"
-              href="#"
-            >
-              REASONING
-            </Typography>
-            <Typography
-              variant="navLinks"
-              sx={{
-                marginBottom: 0.25
-              }}
-              component="a"
-              href="#"
-            >
-              EXPERIMENTS
-            </Typography>
-            <Typography
-              variant="navLinks"
-              sx={{
-                marginBottom: 0.25
-              }}
-              component="a"
-              href="#"
-            >
-              COEFFICIENTS
-            </Typography>
-            <Typography variant="navLinks" component="a" href="#">
-              LET’S SOLVE
-            </Typography>
-          </Box>
-        </header> */}
+            &nbsp;WE SOLVE THE &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;♦&nbsp;MILLENNIUM
+            &nbsp;&nbsp;&nbsp;&nbsp;EQUATIONS
+          </Typography>
+        </Box>
       </Box>
     </Box>
   );

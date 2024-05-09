@@ -1,5 +1,6 @@
 import { Box, Typography } from "@mui/material";
 import zoeroLogo from "../assets/img/zoero-logo.svg";
+
 const Header = () => {
   return (
     <header id="header">
@@ -69,4 +70,4 @@ const Header = () => {
   </header>
   )
 }
-export default Header
+export default Header;

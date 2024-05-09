@@ -14,18 +14,17 @@ export default createTheme({
     fontFamily: ["Urbanist", "Neat Chalk", "sans-serif"],
     fontSize: 16,
     h1: {
-      color: "#FFFFFF",
-
       fontFamily: "Urbanist",
-      fontSize: "10rem",
+      color: "#FFFFFF",      
+      fontSize: "11.5rem",
       fontStyle: "normal",
       fontWeight: "700",
       lineHeight: "90%"
     },
 
     h2: {
-      color: "#FFFFFF",
       fontFamily: "Urbanist",
+      color: "#FFFFFF",      
       fontSize: "3.125rem",
       fontStyle: "normal",
       fontWeight: "700",
@@ -33,8 +32,8 @@ export default createTheme({
     },
 
     h3: {
-      color: "#FFFFFF",
       fontFamily: "Urbanist",
+      color: "#FFFFFF",      
       fontSize: "1.875rem",
       fontStyle: "normal",
       fontWeight: "600",
@@ -42,10 +41,11 @@ export default createTheme({
     },
 
     navLinks: {
+      fontFamily: "Urbanist",
       color: "#AAAAAA",      
       fontSize: "1.125rem",
       fontStyle: "normal",
-      fontWeight: "500",
+      fontWeight: "600",
       lineHeight: "normal",
       textDecoration: "none"
     }
