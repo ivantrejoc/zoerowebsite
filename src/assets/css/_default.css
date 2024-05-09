@@ -1,9 +1,9 @@
-*{
+* {
   padding: 0;
   margin-left: 0;
 }
 
-#header{
+#header {
   width: 100vw;
   height: 23vh;
   gap: 65vw;
@@ -11,8 +11,21 @@
   flex-direction: row;
 }
 
-#logo{
+#logo {
   width: 7.36156rem;
-height: 1.339rem;
-flex-shrink: 0;
+  height: 1.339rem;
+  flex-shrink: 0;
+}
+
+#reasoning-image {
+  width: 23.6875rem;
+  height: 23.6875rem;  
+  box-sizing: border-box;
+}
+
+#reasoning-text {
+  width: 24.1875rem;
+  height: 10.1875rem;
+  flex-shrink: 0;
+  box-sizing: border-box;
 }
