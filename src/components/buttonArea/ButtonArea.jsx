@@ -18,7 +18,7 @@ const ButtonArea = () => {
           paddingTop: "2vh",
           width: "100vw",
           height: "33vh",
-          marginBottom: "10vh"
+          marginBottom: "20vh"
         }}
       >
         <Button>SEND US YOUR EQUATION</Button>
