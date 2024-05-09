@@ -1,0 +1,13 @@
+*{
+  padding: 0;
+  margin-left: 0;
+}
+
+#header{
+  width: 100vw;
+  height: 20vh;
+  display: flex;
+  flex-direction: row;
+  background: salmon;
+
+}

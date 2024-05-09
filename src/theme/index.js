@@ -51,7 +51,11 @@ export default createTheme({
           stroke: "#22505D",
           width: "27.125rem",
           height: "6.125rem",
-          flexShrink: "0"
+          flexShrink: 0,          
+          fontSize: "1.625rem",
+          fontStyle: "normal",
+          fontWeight: "700",
+          lineHeight: "112%" /* 1.82rem */
         }
       }
     }
