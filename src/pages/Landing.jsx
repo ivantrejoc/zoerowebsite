@@ -1,5 +1,5 @@
 import "../assets/css/_default.css";
-import { Box, useTheme } from "@mui/material";
+import { Box, useTheme, Typography } from "@mui/material";
 import mainBackground from "../assets/img/vector-103-stroke.png";
 import Header from "../components/header/Header.jsx";
 import HeroSection from "../components/heroSection/HeroSection.jsx";
@@ -7,6 +7,7 @@ import ReasoningSection from "../components/reasoningSection/ReasoningSection.js
 import ButtonArea from "../components/buttonArea/ButtonArea.jsx";
 import ExperimentsSection from "../components/experimentsSection/ExperimentsSection.jsx";
 import binaryStripe from "../assets/img/binary-stripe.png";
+import coefficientsImage from "../assets/img/coefficients-image.png";
 
 export default function Landing() {
   const theme = useTheme();
@@ -62,9 +63,64 @@ export default function Landing() {
           backgroundRepeat: "no-repeat",
           width: "100vw",
           height: "20vh",
-          marginBottom: "20vh"
+          marginBottom: "15vh"
         }}
-      ></Box>
+      />
+      {/* Coeficients Section */}
+      <Box
+        id="coefficient-container"
+        sx={{
+          display: "flex",
+          justifyContent: "start",
+          alignItems: "start",
+          flexDirection: "column",
+          position: "relative",
+          marginBottom: "15vh",
+          width: "100vw",
+          height: "100vh"
+        }}
+      >
+        <Box
+          id="title-container"
+          sx={{
+            display: "flex",
+            justifyContent: "start",
+            alignItems: "center",
+            position: "relative",
+            width: "100vw",
+            height: "5vh",
+            padding: "10vh 0 10vh 0"
+          }}
+        >
+          <Typography
+            variant="h2"
+            component="h2"
+            sx={{
+              marginLeft: "8vw"
+            }}
+          >
+            THE COEFFICIENTS
+          </Typography>
+        </Box>
+        <Box
+          id="data-container"
+          sx={{
+            display: "flex",
+            justifyContent: "start",
+            alignItems: "start",
+            position: "relative",
+            width: "74vw",
+            height: "70vh",
+            margin: "0 auto 0 12vw"
+          }}
+        >
+          <img
+            id="coefficient-image"
+            src={coefficientsImage}
+            alt="coefficients-image"
+          />
+        </Box>
+      </Box>
     </Box>
   );
 }
