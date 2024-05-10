@@ -14,6 +14,7 @@ const ExperimentsSection = () => {
           alignItems: "center",
           flexDirection: "column",
           position: "relative",
+          marginBottom: "15vh",
           width: "100vw",
           height: "140vh"
         }}
