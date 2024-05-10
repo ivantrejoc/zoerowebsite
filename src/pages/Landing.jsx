@@ -1,5 +1,5 @@
 import "../assets/css/_default.css";
-import { Box, useTheme } from "@mui/material";
+import { Box, useTheme, Typography } from "@mui/material";
 import mainBackground from "../assets/img/vector-103-stroke.png";
 import Header from "../components/header/Header.jsx";
 import HeroSection from "../components/heroSection/HeroSection.jsx";
@@ -69,6 +69,60 @@ export default function Landing() {
       />
       {/* Coeficients Section */}
       <CoefficientsSection/>
+      {/* Fields Medals Section */}
+      <Box
+        id="fields-medals-container"
+        sx={{
+          display: "flex",
+          justifyContent: "start",
+          alignItems: "center",
+          background: "plum",
+          flexDirection: "column",
+          position: "relative",
+          marginBottom: "15vh",
+          width: "100vw",
+          height: "100vh"
+        }}
+      >
+        <Box
+          id="title-container"
+          sx={{
+            display: "flex",
+            justifyContent: "start",
+            alignItems: "center",
+            position: "relative",
+            background: "lightblue",
+            width: "100vw",
+            height: "5vh",
+            padding: "10vh 0 10vh 0"
+          }}
+        >
+          <Typography
+            variant="h2"
+            component="h2"
+            sx={{
+              marginLeft: "8vw"
+            }}
+          >
+            FIELDS MEDALS
+          </Typography>
+        </Box>
+        <Box
+          id="data-container"
+          sx={{
+            display: "flex",
+            justifyContent: "start",
+            background: "gold",
+            alignItems: "start",
+            position: "relative",
+            width: "83vw",
+            height: "70vh",
+            margin: "0 1vw 0 0"
+          }}
+        >
+          
+        </Box>
+      </Box>
       
     </Box>
   );
