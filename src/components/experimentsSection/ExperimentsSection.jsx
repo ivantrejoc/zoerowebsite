@@ -1,58 +1,12 @@
-import "../assets/css/_default.css";
-import { Box, useTheme } from "@mui/material";
-import mainBackground from "../assets/img/vector-103-stroke.png";
-import Header from "../components/header/Header.jsx";
-import HeroSection from "../components/heroSection/HeroSection.jsx";
-import ReasoningSection from "../components/reasoningSection/ReasoningSection.jsx";
-import ButtonArea from "../components/buttonArea/ButtonArea.jsx";
-import ExperimentsSection from "../components/experimentsSection/ExperimentsSection.jsx";
-// import { Typography } from "@mui/material";
-// import diamond from "../assets/icons/diamond.svg";
-// import brands from "../assets/img/brands1.jpg";
-// import brandsTwo from "../assets/img/brands2.png";
-// import brandsThree from "../assets/img/brands3.png";
+import { Box, Typography } from "@mui/material";
+import diamond from "../../assets/icons/diamond.svg";
+import brands from "../../assets/img/brands1.jpg";
+import brandsTwo from "../../assets/img/brands2.png";
+import brandsThree from "../../assets/img/brands3.png";
 
-export default function Landing() {
-  const theme = useTheme();
-
+const ExperimentsSection = () => {
   return (
     <Box
-      id="main-body"
-      sx={{
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "stretch",
-        flexDirection: "column",
-        position: "relative",
-        backgroundColor: theme.palette.background.default,
-        backgroundSize: "cover"
-      }}
-    >
-      {/* Main area */}
-      <Box
-        id="header-container"
-        sx={{
-          display: "flex",
-          justifyContent: "start",
-          alignItems: "center",
-          flexDirection: "column",
-          position: "relative",
-          backgroundImage: `url(${mainBackground})`,
-          backgroundRepeat: "no-repeat",
-          width: "100vw",
-          height: "100vh",
-          maxHeight: "100vh"
-        }}
-      >
-        <Header />
-        <HeroSection />
-      </Box>
-      <ReasoningSection />
-      {/* Button Area */}
-      <ButtonArea />
-<ExperimentsSection />
-      {/* The experiments       */}
-      {/* <Box
         id="experiment-container"
         sx={{
           display: "flex",
@@ -123,7 +77,7 @@ export default function Landing() {
             </div>
           </div>
         </Box>
-      </Box> */}
-    </Box>
-  );
+      </Box>
+  )
 }
+export default ExperimentsSection

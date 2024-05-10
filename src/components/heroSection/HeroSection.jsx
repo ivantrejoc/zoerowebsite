@@ -30,4 +30,4 @@ const HeroSection = () => {
   </Box>
   )
 }
-export default HeroSection
+export default HeroSection;
