@@ -8,7 +8,7 @@ import ButtonArea from "../components/buttonArea/ButtonArea.jsx";
 import ExperimentsSection from "../components/experimentsSection/ExperimentsSection.jsx";
 import binaryStripe from "../assets/img/binary-stripe.png";
 import CoefficientsSection from "../components/coefficientsSection/CoefficientsSection.jsx";
-
+import binaryFrame from "../assets/img/bynary-frame.png";
 
 export default function Landing() {
   const theme = useTheme();
@@ -57,7 +57,6 @@ export default function Landing() {
           display: "flex",
           justifyContent: "start",
           alignItems: "center",
-          background: "lightgreen",
           position: "relative",
           backgroundImage: `url(${binaryStripe})`,
           backgroundSize: "100%",
@@ -68,7 +67,7 @@ export default function Landing() {
         }}
       />
       {/* Coeficients Section */}
-      <CoefficientsSection/>
+      <CoefficientsSection />
       {/* Fields Medals Section */}
       <Box
         id="fields-medals-container"
@@ -76,12 +75,11 @@ export default function Landing() {
           display: "flex",
           justifyContent: "start",
           alignItems: "center",
-          background: "plum",
           flexDirection: "column",
           position: "relative",
           marginBottom: "15vh",
           width: "100vw",
-          height: "100vh"
+          height: "90vh"
         }}
       >
         <Box
@@ -91,7 +89,6 @@ export default function Landing() {
             justifyContent: "start",
             alignItems: "center",
             position: "relative",
-            background: "lightblue",
             width: "100vw",
             height: "5vh",
             padding: "10vh 0 10vh 0"
@@ -112,18 +109,147 @@ export default function Landing() {
           sx={{
             display: "flex",
             justifyContent: "start",
-            background: "gold",
             alignItems: "start",
             position: "relative",
             width: "83vw",
-            height: "70vh",
+            height: "56.5vh",
             margin: "0 1vw 0 0"
           }}
         >
-          
+          <div id="grid-container">
+            <div className="item">
+              <img
+                className="binary-frame"
+                src={binaryFrame}
+                alt="binary-frame"
+              />
+              <Typography
+                variant="h4"
+                component="h4"
+                sx={{
+                  marginTop: "1.25rem"
+                }}
+              >
+                Award One
+              </Typography>
+              <Typography
+                variant="text"
+                component="p"
+                sx={{
+                  color: "#7C7C7C",
+                  fontWeight: "600"
+                }}
+              >
+                Coming Soon
+              </Typography>
+            </div>
+            <div className="item">
+              <img
+                className="binary-frame"
+                src={binaryFrame}
+                alt="binary-frame"
+              />
+              <Typography
+                variant="h4"
+                component="h4"
+                sx={{
+                  marginTop: "1.25rem"
+                }}
+              >
+                Award One
+              </Typography>
+              <Typography
+                variant="text"
+                component="p"
+                sx={{
+                  color: "#7C7C7C",
+                  fontWeight: "600"
+                }}
+              >
+                Coming Soon
+              </Typography>
+            </div>
+            <div className="item">
+              <img
+                className="binary-frame"
+                src={binaryFrame}
+                alt="binary-frame"
+              />
+              <Typography
+                variant="h4"
+                component="h4"
+                sx={{
+                  marginTop: "1.25rem"
+                }}
+              >
+                Award One
+              </Typography>
+              <Typography
+                variant="text"
+                component="p"
+                sx={{
+                  color: "#7C7C7C",
+                  fontWeight: "600"
+                }}
+              >
+                Coming Soon
+              </Typography>
+            </div>
+            <div className="item">
+              <img
+                className="binary-frame"
+                src={binaryFrame}
+                alt="binary-frame"
+              />
+              <Typography
+                variant="h4"
+                component="h4"
+                sx={{
+                  marginTop: "1.25rem"
+                }}
+              >
+                Award One
+              </Typography>
+              <Typography
+                variant="text"
+                component="p"
+                sx={{
+                  color: "#7C7C7C",
+                  fontWeight: "600"
+                }}
+              >
+                Coming Soon
+              </Typography>
+            </div>
+            <div className="item">
+              <img
+                className="binary-frame"
+                src={binaryFrame}
+                alt="binary-frame"
+              />
+              <Typography
+                variant="h4"
+                component="h4"
+                sx={{
+                  marginTop: "1.25rem"
+                }}
+              >
+                Award One
+              </Typography>
+              <Typography
+                variant="text"
+                component="p"
+                sx={{
+                  color: "#7C7C7C",
+                  fontWeight: "600"
+                }}
+              >
+                Coming Soon
+              </Typography>
+            </div>
+          </div>
         </Box>
       </Box>
-      
     </Box>
   );
 }

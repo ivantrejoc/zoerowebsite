@@ -40,6 +40,15 @@ export default createTheme({
       lineheight: "112%"
     },
 
+    h4: {
+      fontFamily: "Urbanist",
+      color: "#FFFFFF",
+      fontSize: "1.875rem",
+      fontStyle: "normal",
+      fontWeight: "500",
+      lineheight: "112%"
+    },
+
     navLinks: {
       fontFamily: "Urbanist",
       color: "#AAAAAA",

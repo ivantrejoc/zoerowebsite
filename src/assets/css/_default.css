@@ -81,3 +81,27 @@
   flex-shrink: 0;
   box-sizing: border-box;
 }
+
+#grid-container {
+  width: 100%;
+  height: 56.5vh;
+    display: grid;
+  grid-template-columns: repeat(5, 1fr); /* 5 columnas con el mismo tamaño */
+  justify-items: start;
+  align-items: start;
+  column-gap: 4.025rem; 
+  }
+
+.item {
+  height: 56.5vh;
+  width: 14.813rem;
+  display: flex,
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: stretch;
+  
+}
+
+.binary-frame{
+  width: 100%;
+}
