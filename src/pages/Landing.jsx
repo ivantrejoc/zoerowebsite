@@ -70,6 +70,8 @@ export default function Landing() {
       <CoefficientsSection />
       {/* Fields Medals Section */}
       <FieldsMedalsSection />
+      {/* Button Area 2 */}
+      <ButtonArea />
     </Box>
   );
 }
