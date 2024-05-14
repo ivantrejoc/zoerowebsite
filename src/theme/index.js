@@ -11,7 +11,7 @@ export default createTheme({
     }
   },
   typography: {
-    fontFamily: ["Urbanist", "Neat Chalk", "sans-serif"],
+    fontFamily: ["Urbanist", "Neat Chalk", "Caveat Brush", "sans-serif"],
     fontSize: 16,
     h1: {
       fontFamily: "Urbanist",
@@ -61,6 +61,15 @@ export default createTheme({
     text: {
       fontFamily: "Urbanist",
       fontSize: "1.375rem",
+      fontStyle: "normal",
+      fontWeight: "600",
+      lineHeight: "112%"
+    },
+    
+    workPosition:{
+      color: "#595959",
+      fontFamily: "Urbanist",
+      fontSize: "1.5rem",
       fontStyle: "normal",
       fontWeight: "600",
       lineHeight: "112%"

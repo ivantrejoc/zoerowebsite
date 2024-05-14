@@ -106,3 +106,45 @@
 .binary-frame{
   width: 100%;
 }
+
+/* Hero-2 Styles */
+#text-container{
+   display: flex;
+    justify-content: flex-start;
+  align-items: stretch;
+  height: 27vh;
+  width: 100%;
+  padding: 0px;
+  
+}
+
+#hero-2-text{
+color: #FFF;
+font-family: "Caveat Brush";
+font-size: 3.5rem;
+font-style: normal;
+font-weight: 600;
+line-height: 4.5rem;
+letter-spacing: 3px;
+text-transform: uppercase;
+margin: 0px;
+}
+
+#avatar-container{
+    display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1.19rem;
+}
+
+#name{
+  color: #FFF;
+font-family: "Caveat Brush";
+font-size: 2.25rem;
+font-style: normal;
+font-weight: 600;
+line-height: 2.75rem;
+letter-spacing: 3px;
+text-transform: uppercase;
+margin: 0px;
+}
