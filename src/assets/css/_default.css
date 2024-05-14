@@ -10,6 +10,7 @@
   gap: 65vw;
   display: flex;
   flex-direction: row;
+  margin-bottom: 3vh;
 }
 
 #logo {
@@ -109,8 +110,8 @@
 
 /* Hero-2 Styles */
 #text-container{
-   display: flex;
-    justify-content: flex-start;
+  display: flex;
+  justify-content: flex-start;
   align-items: stretch;
   height: 27vh;
   width: 100%;
@@ -119,19 +120,19 @@
 }
 
 #hero-2-text{
-color: #FFF;
-font-family: "Caveat Brush";
-font-size: 3.5rem;
-font-style: normal;
-font-weight: 600;
-line-height: 4.5rem;
-letter-spacing: 3px;
-text-transform: uppercase;
-margin: 0px;
+  color: #FFF;
+  font-family: "Caveat Brush";
+  font-size: 3.5rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 4.5rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin: 0px;
 }
 
 #avatar-container{
-    display: flex;
+  display: flex;
   justify-content: center;
   align-items: flex-start;
   gap: 1.19rem;
@@ -139,12 +140,82 @@ margin: 0px;
 
 #name{
   color: #FFF;
-font-family: "Caveat Brush";
-font-size: 2.25rem;
-font-style: normal;
-font-weight: 600;
-line-height: 2.75rem;
-letter-spacing: 3px;
-text-transform: uppercase;
-margin: 0px;
+  font-family: "Caveat Brush";
+  font-size: 2.25rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 2.75rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin: 0px;
+}
+
+/* Footer Style */
+#left-items{  
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+}
+
+ #logo-footer{  
+  width: 7.36156rem;
+  height: 1.339rem;
+  flex-shrink: 0;
+  box-sizing: border-box;
+}
+
+.rights{
+  width: 65%;
+  color: var(--White, #FFF);
+  font-family: Urbanist;
+  font-size: 1.48225rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+#solvedText{
+  color: var(--White, #FFF);
+  font-family: Urbanist;
+  font-size: 1.48225rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.highlight{
+  color: #5E4699;
+  font-family: Urbanist;
+  font-size: 1.48225rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+#right-items{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 5rem;
+
+}
+
+#nav-1, #nav-2{
+  display: flex;
+  flex-direction: column;
+  gap: 1.85rem;
+}
+
+.footerLinks{
+  color: var(--White, #FFF);
+  font-family: Urbanist;
+  font-size: 1.78225rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-decoration: none;
+}
+
+.footerLinks:hover{
+  text-decoration: underline;
 }
