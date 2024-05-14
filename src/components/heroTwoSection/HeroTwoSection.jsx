@@ -63,16 +63,7 @@ const HeroTwoSection = () => {
               </Typography>
             </div>
           </div>
-        </Box>
-        {/* <Divider variant="fullWidth" orientation="horizontal"
-        absolute sx={{
-          display: "flex",
-          color: "red",
-         width: 3,
-          height: "2rem",
-          flexShrink: 0,
-          marginTop: "10rem"
-        }} /> */}
+        </Box>        
       </Box>
   )
 }
