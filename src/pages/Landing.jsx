@@ -50,7 +50,7 @@ export default function Landing() {
       <ButtonArea />
       {/* Experiment section */}
       <ExperimentsSection />
-      {/* Binary Strip */}
+      {/* Binary Stripe */}
       <Box
         id="binary-stripe-container"
         sx={{
@@ -72,6 +72,35 @@ export default function Landing() {
       <FieldsMedalsSection />
       {/* Button Area 2 */}
       <ButtonArea />
+      <Box
+        id="hero-2"
+        sx={{
+          display: "flex",
+          justifyContent: "start",
+          alignItems: "center",
+          position: "relative",
+          background: "plum",
+          width: "100vw",
+          height: "70vh",
+          marginBottom: "15vh"
+        }}
+      >
+        <Box
+          id="hero-contanier"
+          sx={{
+            display: "flex",
+            justifyContent: "start",
+            alignItems: "start",
+            position: "relative",
+            background: "lightblue",
+            width: "70.25rem",
+            height: "28rem",
+            marginLeft: "8vw",
+          }}
+        >
+         
+        </Box>
+      </Box>
     </Box>
   );
 }
