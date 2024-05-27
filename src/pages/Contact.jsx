@@ -1,7 +1,8 @@
-import { Box, Typography, Grid, TextField } from "@mui/material";
+import { Box, Typography, Grid, TextField, Button } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
 import CheckIcon from "@mui/icons-material/Check";
 import coefficientsImage from "../assets/img/coefficients-image.png";
+import buttonBackground from "../assets/img/vector-104-stroke.png"
 const Contact = () => {
   const theme = useTheme();
 
@@ -72,7 +73,8 @@ const Contact = () => {
           width: "100%",
           overflowX: "0px",
           height: "140vh",
-          maxHeight: "140vh"
+          maxHeight: "140vh",
+          marginBottom: 10
         }}
       >
         <Box
@@ -88,7 +90,7 @@ const Contact = () => {
           }}
         >
           <Box
-            id="title-two-container"
+            id="title-container"
             sx={{
               display: "flex",
               justifyContent: "start",
@@ -281,7 +283,7 @@ const Contact = () => {
             </Grid>
           </Grid>
           <Box
-            id="title-container"
+            id="title-two-container"
             sx={{
               display: "flex",
               justifyContent: "start",
@@ -319,6 +321,26 @@ const Contact = () => {
         </Box>
           
         </Box>
+      </Box>
+      <Box
+        id="button-container"
+        sx={{
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          flexDirection: "column",
+          position: "relative",
+          backgroundImage: `url(${buttonBackground})`,
+          backgroundSize: "100%",
+          backgroundRepeat: "no-repeat",
+          backgroundPosition: "center",
+          paddingTop: "2vh",
+          width: "100vw",
+          height: "33vh",
+          marginBottom: "20vh"
+        }}
+      >
+        <Button>SEND US YOUR EQUATION</Button>
       </Box>
     </Box>
   );
