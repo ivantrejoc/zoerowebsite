@@ -1,6 +1,7 @@
 import { Box, Typography } from "@mui/material";
 import { useTheme } from "@emotion/react";
 import xicon from "../assets/icons/x-icon.svg";
+import cellphonesImage from "../assets/img/frame-300.png";
 
 const Experiments = () => {
   const theme = useTheme();
@@ -148,6 +149,40 @@ const Experiments = () => {
             </Box>
           </Box>
         </Box>
+      </Box>
+      <Box
+        id="main-image-container"
+        sx={{
+          display: "flex",
+          justifyContent: "start",
+          alignItems: "center",
+          flexDirection: "column",
+          position: "relative",
+          width: "100%",
+          overflowX: "0px",
+          height: "110vh",
+          maxHeight: "110vh",
+          marginBottom: 12
+        }}
+      >
+        <Box
+          sx={{
+            background: "gold",
+            display: "flex",
+            justifyContent: "start",
+            alignItems: "start",
+            flexDirection: "column",
+            position: "relative",
+            backgroundImage: `url(${cellphonesImage})`,
+            backgroundSize: "100%",
+            backgroundRepeat: "no-repeat",
+            backgroundPosition: "center",
+            width: "86%",
+            height: "100%",
+            margin: "0 7vw 0 7vw",
+            maxHeight: "100%"
+          }}
+        ></Box>
       </Box>
     </Box>
   );
