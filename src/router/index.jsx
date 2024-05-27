@@ -1,5 +1,6 @@
 import { useRoutes } from "react-router-dom"
 import Landing from "../pages/Landing"
+import Contact from "../pages/Contact"
 
 
 
@@ -9,6 +10,10 @@ function Router() {
     {
       path: "/",
       element: <Landing />
+    },
+    {
+      path: "contact",
+      element: <Contact />
     },
     
   ])
