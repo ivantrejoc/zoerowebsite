@@ -2,7 +2,10 @@ import { Box, Typography, Grid, TextField, Button } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
 import CheckIcon from "@mui/icons-material/Check";
 import coefficientsImage from "../assets/img/coefficients-image.png";
-import buttonBackground from "../assets/img/vector-104-stroke.png"
+import buttonBackground from "../assets/img/vector-104-stroke.png";
+import binaryStripe from "../assets/img/binary-stripe.png";
+
+
 const Contact = () => {
   const theme = useTheme();
 
@@ -32,7 +35,7 @@ const Contact = () => {
           overflowX: "0px",
           height: "43vh",
           maxHeight: "43vh",
-          marginBottom: 10
+          marginBottom: 12
         }}
       >
         <Box
@@ -335,13 +338,30 @@ const Contact = () => {
           backgroundRepeat: "no-repeat",
           backgroundPosition: "center",
           paddingTop: "2vh",
-          width: "100vw",
+          width: "100%",
+          overflowX: "hidden",
           height: "33vh",
           marginBottom: "20vh"
         }}
       >
         <Button>SEND US YOUR EQUATION</Button>
       </Box>
+      <Box
+        id="binary-stripe-container"
+        sx={{
+          display: "flex",
+          justifyContent: "start",
+          alignItems: "center",
+          position: "relative",
+          backgroundImage: `url(${binaryStripe})`,
+          backgroundSize: "100%",
+          backgroundRepeat: "no-repeat",
+          width: "100%",
+          overflowX: "hidden",
+          height: "20vh",
+          marginBottom: "15vh"
+        }}
+      />
     </Box>
   );
 };

@@ -75,7 +75,7 @@ const Header = () => {
         >
           COEFFICIENTS
         </Typography>
-        <Typography variant="navLinks" component="a" href="#">
+        <Typography variant="navLinks" component="a" href="/contact">
           LET’S SOLVE
         </Typography>
       </Box>

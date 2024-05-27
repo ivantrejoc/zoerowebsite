@@ -1,12 +1,10 @@
 import "../assets/css/_default.css";
 import { Box, useTheme } from "@mui/material";
 import mainBackground from "../assets/img/vector-103-stroke.png";
-import Header from "../components/header/Header.jsx";
 import HeroSection from "../components/heroSection/HeroSection.jsx";
 import ReasoningSection from "../components/reasoningSection/ReasoningSection.jsx";
 import ButtonArea from "../components/buttonArea/ButtonArea.jsx";
 import ExperimentsSection from "../components/experimentsSection/ExperimentsSection.jsx";
-import Footer from "../components/footer/Footer.jsx";
 import binaryStripe from "../assets/img/binary-stripe.png";
 import CoefficientsSection from "../components/coefficientsSection/CoefficientsSection.jsx";
 import FieldsMedalsSection from "../components/fieldsMedalsSection/FieldsMedalsSection.jsx";
