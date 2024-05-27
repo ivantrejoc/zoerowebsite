@@ -12,8 +12,7 @@ import "./assets/css/_default.css";
 function App() {
   return (
     <ThemeProvider theme={theme}>
-      <CssBaseline />
-      {/*  <Loader show={config.loading} /> */}
+      <CssBaseline />      
       <BrowserRouter>
         <Header />
         <Router />
