@@ -1,10 +1,10 @@
 import { Box, Typography, Grid, TextField, Button } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
+import HeroTwoSection from "../components/heroTwoSection/HeroTwoSection";
 import CheckIcon from "@mui/icons-material/Check";
 import coefficientsImage from "../assets/img/coefficients-image.png";
 import buttonBackground from "../assets/img/vector-104-stroke.png";
 import binaryStripe from "../assets/img/binary-stripe.png";
-
 
 const Contact = () => {
   const theme = useTheme();
@@ -305,24 +305,23 @@ const Contact = () => {
             </Typography>
           </Box>
           <Box
-          id="data-container"
-          sx={{
-            display: "flex",
-            justifyContent: "start",
-            alignItems: "start",
-            position: "relative",
-            width: "74vw",
-            height: "70vh",
-            margin: "0 auto 0 8vw"
-          }}
-        >
-          <img
-            id="coefficient-image"
-            src={coefficientsImage}
-            alt="coefficients-image"
-          />
-        </Box>
-          
+            id="data-container"
+            sx={{
+              display: "flex",
+              justifyContent: "start",
+              alignItems: "start",
+              position: "relative",
+              width: "74vw",
+              height: "70vh",
+              margin: "0 auto 0 8vw"
+            }}
+          >
+            <img
+              id="coefficient-image"
+              src={coefficientsImage}
+              alt="coefficients-image"
+            />
+          </Box>
         </Box>
       </Box>
       <Box
@@ -362,6 +361,7 @@ const Contact = () => {
           marginBottom: "15vh"
         }}
       />
+      <HeroTwoSection />
     </Box>
   );
 };

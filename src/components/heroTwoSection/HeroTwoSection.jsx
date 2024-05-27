@@ -14,7 +14,7 @@ const HeroTwoSection = () => {
           height: "50vh",
           maxHeight: "50vh",
           paddingLeft: "8.25vw",
-          marginBottom: "15vh"
+          marginBottom: "5vh"
         }}
       >
         <Box
@@ -29,8 +29,7 @@ const HeroTwoSection = () => {
             width: "70.25rem",
             height: "100%"
           }}
-        >
-          {" "}
+        >       
           <div id="text-container">
             <div>
               <p id="hero-2-text">

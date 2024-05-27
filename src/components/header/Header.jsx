@@ -12,7 +12,7 @@ const Header = () => {
         height: "23vh",
         gap: "65%",
         display: "flex",
-        overflowX: "hidden",        
+        overflowX: "hidden",
         marginBottom: "3vh"
       }}
     >

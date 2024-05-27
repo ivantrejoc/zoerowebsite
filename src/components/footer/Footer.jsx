@@ -24,7 +24,8 @@ const Footer = () => {
           position: "relative",
           width: "84vw",
           height: "100%",
-          margin: "0 8vw 0 8vw"
+          margin: "0 8vw 0 8vw",
+          borderTop: "1px solid #FFF"
         }}
       >
         <div id="left-items">
