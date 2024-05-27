@@ -29,7 +29,8 @@ const Contact = () => {
           width: "100%",
           overflowX: "0px",
           height: "43vh",
-          maxHeight: "43vh"
+          maxHeight: "43vh",
+          marginBottom: 10
         }}
       >
         <Box
@@ -59,6 +60,36 @@ const Contact = () => {
         </Box>
       </Box>
       {/* FORM SECTION */}
+      <Box
+        id="form-container"
+        sx={{
+          background: "plum",
+          display: "flex",
+          justifyContent: "start",
+          alignItems: "center",
+          flexDirection: "column",
+          position: "relative",
+          width: "100%",
+          overflowX: "0px",
+          height: "130vh",
+          maxHeight: "130vh"
+        }}
+      >
+        <Box
+          sx={{
+            background: "orange",
+            display: "flex",
+            justifyContent: "start",
+            alignItems: "start",
+            flexDirection: "column",
+            position: "relative",
+            width: "88%",
+            height: "100%",
+            margin: "0 6vw 0 6vw",
+            maxHeight: "100%"
+          }}
+        ></Box>
+      </Box>
     </Box>
   );
 };
