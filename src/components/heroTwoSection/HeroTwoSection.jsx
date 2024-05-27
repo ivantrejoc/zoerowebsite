@@ -51,8 +51,8 @@ const HeroTwoSection = () => {
             </p>
           </Box>
         </Box>
-        <div id="avatar-container">
-          <div id="photo-container">
+        <Box id="avatar-container">
+          <Box id="photo-container">
             <Avatar
               alt="zakaria-ambari"
               src={zakariaAvatar}
@@ -63,14 +63,14 @@ const HeroTwoSection = () => {
                 flexShrink: "0"
               }}
             />
-          </div>
-          <div>
+          </Box>
+          <Box id="name-container">
             <p id="name">Zakaria Ambari</p>
             <Typography variant="workPosition" component="p" sx={{ margin: 0 }}>
               Zœro Mathematician
             </Typography>
-          </div>
-        </div>
+          </Box>
+        </Box>
       </Box>
     </Box>
   );
