@@ -61,7 +61,7 @@ const Header = () => {
             marginBottom: 0.5
           }}
           component="a"
-          href="#"
+          href="/experiments"
         >
           EXPERIMENTS
         </Typography>

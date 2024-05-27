@@ -1,7 +1,7 @@
 import { useRoutes } from "react-router-dom"
 import Landing from "../pages/Landing"
 import Contact from "../pages/Contact"
-
+import Experiments from "../pages/Experiments"
 
 
 
@@ -14,6 +14,10 @@ function Router() {
     {
       path: "contact",
       element: <Contact />
+    },
+    {
+      path: "experiments",
+      element: <Experiments />
     },
     
   ])
