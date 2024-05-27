@@ -8,6 +8,7 @@ import Footer from "./components/footer/Footer.jsx";
 import "swiper/css";
 import "swiper/css/pagination";
 import "./assets/css/_default.css";
+import "./assets/css/fonts.css";
 
 function App() {
   return (

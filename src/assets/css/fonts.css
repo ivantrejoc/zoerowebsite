@@ -1,0 +1,10 @@
+@font-face {
+    font-family: 'Neat Chalk';
+    src: url('/fonts/neat-chalk.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  .neat-chalk {
+    font-family: 'Neat Chalk', sans-serif;
+  }
