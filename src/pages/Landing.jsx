@@ -44,7 +44,6 @@ export default function Landing() {
           maxHeight: "100vh"
         }}
       >
-        <Header />
         <HeroSection />
       </Box>
       <ReasoningSection />
@@ -76,10 +75,6 @@ export default function Landing() {
       <ButtonArea />
       {/* Hero-2 */}
       <HeroTwoSection />
-
-      {/* FALTA INSERTAR DIVIDER QUE NO LO ESTÁ RENDERIZANDO */}
-      {/* Footer     */}
-      <Footer />
     </Box>
   );
 }

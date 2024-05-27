@@ -1,7 +1,9 @@
 import { Box, Typography } from "@mui/material";
 import zoeroLogo from "../../assets/img/zoero-logo.svg";
+import { useTheme } from "@mui/material/styles";
 
 const Header = () => {
+  const theme = useTheme();
   return (
     <header id="header">
     <Box
