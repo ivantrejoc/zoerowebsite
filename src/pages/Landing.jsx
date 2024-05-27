@@ -24,6 +24,9 @@ export default function Landing() {
         alignItems: "stretch",
         flexDirection: "column",
         position: "relative",
+        width: "100%",
+        maxWidth: "100%",
+        overflowX: "hidden",
         backgroundColor: theme.palette.background.default,
         backgroundSize: "cover"
       }}

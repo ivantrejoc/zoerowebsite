@@ -1,4 +1,4 @@
-import { Box } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
 
 const Contact = () => {
@@ -6,7 +6,7 @@ const Contact = () => {
 
   return (
     <Box
-      id="main-body"
+      id="contact-main-body"
       sx={{
         display: "flex",
         justifyContent: "center",
@@ -17,36 +17,48 @@ const Contact = () => {
         backgroundSize: "cover"
       }}
     >
+      {/* HERO SECTION */}
       <Box
-        id="header-container"
+        id="hero-two-container"
         sx={{
-          background: "plum",
           display: "flex",
           justifyContent: "start",
           alignItems: "center",
           flexDirection: "column",
           position: "relative",
           width: "100%",
-          height: "72vh",
-          maxHeight: "100vh"
+          overflowX: "0px",
+          height: "43vh",
+          maxHeight: "43vh"
         }}
       >
         <Box
-    sx={{
-      background: "orange",
-      display: "flex",
-      justifyContent: "start",
-      alignItems: "start",
-      flexDirection: "column",
-      position: "relative",
-      width: "90%",
-      height: "100%",
-      margin: "0 5vw 0 5vw",
-      maxHeight: "120vh"
-    }}>
-      
-       </Box>
+          sx={{
+            display: "flex",
+            justifyContent: "start",
+            alignItems: "start",
+            flexDirection: "column",
+            position: "relative",
+            width: "88%",
+            height: "100%",
+            margin: "0 6vw 0 6vw",
+            maxHeight: "100%"
+          }}
+        >
+          <Typography
+            variant="h1"
+            component="h1"
+            sx={{
+              width: "100%",
+              marginTop: "2vh",
+              whiteSpace: "pre-line"
+            }}
+          >
+            LET’S SOLVE TOGETHER
+          </Typography>
+        </Box>
       </Box>
+      {/* FORM SECTION */}
     </Box>
   );
 };

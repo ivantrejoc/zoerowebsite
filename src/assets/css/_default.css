@@ -4,14 +4,6 @@
 }
 
 /* Header Styles */
-#header {
-  width: 100vw;
-  height: 23vh;
-  gap: 65vw;
-  display: flex;
-  flex-direction: row;
-  margin-bottom: 3vh;
-}
 
 #logo {
   width: 7.36156rem;
