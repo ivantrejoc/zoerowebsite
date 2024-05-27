@@ -65,11 +65,19 @@ export default createTheme({
       fontWeight: "600",
       lineHeight: "112%"
     },
-    
-    workPosition:{
+
+    workPosition: {
       color: "#595959",
       fontFamily: "Urbanist",
       fontSize: "1.5rem",
+      fontStyle: "normal",
+      fontWeight: "600",
+      lineHeight: "112%"
+    },
+    formLabel: {
+      color: "#FFF",
+      fontFamily: "Urbanist",
+      fontSize: "1.625rem",
       fontStyle: "normal",
       fontWeight: "600",
       lineHeight: "112%"
@@ -78,11 +86,11 @@ export default createTheme({
   components: {
     MuiButton: {
       defaultProps: {
-        style: {          
+        style: {
           strokeWidth: "6px",
           border: "solid 6px #22505D",
           borderRadius: "10px",
-          background:"#121212" ,
+          background: "#121212",
           width: "30.125rem",
           height: "7.125rem",
           flexShrink: 0,
@@ -91,7 +99,7 @@ export default createTheme({
           fontSize: "1.625rem",
           fontStyle: "normal",
           fontWeight: "700",
-          lineHeight: "112%" 
+          lineHeight: "112%"
         }
       }
     }
