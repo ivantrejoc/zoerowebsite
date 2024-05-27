@@ -201,3 +201,12 @@ letter-spacing: 0.15rem;
 .footerLinks:hover{
   text-decoration: underline;
 }
+
+/* EXPERIMENTS STYLES */
+
+#x-icon{
+  width: 2.42894rem;
+  height: 2.42894rem;
+  flex-shrink: 0;
+  box-sizing: border-box
+}

@@ -1,5 +1,6 @@
-import { Box } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 import { useTheme } from "@emotion/react";
+import xicon from "../assets/icons/x-icon.svg";
 
 const Experiments = () => {
   const theme = useTheme();
@@ -20,7 +21,6 @@ const Experiments = () => {
       <Box
         id="hero-experiment-container"
         sx={{
-          background: "plum",
           display: "flex",
           justifyContent: "start",
           alignItems: "center",
@@ -28,52 +28,125 @@ const Experiments = () => {
           position: "relative",
           width: "100%",
           overflowX: "0px",
-          height: "45vh",
-          maxHeight: "45vh",
+          height: "30vh",
+          maxHeight: "30vh",
           marginBottom: 12
         }}
       >
         <Box
           sx={{
-            background: "gold",
             display: "flex",
             justifyContent: "start",
             alignItems: "start",
             flexDirection: "column",
             position: "relative",
-            width: "87%",
+            width: "86%",
             height: "100%",
-            margin: "0 6.5vw 0 6.5vw",
+            margin: "0 7vw 0 7vw",
             maxHeight: "100%"
           }}
         >
           <Box
             sx={{
-              background: "red",
-              width: "25%",
-              height: "33%",
+              width: "15%",
+              height: "9vh",
               display: "flex",
-              flexDirection: "column"
+              gap: 1,
+              marginBottom: 2
             }}
-          ></Box>
+          >
+            <Typography
+              variant="h2"
+              sx={{
+                fontFamily: "Urbanist",
+                fontSize: "5rem",
+                fontStyle: "normal",
+                fontWeight: "700",
+                lineHeight: "100%"
+              }}
+              component="h2"
+            >
+              EXE
+            </Typography>
+            <Typography
+              variant="text"
+              component="p"
+              sx={{
+                width: "10%",
+                paddingTop: 2
+              }}
+            >
+              Case Study
+            </Typography>
+          </Box>
           <Box
             sx={{
-              background: "green",
-              width: "80%",
-              height: "33%",
+              width: "60%",
+              height: "12vh",
               display: "flex",
-              flexDirection: "column"
+              flexDirection: "column",
+              marginBottom: 2
             }}
-          ></Box>
+          >
+            <Typography
+              sx={{
+                fontFamily: "Urbanist",
+                fontSize: "2.5rem",
+                fontStyle: "normal",
+                fontWeight: "600",
+                lineHeight: "112%"
+              }}
+              component="p"
+            >
+              An innovative workout tracker app designed to optimize your
+              exercise regimen and accuracy.
+            </Typography>
+          </Box>
           <Box
             sx={{
-              background: "blue",
-              width: "40%",
-              height: "33%",
+              width: "30%",
+              height: "5vh",
               display: "flex",
-              flexDirection: "column"
+              gap: 6
             }}
-          ></Box>
+          >
+            <Box
+              sx={{
+                display: "flex",
+                gap: 2
+              }}
+            >
+              <img id="x-icon" src={xicon} alt="x-icon" />{" "}
+              <Typography
+                variant="text"
+                sx={{
+                  justifyItems: "center",
+                  alignContent: "center"
+                }}
+                component="p"
+              >
+                Brand Design
+              </Typography>
+            </Box>
+            <Box
+              sx={{
+                display: "flex",
+                gap: 2
+              }}
+            >
+              <img id="x-icon" src={xicon} alt="x-icon" />{" "}
+              <Typography
+                variant="text"
+                sx={{
+                  justifyItems: "center",
+                  alignContent: "center"
+                }}
+                component="p"
+              >
+                Web Crafting
+              </Typography>
+            </Box>
+          </Box>
         </Box>
       </Box>
     </Box>
