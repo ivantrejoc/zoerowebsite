@@ -142,6 +142,7 @@ const Contact = () => {
               <TextField
                 id="outlined-basic"
                 variant="outlined"
+                placeholder="Your Full Name"
                 sx={{
                   width: "100%",
                   "& .MuiOutlinedInput-root": {
@@ -180,6 +181,7 @@ const Contact = () => {
               <TextField
                 id="outlined-basic"
                 variant="outlined"
+                placeholder="you@yourcompany.com"
                 sx={{
                   width: "100%",
                   "& .MuiOutlinedInput-root": {
@@ -218,6 +220,7 @@ const Contact = () => {
               <TextField
                 id="outlined-basic"
                 variant="outlined"
+                placeholder="Nice to meet you!"
                 sx={{
                   width: "100%",
                   "& .MuiOutlinedInput-root": {
@@ -256,6 +259,7 @@ const Contact = () => {
               <TextField
                 id="outlined-basic"
                 variant="outlined"
+                placeholder="In One Line"
                 sx={{
                   width: "100%",
                   "& .MuiOutlinedInput-root": {
@@ -295,6 +299,24 @@ const Contact = () => {
               SELECT YOUR COEFFICIENTS
             </Typography>
           </Box>
+          <Box
+          id="data-container"
+          sx={{
+            display: "flex",
+            justifyContent: "start",
+            alignItems: "start",
+            position: "relative",
+            width: "74vw",
+            height: "70vh",
+            margin: "0 auto 0 8vw"
+          }}
+        >
+          <img
+            id="coefficient-image"
+            src={coefficientsImage}
+            alt="coefficients-image"
+          />
+        </Box>
           
         </Box>
       </Box>
