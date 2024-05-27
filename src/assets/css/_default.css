@@ -100,25 +100,15 @@
   width: 100%;
 }
 
-/* Hero-2 Styles */
-#text-container{
-  display: flex;
-  justify-content: flex-start;
-  align-items: stretch;
-  height: 27vh;
-  width: 100%;
-  padding: 0px;
-  
-}
 
 #hero-2-text{
   color: #FFF;
-  font-family: "Neat Chalk";
-  font-size: 3.5rem;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 4.5rem;
-  letter-spacing: 3px;
+font-family: "Neat Chalk";
+font-size: 1.5rem;
+font-style: normal;
+font-weight: 400;
+line-height: 252%;
+letter-spacing: 0.15rem; 
   text-transform: uppercase;
   margin: 0px;
 }

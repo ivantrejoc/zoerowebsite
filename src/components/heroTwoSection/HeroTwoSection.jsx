@@ -1,5 +1,4 @@
 import { Box, Typography, Avatar } from "@mui/material";
-import NeatChalkTypography from "../shared/NeatChalkTypography";
 import zakariaAvatar from "../../assets/img/zakaria-avatar.png";
 
 const HeroTwoSection = () => {
@@ -32,15 +31,26 @@ const HeroTwoSection = () => {
           height: "100%"
         }}
       >
-        <div id="text-container">
-          <div>
+        <Box
+          id="text-container"
+          sx={{
+            display: "flex",
+            justifyContent: "start",
+            alignItems: "stretch",
+            height: "27vh",
+            width: "100%",
+            padding: "0px",
+            marginBottom: 0.5
+          }}
+        >
+          <Box>
             <p id="hero-2-text">
               {
                 '"In math, we find certainty among variables. Zoero applies this principle to navigate complex business landscapes."'
               }
             </p>
-          </div>
-        </div>
+          </Box>
+        </Box>
         <div id="avatar-container">
           <div id="photo-container">
             <Avatar
@@ -57,7 +67,7 @@ const HeroTwoSection = () => {
           <div>
             <p id="name">Zakaria Ambari</p>
             <Typography variant="workPosition" component="p" sx={{ margin: 0 }}>
-              Zœro Mathematician{" "}
+              Zœro Mathematician
             </Typography>
           </div>
         </div>
