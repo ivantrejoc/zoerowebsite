@@ -1,7 +1,7 @@
 import { Box, Typography, Grid, TextField } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
 import CheckIcon from "@mui/icons-material/Check";
-
+import coefficientsImage from "../assets/img/coefficients-image.png";
 const Contact = () => {
   const theme = useTheme();
 
@@ -64,7 +64,6 @@ const Contact = () => {
       <Box
         id="form-container"
         sx={{
-          background: "plum",
           display: "flex",
           justifyContent: "start",
           alignItems: "center",
@@ -72,13 +71,12 @@ const Contact = () => {
           position: "relative",
           width: "100%",
           overflowX: "0px",
-          height: "130vh",
-          maxHeight: "130vh"
+          height: "140vh",
+          maxHeight: "140vh"
         }}
       >
         <Box
           sx={{
-            background: "orange",
             display: "flex",
             justifyContent: "start",
             alignItems: "start",
@@ -86,14 +84,12 @@ const Contact = () => {
             position: "relative",
             width: "88%",
             height: "100%",
-            margin: "0 6vw 0 6vw",
-            maxHeight: "100%"
+            margin: "0 6vw 0 6vw"
           }}
         >
           <Box
-            id="title-container"
+            id="title-two-container"
             sx={{
-              background: "lightGreen",
               display: "flex",
               justifyContent: "start",
               alignItems: "center",
@@ -116,9 +112,8 @@ const Contact = () => {
             spacing={0}
             columnGap={2}
             sx={{
-              background: "lightblue",
               width: "100%",
-              height: "22%",
+              height: "25vh",
               padding: 0,
               overflowX: "hidden",
               marginBottom: 10
@@ -281,10 +276,9 @@ const Contact = () => {
               />
             </Grid>
           </Grid>
-          {/* <Box
+          <Box
             id="title-container"
             sx={{
-              background: "lightGreen",
               display: "flex",
               justifyContent: "start",
               alignItems: "center",
@@ -300,25 +294,8 @@ const Contact = () => {
             <Typography variant="h2" component="h2">
               SELECT YOUR COEFFICIENTS
             </Typography>
-          </Box> */}
-          {/* <Box
-          id="data-container"
-          sx={{
-            display: "flex",
-            justifyContent: "start",
-            alignItems: "start",
-            position: "relative",
-            width: "74vw",
-            height: "70vh",
-            margin: "0 auto 0 12vw"
-          }}
-        >
-          <img
-            id="coefficient-image"
-            src={coefficientsImage}
-            alt="coefficients-image"
-          />
-        </Box> */}
+          </Box>
+          
         </Box>
       </Box>
     </Box>
