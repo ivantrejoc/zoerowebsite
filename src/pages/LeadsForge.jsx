@@ -1,6 +1,7 @@
 import { Box, Typography, Grid } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
 import ButtonArea from "../components/buttonArea/ButtonArea";
+import HeroTwoSection from "../components/heroTwoSection/HeroTwoSection";
 import xicon from "../assets/icons/x-icon.svg";
 import leadsForgeImage from "../assets/img/leads-forge.png";
 import leadsForgeBanner from "../assets/img/leads-forge-banner.png";
@@ -324,6 +325,7 @@ const LeadsForge = () => {
           marginBottom: "15vh"
         }}
       />
+      <HeroTwoSection />
     </Box>
   );
 };

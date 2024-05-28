@@ -1,8 +1,8 @@
-import { useRoutes } from "react-router-dom"
-import Landing from "../pages/Landing"
-import Contact from "../pages/Contact"
-import Experiments from "../pages/Experiments"
-import DomainExpansion from "../pages/DomainExpansion"
+import { useRoutes } from "react-router-dom";
+import Landing from "../pages/Landing";
+import Contact from "../pages/Contact";
+import Experiments from "../pages/Experiments";
+import DomainExpansion from "../pages/DomainExpansion";
 import LeadsForge from "../pages/LeadsForge";
 
 function Router() {
@@ -15,7 +15,7 @@ function Router() {
       path: "contact",
       element: <Contact />
     },
-    
+
     {
       path: "experiments",
       element: <Experiments />
@@ -27,9 +27,8 @@ function Router() {
     {
       path: "leads-forge",
       element: <LeadsForge />
-    },
-    
-  ])
+    }
+  ]);
 }
 
-export default Router
+export default Router;
