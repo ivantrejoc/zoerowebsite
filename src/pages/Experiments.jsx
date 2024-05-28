@@ -1,4 +1,4 @@
-import { Box, Typography } from "@mui/material";
+import { Box, Typography, Grid } from "@mui/material";
 import { useTheme } from "@emotion/react";
 import xicon from "../assets/icons/x-icon.svg";
 import cellphonesImage from "../assets/img/frame-300.png";
@@ -19,6 +19,7 @@ const Experiments = () => {
         backgroundSize: "cover"
       }}
     >
+      {/* MAIN HERO */}
       <Box
         id="hero-experiment-container"
         sx={{
@@ -150,6 +151,7 @@ const Experiments = () => {
           </Box>
         </Box>
       </Box>
+      {/* MAIN IMAGE */}
       <Box
         id="main-image-container"
         sx={{
@@ -167,7 +169,6 @@ const Experiments = () => {
       >
         <Box
           sx={{
-            background: "gold",
             display: "flex",
             justifyContent: "start",
             alignItems: "start",
@@ -180,9 +181,93 @@ const Experiments = () => {
             width: "86%",
             height: "100%",
             margin: "0 7vw 0 7vw",
-            maxHeight: "100%"
+            maxHeight: "100%",
+            marginBottom: 12
           }}
-        ></Box>
+        />
+      </Box>
+      {/* EXE APP SECTION */}
+      <Box
+        id="exe-app-container"
+        sx={{
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          flexDirection: "column",
+          position: "relative",
+          width: "100%",
+          overflowX: "0px",
+          height: "50vh",
+          maxHeight: "50vh",
+          marginBottom: 12
+        }}
+      >
+        <Box
+          sx={{
+            display: "flex",
+            justifyContent: "stretch",
+            alignItems: "start",
+            flexDirection: "column",
+            position: "relative",
+            width: "86%",
+            height: "100%",
+            margin: "0 7vw 0 7vw"
+          }}
+        >
+          <Grid container columnGap={2} sx={{ height: "100%" }}>
+            <Grid
+              item
+              xs={5}
+              sx={{
+                display: "flex",
+                justifyContent: "start",
+                alignItems: "center"
+              }}
+            >
+              <Typography
+                component="h2"
+                sx={{
+                  fontFamily: "Urbanist",
+                  fontSize: "4.575rem",
+                  fontStyle: "normal",
+                  fontWeight: "700",
+                  lineHeight: "100%"
+                }}
+              >
+                EXE APP EQUATIONS
+              </Typography>
+            </Grid>
+            <Grid
+              item
+              xs={6.87}
+              sx={{
+                display: "flex",
+                justifyContent: "start",
+                alignItems: "center"
+              }}
+            >
+              <Typography
+                variant="text"
+                align="start"
+                sx={{
+                  width: "100%",
+                  flexShrink: 0,
+                  fontSize: "2.51244rem",
+                  fontStyle: "normal",
+                  fontWeight: "400",
+                  lineHeight: "150%",
+                  letterSpacing: 0
+                }}
+              >
+                EXE is an innovative workout tracker app that combines great
+                design with precise analytics to deliver an efficient fitness
+                experience. Our goal was to create a tool that not only tracks
+                workouts but also provides actionable insights that help users
+                optimize their fitness journey.
+              </Typography>
+            </Grid>
+          </Grid>
+        </Box>
       </Box>
     </Box>
   );
