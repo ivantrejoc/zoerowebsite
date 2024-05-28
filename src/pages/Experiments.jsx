@@ -1,6 +1,7 @@
 import { Box, Typography, Grid, Avatar } from "@mui/material";
 import { useTheme } from "@emotion/react";
 import ButtonArea from "../components/buttonArea/ButtonArea";
+import HeroTwoSection from "../components/heroTwoSection/HeroTwoSection";
 import xicon from "../assets/icons/x-icon.svg";
 import cellphonesImage from "../assets/img/frame-300.png";
 import exeBanner from "../assets/img/exe-banner.png";
@@ -11,6 +12,10 @@ import exeGrid4 from "../assets/img/exe-grid-4.png";
 import exeScreenshots from "../assets/img/exe-screenshots.png";
 import bachirAvatar from "../assets/img/bachir-avatar.png";
 import binaryStripe from "../assets/img/binary-stripe.png";
+
+
+
+
 
 const Experiments = () => {
   const theme = useTheme();
@@ -496,6 +501,8 @@ const Experiments = () => {
           marginBottom: "15vh"
         }}
       />
+      {/* HERO TWO */}
+      <HeroTwoSection />
     </Box>
   );
 };
