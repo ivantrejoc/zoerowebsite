@@ -1,4 +1,4 @@
-import { Box, Typography } from "@mui/material";
+import { Box, Typography, Link } from "@mui/material";
 import zoeroLogo from "../../assets/img/zoero-logo.svg";
 import { useTheme } from "@mui/material/styles";
 
@@ -28,7 +28,9 @@ const Header = () => {
           maxHeight: "100%"
         }}
       >
-        <img id="logo" src={zoeroLogo} alt="zoero-logo" />
+        <Link href="/" sx={{marginTop: 3}}>
+          <img id="logo" src={zoeroLogo} alt="zoero-logo" />
+        </Link>
       </Box>
 
       <Box
