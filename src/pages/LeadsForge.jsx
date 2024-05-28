@@ -1,4 +1,4 @@
-import { Box, Typography } from "@mui/material";
+import { Box, Typography, Grid } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
 import xicon from "../assets/icons/x-icon.svg";
 import leadsForgeImage from "../assets/img/leads-forge.png";
@@ -184,7 +184,99 @@ const LeadsForge = () => {
           }}
         />
       </Box>
-
+      {/* LEADS FORGE EQUATIONS */}
+      <Box
+        id="leadsForge-equations-container"
+        sx={{
+          background: "plum",
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          flexDirection: "column",
+          position: "relative",
+          width: "100%",
+          overflowX: "0px",
+          height: "90vh",
+          maxHeight: "90vh",
+          marginBottom: 12
+        }}
+      >
+        <Box
+          sx={{
+            background: "gold",
+            display: "flex",
+            justifyContent: "stretch",
+            alignItems: "start",
+            flexDirection: "column",
+            position: "relative",
+            width: "86%",
+            height: "100%",
+            margin: "0 7vw 0 7vw"
+          }}
+        >
+          <Grid
+            container
+            columnGap={2}
+            sx={{ height: "100%", background: "orange" }}
+          >
+            <Grid
+              item
+              xs={5}
+              sx={{
+                display: "flex",
+                justifyContent: "start",
+                alignItems: "start"
+              }}
+            >
+              <Typography
+                component="h2"
+                sx={{
+                  fontFamily: "Urbanist",
+                  fontSize: "4.575rem",
+                  fontStyle: "normal",
+                  fontWeight: "700",
+                  lineHeight: "100%"
+                }}
+              >
+                {/* LEADS FORGE EQUATIONS */}
+              </Typography>
+            </Grid>
+            <Grid
+              item
+              xs={6.87}
+              sx={{
+                display: "flex",
+                justifyContent: "start",
+                alignItems: "start"
+              }}
+            >
+              <Typography
+                variant="text"
+                align="start"
+                sx={{
+                  width: "100%",
+                  flexShrink: 0,
+                  fontSize: "2.51244rem",
+                  fontStyle: "normal",
+                  fontWeight: "400",
+                  lineHeight: "150%",
+                  letterSpacing: 0
+                }}
+              >
+                {/* For Leads Forge, we worked on crafting a comprehensive strategy
+                and designing a captivating website to elevate their online
+                presence. As a market validation company, Leads Forge sought to
+                establish credibility and attract their target audience through
+                a seamless digital experience. Our design process centered on
+                creating a visually striking website that not only reflected
+                their innovative approach but also provided intuitive navigation
+                for visitors. The result was a dynamic platform that effectively
+                communicated their expertise. */}
+              </Typography>
+            </Grid>
+          </Grid>
+        </Box>
+      </Box>
     </Box>
   );
 };
