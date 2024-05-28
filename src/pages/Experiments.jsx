@@ -7,6 +7,7 @@ import exeGrid1 from "../assets/img/exe-grid1.png";
 import exeGrid2 from "../assets/img/exe-grid-2.png";
 import exeGrid3 from "../assets/img/exe-grid-3.png";
 import exeGrid4 from "../assets/img/exe-grid-4.png";
+import exeScreenshots from "../assets/img/exe-screenshots.png";
 
 const Experiments = () => {
   const theme = useTheme();
@@ -294,9 +295,9 @@ const Experiments = () => {
           marginBottom: 12
         }}
       />
-      {/* SCREENSHOTS */}
+      {/* GRID IMAGES */}
       <Box
-        id="screenshots-container"
+        id="grid-image-container"
         sx={{
           display: "flex",
           justifyContent: "center",
@@ -322,7 +323,7 @@ const Experiments = () => {
             margin: "0 7vw 0 7vw"
           }}
         >
-          <Grid container gap={5} sx={{ height: "100%"}}>
+          <Grid container gap={5} sx={{ height: "100%" }}>
             <Grid
               item
               xs={5.838}
@@ -365,6 +366,39 @@ const Experiments = () => {
             />
           </Grid>
         </Box>
+      </Box>
+      <Box
+        id="screenshots-container"
+        sx={{
+          display: "flex",
+          justifyContent: "start",
+          alignItems: "center",
+          flexDirection: "column",
+          position: "relative",
+          width: "100%",
+          overflowX: "0px",
+          height: "135vh",
+          maxHeight: "135vh",
+          marginBottom: 12
+        }}
+      >
+        <Box
+          sx={{
+            background: "gold",
+            display: "flex",
+            justifyContent: "stretch",
+            alignItems: "start",
+            flexDirection: "column",
+            position: "relative",
+            width: "86%",
+            height: "100%",
+            margin: "0 7vw 0 7vw",
+            backgroundImage: `url(${exeScreenshots})`,
+            backgroundSize: "100%",
+            backgroundRepeat: "no-repeat",
+            backgroundPosition: "center"
+          }}
+        ></Box>
       </Box>
     </Box>
   );
