@@ -210,3 +210,11 @@ letter-spacing: 0.15rem;
   flex-shrink: 0;
   box-sizing: border-box
 }
+
+/* NOT FOUND */
+#not-found-image{
+  width: 12.83031rem;
+  height: 12.83031rem;
+  flex-shrink: 0;
+  box-sizing: border-box
+}

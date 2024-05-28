@@ -4,6 +4,7 @@ import Contact from "../pages/Contact";
 import Experiments from "../pages/Experiments";
 import DomainExpansion from "../pages/DomainExpansion";
 import LeadsForge from "../pages/LeadsForge";
+import NotFound from "../pages/NotFound";
 
 function Router() {
   return useRoutes([
@@ -27,6 +28,10 @@ function Router() {
     {
       path: "leads-forge",
       element: <LeadsForge />
+    },
+    {
+      path: "*", 
+      element: <NotFound />
     }
   ]);
 }
