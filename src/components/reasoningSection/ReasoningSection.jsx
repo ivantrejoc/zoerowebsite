@@ -3,7 +3,7 @@ import ellipse from "../../assets/img/ellipse-reasoning.svg";
 const ReasoningSection = () => {
   return (
     <Box
-      id="reasoning-container"
+      id="reasoning"
       sx={{
         display: "flex",
         justifyContent: "start",
