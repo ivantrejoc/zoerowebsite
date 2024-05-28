@@ -39,6 +39,10 @@ function Router() {
     {
       path: "teuser",
       element: <Teuser />
+    },
+    {
+      path: "terms",
+      element: <Terms />
     },   
     {
       path: "*",
