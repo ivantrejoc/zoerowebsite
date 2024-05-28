@@ -4,7 +4,7 @@ import coefficientsImage from "../../assets/img/coefficients-image.png";
 const CoefficientsSection = () => {
   return (
     <Box
-        id="coefficient-container"
+        id="coefficients"
         sx={{
           display: "flex",
           justifyContent: "start",

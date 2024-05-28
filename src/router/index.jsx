@@ -1,8 +1,8 @@
-import { useRoutes } from "react-router-dom"
-import Landing from "../pages/Landing"
-import Contact from "../pages/Contact"
-import Experiments from "../pages/Experiments"
-import DomainExpansion from "../pages/DomainExpansion"
+import { useRoutes } from "react-router-dom";
+import Landing from "../pages/Landing";
+import Contact from "../pages/Contact";
+import Experiments from "../pages/Experiments";
+import DomainExpansion from "../pages/DomainExpansion";
 import LeadsForge from "../pages/LeadsForge";
 import Seafena from "../pages/Seafena"
 
@@ -16,7 +16,7 @@ function Router() {
       path: "contact",
       element: <Contact />
     },
-    
+
     {
       path: "experiments",
       element: <Experiments />
@@ -33,8 +33,7 @@ function Router() {
       path: "seafena",
       element: <Seafena />
     },
-    
-  ])
+  ]);
 }
 
-export default Router
+export default Router;

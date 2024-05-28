@@ -53,7 +53,7 @@ const Header = () => {
             marginBottom: 0.5
           }}
           component="a"
-          href="#"
+          href="/#reasoning"
         >
           REASONING
         </Typography>
@@ -63,7 +63,7 @@ const Header = () => {
             marginBottom: 0.5
           }}
           component="a"
-          href="/experiments"
+          href="/#experiments"
         >
           EXPERIMENTS
         </Typography>
@@ -73,7 +73,7 @@ const Header = () => {
             marginBottom: 0.5
           }}
           component="a"
-          href="#"
+          href="/#coefficients"
         >
           COEFFICIENTS
         </Typography>
