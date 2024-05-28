@@ -367,6 +367,7 @@ const Experiments = () => {
           </Grid>
         </Box>
       </Box>
+      {/* SCREENSHOTS SECTION */}
       <Box
         id="screenshots-container"
         sx={{
@@ -384,7 +385,6 @@ const Experiments = () => {
       >
         <Box
           sx={{
-            background: "gold",
             display: "flex",
             justifyContent: "stretch",
             alignItems: "start",
@@ -398,7 +398,38 @@ const Experiments = () => {
             backgroundRepeat: "no-repeat",
             backgroundPosition: "center"
           }}
-        ></Box>
+        />
+      </Box>
+      {/* TESTIMONY SECTION */}
+      <Box
+        id="testimony-container"
+        sx={{
+          background: "plum",
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          flexDirection: "column",
+          position: "relative",
+          width: "100%",
+          overflowX: "0px",
+          height: "100vh",
+          maxHeight: "100vh",
+          marginBottom: 12
+        }}
+      >
+        <Box
+          sx={{
+            background: "gold",
+            display: "flex",
+            justifyContent: "stretch",
+            alignItems: "start",
+            flexDirection: "column",
+            position: "relative",
+            width: "86%",
+            height: "80%",
+            margin: "0 7vw 0 7vw"
+            
+          }}></Box>
       </Box>
     </Box>
   );
