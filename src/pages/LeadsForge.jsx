@@ -1,11 +1,10 @@
 import { Box, Typography } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
 import xicon from "../assets/icons/x-icon.svg";
-
-
+import leadsForgeImage from "../assets/img/leads-forge.png";
 
 const LeadsForge = () => {
-    const theme = useTheme();
+  const theme = useTheme();
   return (
     <Box
       id="leads-forge-main-body"
@@ -19,10 +18,10 @@ const LeadsForge = () => {
         backgroundSize: "cover"
       }}
     >
+      {/* MAIN HERO */}
       <Box
         id="hero-leadsForge-container"
         sx={{
-          background: "plum",
           display: "flex",
           justifyContent: "start",
           alignItems: "center",
@@ -37,7 +36,6 @@ const LeadsForge = () => {
       >
         <Box
           sx={{
-            background: "gold",
             display: "flex",
             justifyContent: "start",
             alignItems: "start",
@@ -51,7 +49,7 @@ const LeadsForge = () => {
         >
           <Box
             sx={{
-              width: "15%",
+              width: "45%",
               height: "9vh",
               display: "flex",
               gap: 1,
@@ -69,7 +67,7 @@ const LeadsForge = () => {
               }}
               component="h2"
             >
-              {/* EXE */}
+              LEADS FORGE
             </Typography>
             <Typography
               variant="text"
@@ -79,12 +77,12 @@ const LeadsForge = () => {
                 paddingTop: 2
               }}
             >
-              {/* Case Study */}
+              Case Study
             </Typography>
           </Box>
           <Box
             sx={{
-              width: "60%",
+              width: "45%",
               height: "12vh",
               display: "flex",
               flexDirection: "column",
@@ -101,8 +99,7 @@ const LeadsForge = () => {
               }}
               component="p"
             >
-              {/* An innovative workout tracker app designed to optimize your
-              exercise regimen and accuracy. */}
+              Strategy Crafting and Web Design for a Market Validation Company.
             </Typography>
           </Box>
           <Box
@@ -152,7 +149,43 @@ const LeadsForge = () => {
           </Box>
         </Box>
       </Box>
+      {/* MAIN IMAGE */}
+      <Box
+        id="main-image-container"
+        sx={{
+          display: "flex",
+          justifyContent: "start",
+          alignItems: "center",
+          flexDirection: "column",
+          position: "relative",
+          width: "100%",
+          overflowX: "0px",
+          height: "120vh",
+          maxHeight: "120vh",
+          marginBottom: 12
+        }}
+      >
+        <Box
+          sx={{
+            display: "flex",
+            justifyContent: "start",
+            alignItems: "start",
+            flexDirection: "column",
+            position: "relative",
+            backgroundImage: `url(${leadsForgeImage})`,
+            backgroundSize: "100%",
+            backgroundRepeat: "no-repeat",
+            backgroundPosition: "center",
+            width: "86%",
+            height: "100%",
+            margin: "0 7vw 0 7vw",
+            maxHeight: "100%",
+            marginBottom: 12
+          }}
+        />
+      </Box>
+
     </Box>
-  )
-}
-export default LeadsForge
+  );
+};
+export default LeadsForge;
