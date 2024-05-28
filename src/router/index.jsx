@@ -4,6 +4,7 @@ import Contact from "../pages/Contact";
 import Experiments from "../pages/Experiments";
 import DomainExpansion from "../pages/DomainExpansion";
 import LeadsForge from "../pages/LeadsForge";
+import Seafena from "../pages/Seafena"
 
 function Router() {
   return useRoutes([
@@ -27,7 +28,11 @@ function Router() {
     {
       path: "leads-forge",
       element: <LeadsForge />
-    }
+    },
+    {
+      path: "seafena",
+      element: <Seafena />
+    },
   ]);
 }
 
