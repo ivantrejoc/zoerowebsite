@@ -170,8 +170,8 @@ const Seafena = () => {
           position: "relative",
           width: "100%",
           overflowX: "0px",
-          height: "110vh",
-          maxHeight: "110vh",
+          height: "150vh",
+          maxHeight: "150vh",
           marginBottom: 12,
         }}
       >
