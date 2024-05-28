@@ -21,7 +21,7 @@ const ButtonArea = () => {
         marginBottom: "20vh"
       }}
     >
-      <Button>SEND US YOUR EQUATION</Button>
+      <Button href="/contact">SEND US YOUR EQUATION</Button>
     </Box>
   );
 };

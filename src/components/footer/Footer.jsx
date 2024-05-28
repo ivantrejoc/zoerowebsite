@@ -49,7 +49,7 @@ const Footer = () => {
             <a className="footerLinks" href="#">
               Millenniums
             </a>
-            <a className="footerLinks" href="#">
+            <a className="footerLinks" href="/#coefficients">
               Coefficients
             </a>
           </div>
@@ -60,7 +60,7 @@ const Footer = () => {
             <a className="footerLinks" href="/terms">
               Terms & Policies
             </a>
-            <a className="footerLinks" href="#">
+            <a className="footerLinks" href="/contact">
               Contact us
             </a>
           </div>
