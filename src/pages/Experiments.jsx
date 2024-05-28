@@ -1,5 +1,6 @@
 import { Box, Typography, Grid, Avatar } from "@mui/material";
 import { useTheme } from "@emotion/react";
+import ButtonArea from "../components/buttonArea/ButtonArea";
 import xicon from "../assets/icons/x-icon.svg";
 import cellphonesImage from "../assets/img/frame-300.png";
 import exeBanner from "../assets/img/exe-banner.png";
@@ -9,6 +10,7 @@ import exeGrid3 from "../assets/img/exe-grid-3.png";
 import exeGrid4 from "../assets/img/exe-grid-4.png";
 import exeScreenshots from "../assets/img/exe-screenshots.png";
 import bachirAvatar from "../assets/img/bachir-avatar.png";
+import binaryStripe from "../assets/img/binary-stripe.png";
 
 const Experiments = () => {
   const theme = useTheme();
@@ -477,6 +479,23 @@ const Experiments = () => {
           </Typography>
         </Box>
       </Box>
+      <ButtonArea />
+      {/* BINARY STRIPE */}
+      <Box
+        id="binary-stripe-container"
+        sx={{
+          display: "flex",
+          justifyContent: "start",
+          alignItems: "center",
+          position: "relative",
+          backgroundImage: `url(${binaryStripe})`,
+          backgroundSize: "100%",
+          backgroundRepeat: "no-repeat",
+          width: "100vw",
+          height: "20vh",
+          marginBottom: "15vh"
+        }}
+      />
     </Box>
   );
 };
