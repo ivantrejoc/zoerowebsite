@@ -18,6 +18,7 @@ const LeadsForge = () => {
         alignItems: "stretch",
         flexDirection: "column",
         position: "relative",
+        overflowX: "hidden",
         backgroundColor: theme.palette.background.default,
         backgroundSize: "cover"
       }}
@@ -90,7 +91,7 @@ const LeadsForge = () => {
               height: "12vh",
               display: "flex",
               flexDirection: "column",
-              marginBottom: 2
+              marginBottom: 4
             }}
           >
             <Typography

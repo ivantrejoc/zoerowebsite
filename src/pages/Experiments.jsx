@@ -28,6 +28,7 @@ const Experiments = () => {
         justifyContent: "center",
         alignItems: "stretch",
         flexDirection: "column",
+        overflowX: "hidden",
         position: "relative",
         backgroundColor: theme.palette.background.default,
         backgroundSize: "cover"

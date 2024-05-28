@@ -19,7 +19,7 @@ const ExperimentsSection = () => {
         position: "relative",
         marginBottom: "15vh",
         width: "100vw",
-        height: "140vh",
+        height: "140vh"
       }}
     >
       <Box
@@ -33,14 +33,14 @@ const ExperimentsSection = () => {
           height: "10vh",
           padding: "10vh 0 10vh 0",
           gap: "55vw",
-          maxHeight: "100vh",
+          maxHeight: "100vh"
         }}
       >
         <Typography
           variant="h2"
           component="h2"
           sx={{
-            marginLeft: "8vw",
+            marginLeft: "8vw"
           }}
         >
           THE EXPERIMENTS
@@ -56,7 +56,7 @@ const ExperimentsSection = () => {
           alignItems: "start",
           position: "relative",
           width: "80vw",
-          height: "113vh",
+          height: "113vh"
         }}
       >
         <div id="experiments-image-container">
@@ -82,7 +82,7 @@ const ExperimentsSection = () => {
                     style={{
                       marginRight: "1rem",
                       width: "50%",
-                      height: "20%",
+                      height: "20%"
                     }}
                   >
                     <a href="/leads-forge">
@@ -90,7 +90,7 @@ const ExperimentsSection = () => {
                         src={leadBrand}
                         style={{
                           width: "100%",
-                          height: "100%",
+                          height: "100%"
                         }}
                       />
                     </a>
@@ -99,7 +99,7 @@ const ExperimentsSection = () => {
                     style={{
                       marginRight: "1rem",
                       width: "50%",
-                      height: "auto",
+                      height: "auto"
                     }}
                   >
                     <a href="/experiments">
@@ -107,7 +107,7 @@ const ExperimentsSection = () => {
                         src={expirementsBrand}
                         style={{
                           width: "100%",
-                          height: "100%",
+                          height: "100%"
                         }}
                       />
                     </a>
@@ -117,7 +117,7 @@ const ExperimentsSection = () => {
                   style={{
                     marginTop: "1rem",
                     width: "47%",
-                    height: "20%",
+                    height: "20%"
                   }}
                 >
                   <a href="teuser">
@@ -125,7 +125,7 @@ const ExperimentsSection = () => {
                       src={teuserBrand}
                       style={{
                         width: "100%",
-                        height: "100%",
+                        height: "100%"
                       }}
                     />
                   </a>
