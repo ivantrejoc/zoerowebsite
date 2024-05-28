@@ -16,7 +16,7 @@ const ButtonArea = () => {
           backgroundRepeat: "no-repeat",
           backgroundPosition: "center",
           paddingTop: "2vh",
-          width: "100vw",
+          width: "auto",
           height: "33vh",
           marginBottom: "20vh"
         }}
