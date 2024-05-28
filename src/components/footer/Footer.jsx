@@ -57,7 +57,7 @@ const Footer = () => {
             <a className="footerLinks" href="#">
               Knowledge
             </a>
-            <a className="footerLinks" href="#">
+            <a className="footerLinks" href="/terms">
               Terms & Policies
             </a>
             <a className="footerLinks" href="#">

@@ -64,11 +64,13 @@ const ExperimentsSection = () => {
           </div>
           <div id="right-images">
             <div id="up-right-images">
-              <img
-                src={brandsTwo}
-                alt="brands-1"
-                style={{ width: "100%", height: "100%" }}
-              />
+              <a href="/seafena">
+                <img
+                  src={brandsTwo}
+                  alt="brands-1"
+                  style={{ width: "100%", height: "100%" }}
+                />
+              </a>
             </div>
             <div id="down-right-images">
               <a href="/leads-forge">
