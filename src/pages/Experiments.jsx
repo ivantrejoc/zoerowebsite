@@ -2,6 +2,7 @@ import { Box, Typography, Grid } from "@mui/material";
 import { useTheme } from "@emotion/react";
 import xicon from "../assets/icons/x-icon.svg";
 import cellphonesImage from "../assets/img/frame-300.png";
+import exeBanner from "../assets/img/exe-banner.png";
 
 const Experiments = () => {
   const theme = useTheme();
@@ -269,6 +270,27 @@ const Experiments = () => {
           </Grid>
         </Box>
       </Box>
+      {/* EXE IMAGE */}
+      <Box
+        id="exe-image-container"
+        sx={{
+          background: "plum",
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          flexDirection: "column",
+          position: "relative",
+          width: "100%",
+          overflowX: "0px",
+          height: "64.5vh",
+          maxHeight: "64.5vh",
+          backgroundImage: `url(${exeBanner})`,
+            backgroundSize: "100%",
+            backgroundRepeat: "no-repeat",
+            backgroundPosition: "center",
+          marginBottom: 12
+        }}
+      />
     </Box>
   );
 };
