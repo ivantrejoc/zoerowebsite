@@ -4,6 +4,7 @@ import ButtonArea from "../components/buttonArea/ButtonArea";
 import xicon from "../assets/icons/x-icon.svg";
 import leadsForgeImage from "../assets/img/leads-forge.png";
 import leadsForgeBanner from "../assets/img/leads-forge-banner.png";
+import binaryStripe from "../assets/img/binary-stripe.png";
 
 const LeadsForge = () => {
   const theme = useTheme();
@@ -307,6 +308,22 @@ const LeadsForge = () => {
         />
       </Box>
       <ButtonArea />
+      {/* BINARY STRIPE */}
+      <Box
+        id="binary-stripe-container"
+        sx={{
+          display: "flex",
+          justifyContent: "start",
+          alignItems: "center",
+          position: "relative",
+          backgroundImage: `url(${binaryStripe})`,
+          backgroundSize: "100%",
+          backgroundRepeat: "no-repeat",
+          width: "100vw",
+          height: "20vh",
+          marginBottom: "15vh"
+        }}
+      />
     </Box>
   );
 };
