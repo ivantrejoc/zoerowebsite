@@ -1,4 +1,4 @@
-import { Box, Typography, Grid } from "@mui/material";
+import { Box, Typography, Grid, Avatar } from "@mui/material";
 import { useTheme } from "@emotion/react";
 import xicon from "../assets/icons/x-icon.svg";
 import cellphonesImage from "../assets/img/frame-300.png";
@@ -8,6 +8,7 @@ import exeGrid2 from "../assets/img/exe-grid-2.png";
 import exeGrid3 from "../assets/img/exe-grid-3.png";
 import exeGrid4 from "../assets/img/exe-grid-4.png";
 import exeScreenshots from "../assets/img/exe-screenshots.png";
+import bachirAvatar from "../assets/img/bachir-avatar.png";
 
 const Experiments = () => {
   const theme = useTheme();
@@ -404,7 +405,6 @@ const Experiments = () => {
       <Box
         id="testimony-container"
         sx={{
-          background: "plum",
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
@@ -419,17 +419,63 @@ const Experiments = () => {
       >
         <Box
           sx={{
-            background: "gold",
             display: "flex",
             justifyContent: "stretch",
             alignItems: "start",
             flexDirection: "column",
             position: "relative",
-            width: "86%",
-            height: "80%",
-            margin: "0 7vw 0 7vw"
-            
-          }}></Box>
+            width: "60%",
+            height: "65%",
+            margin: "0 20vw 0 20vw"
+          }}
+        >
+          <Box
+            id="client-avatar-container"
+            sx={{ display: "flex", gap: 2, marginBottom: 2 }}
+          >
+            <Box id="client-photo-container">
+              <Avatar
+                alt="bachir-rzama"
+                src={bachirAvatar}
+                variant="rounded"
+                sx={{
+                  width: "4.375rem",
+                  height: "4.375rem",
+                  flexShrink: "0"
+                }}
+              />
+            </Box>
+            <Box id="client-name-container">
+              <p id="name">Bachir RZAMA</p>
+              <Typography
+                variant="workPosition"
+                component="p"
+                sx={{ margin: 0 }}
+              >
+                Happy Client
+              </Typography>
+            </Box>
+          </Box>
+          <Typography
+            variant="text"
+            component="p"
+            sx={{
+              color: "#FF0303",
+              fontFamily: "Urbanist",
+              fontSize: "2.61244rem",
+              fontStyle: "normal",
+              fontWeight: "400",
+              lineHeight: "150%"
+            }}
+          >
+            “I'm proud to showcase a series of recent branding projects that we
+            passionately brought to life. Each project was approached with a
+            deep understanding of our clients' unique objectives. From crafting
+            compelling visual identities to designing cohesive brand systems, we
+            ensured that every element resonated authentically with our clients'
+            target audiences.”
+          </Typography>
+        </Box>
       </Box>
     </Box>
   );
