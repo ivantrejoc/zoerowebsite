@@ -10,7 +10,7 @@ import CoefficientsSection from "../components/coefficientsSection/CoefficientsS
 import FieldsMedalsSection from "../components/fieldsMedalsSection/FieldsMedalsSection.jsx";
 import HeroTwoSection from "../components/heroTwoSection/HeroTwoSection.jsx";
 
-export default function Landing() {
+const Landing = () => {
   const theme = useTheme();
 
   return (
@@ -79,3 +79,5 @@ export default function Landing() {
     </Box>
   );
 }
+
+export default Landing;

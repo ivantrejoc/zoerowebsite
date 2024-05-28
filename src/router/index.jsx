@@ -1,8 +1,8 @@
-import { useRoutes } from "react-router-dom"
-import Landing from "../pages/Landing"
-import Contact from "../pages/Contact"
-import Experiments from "../pages/Experiments"
-
+import { useRoutes } from "react-router-dom";
+import Landing from "../pages/Landing";
+import Contact from "../pages/Contact";
+import Experiments from "../pages/Experiments";
+import LeadsForge from "../pages/LeadsForge";
 
 
 function Router() {
@@ -15,9 +15,14 @@ function Router() {
       path: "contact",
       element: <Contact />
     },
+    
     {
       path: "experiments",
       element: <Experiments />
+    },
+    {
+      path: "leads-forge",
+      element: <LeadsForge />
     },
     
   ])
