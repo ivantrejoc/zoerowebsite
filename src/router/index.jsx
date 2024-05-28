@@ -6,6 +6,7 @@ import DomainExpansion from "../pages/DomainExpansion";
 import LeadsForge from "../pages/LeadsForge";
 import Seafena from "../pages/Seafena";
 import Teuser from "../pages/Teuser";
+import NotFound from "../pages/NotFound"
 
 function Router() {
   return useRoutes([
@@ -37,7 +38,11 @@ function Router() {
     {
       path: "teuser",
       element: <Teuser />
-    },
+    },   
+    {
+      path: "*", 
+      element: <NotFound />
+    }
   ]);
 }
 
