@@ -3,6 +3,10 @@ import { useTheme } from "@emotion/react";
 import xicon from "../assets/icons/x-icon.svg";
 import cellphonesImage from "../assets/img/frame-300.png";
 import exeBanner from "../assets/img/exe-banner.png";
+import exeGrid1 from "../assets/img/exe-grid1.png";
+import exeGrid2 from "../assets/img/exe-grid-2.png";
+import exeGrid3 from "../assets/img/exe-grid-3.png";
+import exeGrid4 from "../assets/img/exe-grid-4.png";
 
 const Experiments = () => {
   const theme = useTheme();
@@ -274,7 +278,6 @@ const Experiments = () => {
       <Box
         id="exe-image-container"
         sx={{
-          background: "plum",
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
@@ -285,12 +288,84 @@ const Experiments = () => {
           height: "64.5vh",
           maxHeight: "64.5vh",
           backgroundImage: `url(${exeBanner})`,
-            backgroundSize: "100%",
-            backgroundRepeat: "no-repeat",
-            backgroundPosition: "center",
+          backgroundSize: "100%",
+          backgroundRepeat: "no-repeat",
+          backgroundPosition: "center",
           marginBottom: 12
         }}
       />
+      {/* SCREENSHOTS */}
+      <Box
+        id="screenshots-container"
+        sx={{
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          flexDirection: "column",
+          position: "relative",
+          width: "100%",
+          overflowX: "0px",
+          height: "130vh",
+          maxHeight: "130vh",
+          marginBottom: 12
+        }}
+      >
+        <Box
+          sx={{
+            display: "flex",
+            justifyContent: "stretch",
+            alignItems: "start",
+            flexDirection: "column",
+            position: "relative",
+            width: "86%",
+            height: "100%",
+            margin: "0 7vw 0 7vw"
+          }}
+        >
+          <Grid container gap={5} sx={{ height: "100%"}}>
+            <Grid
+              item
+              xs={5.838}
+              sx={{
+                backgroundImage: `url(${exeGrid1})`,
+                backgroundSize: "100%",
+                backgroundRepeat: "no-repeat",
+                backgroundPosition: "center"
+              }}
+            />
+            <Grid
+              item
+              xs={5.838}
+              sx={{
+                backgroundImage: `url(${exeGrid2})`,
+                backgroundSize: "100%",
+                backgroundRepeat: "no-repeat",
+                backgroundPosition: "center"
+              }}
+            />
+            <Grid
+              item
+              xs={5.838}
+              sx={{
+                backgroundImage: `url(${exeGrid3})`,
+                backgroundSize: "100%",
+                backgroundRepeat: "no-repeat",
+                backgroundPosition: "center"
+              }}
+            />
+            <Grid
+              item
+              xs={5.838}
+              sx={{
+                backgroundImage: `url(${exeGrid4})`,
+                backgroundSize: "100%",
+                backgroundRepeat: "no-repeat",
+                backgroundPosition: "center"
+              }}
+            />
+          </Grid>
+        </Box>
+      </Box>
     </Box>
   );
 };
