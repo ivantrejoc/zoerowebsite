@@ -2,7 +2,10 @@ import { Box, Typography } from "@mui/material";
 import diamond from "../../assets/icons/diamond.svg";
 import brands from "../../assets/img/brands1.jpg";
 import brandsTwo from "../../assets/img/brands2.png";
-import brandsThree from "../../assets/img/brands3.png";
+
+import leadBrand from "../../assets/img/leads-forge.png";
+import teuserBrand from "../../assets/img/imageTeuserMain.png";
+import expirementsBrand from "../../assets/img/frame-300.png";
 
 const ExperimentsSection = () => {
   return (
@@ -16,7 +19,7 @@ const ExperimentsSection = () => {
         position: "relative",
         marginBottom: "15vh",
         width: "100vw",
-        height: "140vh"
+        height: "140vh",
       }}
     >
       <Box
@@ -30,14 +33,14 @@ const ExperimentsSection = () => {
           height: "10vh",
           padding: "10vh 0 10vh 0",
           gap: "55vw",
-          maxHeight: "100vh"
+          maxHeight: "100vh",
         }}
       >
         <Typography
           variant="h2"
           component="h2"
           sx={{
-            marginLeft: "8vw"
+            marginLeft: "8vw",
           }}
         >
           THE EXPERIMENTS
@@ -52,8 +55,8 @@ const ExperimentsSection = () => {
           justifyContent: "start",
           alignItems: "start",
           position: "relative",
-          width: "84vw",
-          height: "113vh"
+          width: "80vw",
+          height: "113vh",
         }}
       >
         <div id="experiments-image-container">
@@ -72,15 +75,63 @@ const ExperimentsSection = () => {
                 />
               </a>
             </div>
-            <div id="down-right-images">
-              <a href="/leads-forge">
-                <img
-                  src={brandsThree}
-                  alt="brands-three"
-                  style={{ width: "100%", height: "100%" }}
-                />
-              </a>
-            </div>
+            <Box id="down-right-images">
+              <Box sx={{ display: "flex", flexDirection: "column" }}>
+                <Box sx={{ display: "flex", flexDirection: "row" }}>
+                  <Box
+                    style={{
+                      marginRight: "1rem",
+                      width: "50%",
+                      height: "20%",
+                    }}
+                  >
+                    <a href="/leads-forge">
+                      <img
+                        src={leadBrand}
+                        style={{
+                          width: "100%",
+                          height: "100%",
+                        }}
+                      />
+                    </a>
+                  </Box>
+                  <Box
+                    style={{
+                      marginRight: "1rem",
+                      width: "50%",
+                      height: "auto",
+                    }}
+                  >
+                    <a href="/experiments">
+                      <img
+                        src={expirementsBrand}
+                        style={{
+                          width: "100%",
+                          height: "100%",
+                        }}
+                      />
+                    </a>
+                  </Box>
+                </Box>
+                <Box
+                  style={{
+                    marginTop: "1rem",
+                    width: "47%",
+                    height: "20%",
+                  }}
+                >
+                  <a href="teuser">
+                    <img
+                      src={teuserBrand}
+                      style={{
+                        width: "100%",
+                        height: "100%",
+                      }}
+                    />
+                  </a>
+                </Box>
+              </Box>
+            </Box>
           </div>
         </div>
       </Box>
