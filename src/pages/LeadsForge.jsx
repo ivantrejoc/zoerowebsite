@@ -1,5 +1,6 @@
 import { Box, Typography, Grid } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
+import ButtonArea from "../components/buttonArea/ButtonArea";
 import xicon from "../assets/icons/x-icon.svg";
 import leadsForgeImage from "../assets/img/leads-forge.png";
 import leadsForgeBanner from "../assets/img/leads-forge-banner.png";
@@ -198,7 +199,7 @@ const LeadsForge = () => {
           overflowX: "0px",
           height: "90vh",
           maxHeight: "90vh",
-          marginBottom: 12
+          marginBottom: 18
         }}
       >
         <Box
@@ -275,7 +276,7 @@ const LeadsForge = () => {
       {/* LEADS FORGE BANNER */}
       <Box
         id="leadsForge-equations-container"
-        sx={{          
+        sx={{
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
@@ -285,7 +286,7 @@ const LeadsForge = () => {
           overflowX: "0px",
           height: "60vh",
           maxHeight: "60vh",
-          marginBottom: 12
+          marginBottom: 22
         }}
       >
         <Box
@@ -303,8 +304,9 @@ const LeadsForge = () => {
             backgroundPosition: "center",
             margin: "0 7vw 0 7vw"
           }}
-        ></Box>
-        </Box>
+        />
+      </Box>
+      <ButtonArea />
     </Box>
   );
 };
