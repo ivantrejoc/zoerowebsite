@@ -2,6 +2,7 @@ import { Box, Typography, Grid } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
 import xicon from "../assets/icons/x-icon.svg";
 import leadsForgeImage from "../assets/img/leads-forge.png";
+import leadsForgeBanner from "../assets/img/leads-forge-banner.png";
 
 const LeadsForge = () => {
   const theme = useTheme();
@@ -188,7 +189,6 @@ const LeadsForge = () => {
       <Box
         id="leadsForge-equations-container"
         sx={{
-          background: "plum",
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
@@ -203,7 +203,6 @@ const LeadsForge = () => {
       >
         <Box
           sx={{
-            background: "gold",
             display: "flex",
             justifyContent: "stretch",
             alignItems: "start",
@@ -214,11 +213,7 @@ const LeadsForge = () => {
             margin: "0 7vw 0 7vw"
           }}
         >
-          <Grid
-            container
-            columnGap={2}
-            sx={{ height: "100%", background: "orange" }}
-          >
+          <Grid container columnGap={2} sx={{ height: "100%" }}>
             <Grid
               item
               xs={5}
@@ -238,7 +233,7 @@ const LeadsForge = () => {
                   lineHeight: "100%"
                 }}
               >
-                {/* LEADS FORGE EQUATIONS */}
+                LEADS FORGE EQUATIONS
               </Typography>
             </Grid>
             <Grid
@@ -263,7 +258,7 @@ const LeadsForge = () => {
                   letterSpacing: 0
                 }}
               >
-                {/* For Leads Forge, we worked on crafting a comprehensive strategy
+                For Leads Forge, we worked on crafting a comprehensive strategy
                 and designing a captivating website to elevate their online
                 presence. As a market validation company, Leads Forge sought to
                 establish credibility and attract their target audience through
@@ -271,12 +266,45 @@ const LeadsForge = () => {
                 creating a visually striking website that not only reflected
                 their innovative approach but also provided intuitive navigation
                 for visitors. The result was a dynamic platform that effectively
-                communicated their expertise. */}
+                communicated their expertise.
               </Typography>
             </Grid>
           </Grid>
         </Box>
       </Box>
+      {/* LEADS FORGE BANNER */}
+      <Box
+        id="leadsForge-equations-container"
+        sx={{          
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          flexDirection: "column",
+          position: "relative",
+          width: "100%",
+          overflowX: "0px",
+          height: "60vh",
+          maxHeight: "60vh",
+          marginBottom: 12
+        }}
+      >
+        <Box
+          sx={{
+            display: "flex",
+            justifyContent: "stretch",
+            alignItems: "start",
+            flexDirection: "column",
+            position: "relative",
+            width: "86%",
+            height: "100%",
+            backgroundImage: `url(${leadsForgeBanner})`,
+            backgroundSize: "100%",
+            backgroundRepeat: "no-repeat",
+            backgroundPosition: "center",
+            margin: "0 7vw 0 7vw"
+          }}
+        ></Box>
+        </Box>
     </Box>
   );
 };
