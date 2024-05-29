@@ -101,18 +101,25 @@ export default createTheme({
           fontWeight: "700",
           lineHeight: "112%"
         }
+      },
+      dropDown: {
+        style:{
+          width: "6rem",
+          height: "3rem"
+        }
       }
+
     }
   },
   breakpoints: {
     values: {
       xs: 0,
-      sm: 576,
-      md: 768,
-      lg: 992,
-      xl: 1200,
-      xxl: 1530,
-      xxxl: 1710
+      sm: 577,
+      md: 769,
+      lg: 993,
+      xl: 1201,
+      xxl: 1531,
+      xxxl: 1711
     }
   },
   sizes: {
