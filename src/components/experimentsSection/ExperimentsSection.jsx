@@ -1,13 +1,15 @@
 import { Box, Typography } from "@mui/material";
+import { useTheme } from "@mui/material/styles";
 import diamond from "../../assets/icons/diamond.svg";
 import brands from "../../assets/img/brands1.jpg";
 import brandsTwo from "../../assets/img/brands2.png";
-
 import leadBrand from "../../assets/img/leads-forge.png";
 import teuserBrand from "../../assets/img/imageTeuserMain.png";
 import expirementsBrand from "../../assets/img/frame-300.png";
 
 const ExperimentsSection = () => {
+  const theme = useTheme();
+
   return (
     <Box
       id="experiments"
@@ -19,7 +21,22 @@ const ExperimentsSection = () => {
         position: "relative",
         marginBottom: "15vh",
         width: "100%",
-        height: "140vh"
+        height: "140vh",
+        [theme.breakpoints.down("xxl")]: {
+          height: "120vh"
+        },
+        [theme.breakpoints.down("md")]: {
+          height: "220vh"
+        },
+        [theme.breakpoints.down("sm")]: {
+          height: "171vh"
+        },
+        [theme.breakpoints.down("xs")]: {
+          height: "134.2vh"
+        },
+        [theme.breakpoints.down("xxs")]: {
+          height: "117.4vh"
+        }
       }}
     >
       <Box
@@ -33,20 +50,42 @@ const ExperimentsSection = () => {
           height: "10vh",
           padding: "10vh 0 10vh 0",
           gap: "55vw",
-          maxHeight: "100vh"
+          maxHeight: "100vh",
+          [theme.breakpoints.down("xxl")]: {
+            gap: "45vw"
+          },
+          [theme.breakpoints.down("md")]: {
+            gap: "20vw"
+          },
+          [theme.breakpoints.down("xs")]: {
+            gap: "27vw"
+          }
         }}
       >
         <Typography
           variant="h2"
           component="h2"
           sx={{
-            marginLeft: "8vw"
+            marginLeft: "8vw",
+            [theme.breakpoints.down("xxl")]: {
+              width: "34%"
+            },
+            [theme.breakpoints.down("md")]: {
+              width: "57%"
+            },
+            [theme.breakpoints.down("sm")]: {
+              fontSize: "1.375rem",
+              marginLeft: "6vw"
+            },
+            [theme.breakpoints.down("xxs")]: {
+              fontSize: "1.175rem"
+            }
           }}
         >
           THE EXPERIMENTS
         </Typography>
 
-        <img src={diamond} alt="diamond" />
+        <img id="diamond" src={diamond} alt="diamond" />
       </Box>
       <Box
         id="experiments-container"
@@ -56,7 +95,17 @@ const ExperimentsSection = () => {
           alignItems: "start",
           position: "relative",
           width: "83%",
-          height: "99.1vh"
+          height: "99.1vh",
+          [theme.breakpoints.down("xxl")]: {
+            height: "100vh"
+          },
+          [theme.breakpoints.down("md")]: {
+            height: "200vh"
+          },
+          [theme.breakpoints.down("sm")]: {
+            justifyContent: "center",
+            width: "90%"
+          }
         }}
       >
         <Box
@@ -69,17 +118,45 @@ const ExperimentsSection = () => {
             alignItems: "start",
             flexShrink: 0,
             boxSizing: "border-box",
-            gap: 4
+            gap: 4,
+            [theme.breakpoints.down("xxl")]: {
+              gap: 4
+            },
+            [theme.breakpoints.down("md")]: {
+              flexDirection: "column",
+              gap: 1
+            },
+            [theme.breakpoints.down("sm")]: {
+              gap: 2
+            }
           }}
         >
           <Box
             id="left-images"
             sx={{
-              background: "green",
+              background: "blue",
               width: "50.225rem",
               height: "50.225rem",
               flexShrink: 0,
-              boxSizing: "border-box"
+              boxSizing: "border-box",
+              [theme.breakpoints.down("xxl")]: {
+                width: "40.425rem",
+                height: "40.425rem"
+              },
+              [theme.breakpoints.down("md")]: {
+                width: "39.825rem"
+              },
+              [theme.breakpoints.down("sm")]: {
+                width: "100%",
+                height: "32rem"
+              },
+              [theme.breakpoints.down("xs")]: {
+                width: "100%",
+                height: "21rem"
+              },
+              [theme.breakpoints.down("xxs")]: {
+                height: "18rem"
+              }
             }}
           >
             <a href="/domain-expansion">
@@ -89,13 +166,29 @@ const ExperimentsSection = () => {
           <Box
             id="right-images"
             sx={{
-              width: "38rem",
+              width: "37.2rem",
               height: "100%",
               display: "flex",
               flexDirection: "column",
               justifyContent: "start",
               alignItems: "start",
-              gap: 4
+              gap: 4,
+              [theme.breakpoints.down("xxl")]: {
+                gap: 3
+              },
+              [theme.breakpoints.down("md")]: {
+                flexDirection: "row",
+                width: "100%",
+                height: "18.65rem",
+                gap: 1
+              },
+              [theme.breakpoints.down("sm")]: {
+                height: "12rem",
+                gap: "0.5rem"
+              },
+              [theme.breakpoints.down("xxs")]: {
+                height: "10rem"
+              }
             }}
           >
             <Box
@@ -104,7 +197,26 @@ const ExperimentsSection = () => {
                 width: "100%",
                 height: "28.38215rem",
                 flexShrink: 0,
-                boxSizing: "border-box"
+                boxSizing: "border-box",
+                [theme.breakpoints.down("xxl")]: {
+                  height: "23.38215rem"
+                },
+                [theme.breakpoints.down("md")]: {
+                  width: "18.65rem",
+                  height: "18.65rem"
+                },
+                [theme.breakpoints.down("sm")]: {
+                  width: "16rem",
+                  height: "12rem"
+                },
+                [theme.breakpoints.down("xs")]: {
+                  width: "12rem",
+                  height: "12rem"
+                },
+                [theme.breakpoints.down("xxs")]: {
+                  width: "10rem",
+                  height: "10rem"
+                }
               }}
             >
               <a href="/seafena">
@@ -121,25 +233,73 @@ const ExperimentsSection = () => {
                 justifyContent: "start",
                 gap: 4,
                 flexShrink: 0,
-                boxSizing: "border-box"
+                boxSizing: "border-box",
+                [theme.breakpoints.down("xxl")]: {
+                  height: "15.6rem",
+                  gap: 2
+                },
+                [theme.breakpoints.down("md")]: {
+                  flexDirection: "column"
+                },
+                [theme.breakpoints.down("sm")]: {
+                  gap: 1
+                }
               }}
             >
               <Box
-                id="right-images"
+                id="dowm-left-images"
                 sx={{
                   width: "30%",
                   height: "100%",
                   display: "flex",
                   flexDirection: "column",
-                  gap: 4
+                  gap: 4,
+                  [theme.breakpoints.down("xxl")]: {
+                    height: "15.6rem",
+                    gap: 2
+                  },
+                  [theme.breakpoints.down("md")]: {
+                    flexDirection: "row",
+                    width: "52%",
+                    height: "12rem"
+                  },
+                  [theme.breakpoints.down("sm")]: {
+                    height: "6rem",
+                    width: "49%",
+                    gap: 1
+                  },
+                  [theme.breakpoints.down("xs")]: {
+                    width: "40.95%",
+                    height: "5rem"
+                  },
+                  [theme.breakpoints.down("xxs")]: {
+                    width: "41.6%",
+                    height: "4rem"
+                  }
                 }}
               >
                 <Box
                   id="top-image"
                   sx={{
-                    background: "pink",
                     width: "100%",
-                    height: "35%"
+                    height: "35%",
+                    [theme.breakpoints.down("xxl")]: {
+                      height: "6.1rem"
+                    },
+                    [theme.breakpoints.down("md")]: {
+                      height: "10rem"
+                    },
+                    [theme.breakpoints.down("sm")]: {
+                      height: "6rem",
+                      width: "8rem"
+                    },
+                    [theme.breakpoints.down("xs")]: {
+                      width: "5rem",
+                      height: "5rem"
+                    },
+                    [theme.breakpoints.down("xxs")]: {
+                      height: "4rem"
+                    }
                   }}
                 >
                   <a href="/leads-forge">
@@ -155,7 +315,24 @@ const ExperimentsSection = () => {
                   sx={{
                     background: "pink",
                     width: "100%",
-                    height: "60%"
+                    height: "60%",
+                    [theme.breakpoints.down("xxl")]: {
+                      height: "9.45rem"
+                    },
+                    [theme.breakpoints.down("md")]: {
+                      height: "10rem"
+                    },
+                    [theme.breakpoints.down("sm")]: {
+                      height: "6rem",
+                      width: "8rem"
+                    },
+                    [theme.breakpoints.down("xs")]: {
+                      width: "5rem",
+                      height: "5rem"
+                    },
+                    [theme.breakpoints.down("xxs")]: {
+                      height: "4rem"
+                    }
                   }}
                 >
                   <a href="/teuser">
@@ -168,7 +345,23 @@ const ExperimentsSection = () => {
                 sx={{
                   background: "salmon",
                   width: "70%",
-                  height: "100%"
+                  height: "100%",
+                  [theme.breakpoints.down("md")]: {
+                    width: "20.67rem",
+                    height: "7.7rem"
+                  },
+                  [theme.breakpoints.down("sm")]: {
+                    width: "15.9rem",
+                    height: "5.5rem"
+                  },
+                  [theme.breakpoints.down("xs")]: {
+                    width: "8.69rem",
+                    height: "6.5rem"
+                  },
+                  [theme.breakpoints.down("xxs")]: {
+                    width: "7.5rem",
+                    height: "5.5rem"
+                  }
                 }}
               >
                 <a href="/experiments">

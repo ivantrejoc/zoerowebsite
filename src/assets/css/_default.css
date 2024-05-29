@@ -42,6 +42,16 @@
 
 /* Experiments Styles */
 
+@media (max-width: 577px){
+  #diamond{
+    width: 0.9375rem;
+    height: 1.3125rem;
+    flex-shrink: 0;
+    box-sizing: border-box
+  }
+}
+
+
 #left-side-img {
   width: 100%;
 }
@@ -55,6 +65,7 @@
   width: 100%;
   height: 100%;
 }
+
 
 
 /* Coefficient Styles */
