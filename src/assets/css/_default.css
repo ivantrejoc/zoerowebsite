@@ -27,45 +27,21 @@
 }
 
 /* Experiments Styles */
-#experiments-image-container {
+
+#left-side-img {
   width: 100%;
-  height: 57.4375rem;
-  display: flex;
-  justify-content: space-between;
-  flex-shrink: 0;
-  box-sizing: border-box;
 }
 
-#left-images {
-  width: 57.4375rem;
-  height: 57.4375rem;
-  flex-shrink: 0;
-  box-sizing: border-box;
-}
-
-#right-images {
-  width: 31.6875rem;
+#seafena-img{
+  width: 100.2%;
   height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: flex-start;
 }
 
-#up-right-images {
+#experiment-img, #lead-forge-img, #teuser-img{
   width: 100%;
-  height: 28.6875rem;
-  padding: 0;
-  flex-shrink: 0;
-  box-sizing: border-box;
+  height: 100%;
 }
 
-#down-right-images {
-  width: 100%;
-  height: 27.25rem;
-  flex-shrink: 0;
-  box-sizing: border-box;
-}
 
 /* Coefficient Styles */
 #coefficient-image {

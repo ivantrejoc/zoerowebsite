@@ -18,7 +18,7 @@ const ExperimentsSection = () => {
         flexDirection: "column",
         position: "relative",
         marginBottom: "15vh",
-        width: "100vw",
+        width: "100%",
         height: "140vh"
       }}
     >
@@ -29,7 +29,7 @@ const ExperimentsSection = () => {
           justifyContent: "start",
           alignItems: "center",
           position: "relative",
-          width: "100vw",
+          width: "100%",
           height: "10vh",
           padding: "10vh 0 10vh 0",
           gap: "55vw",
@@ -55,85 +55,133 @@ const ExperimentsSection = () => {
           justifyContent: "start",
           alignItems: "start",
           position: "relative",
-          width: "80vw",
-          height: "113vh"
+          width: "83%",
+          height: "99.1vh"
         }}
       >
-        <div id="experiments-image-container">
-          <div id="left-images">
+        <Box
+          id="experiments-image-container"
+          sx={{
+            width: "100%",
+            height: "100%",
+            display: "flex",
+            justifyContent: "start",
+            alignItems: "start",
+            flexShrink: 0,
+            boxSizing: "border-box",
+            gap: 4
+          }}
+        >
+          <Box
+            id="left-images"
+            sx={{
+              background: "green",
+              width: "50.225rem",
+              height: "50.225rem",
+              flexShrink: 0,
+              boxSizing: "border-box"
+            }}
+          >
             <a href="/domain-expansion">
-              <img src={brands} alt="brands-1" style={{ width: "100%" }} />
+              <img id="left-side-img" src={brands} alt="brands-1" />
             </a>
-          </div>
-          <div id="right-images">
-            <div id="up-right-images">
+          </Box>
+          <Box
+            id="right-images"
+            sx={{
+              width: "38rem",
+              height: "100%",
+              display: "flex",
+              flexDirection: "column",
+              justifyContent: "start",
+              alignItems: "start",
+              gap: 4
+            }}
+          >
+            <Box
+              id="up-right-images"
+              sx={{
+                width: "100%",
+                height: "28.38215rem",
+                flexShrink: 0,
+                boxSizing: "border-box"
+              }}
+            >
               <a href="/seafena">
-                <img
-                  src={brandsTwo}
-                  alt="brands-1"
-                  style={{ width: "100%", height: "100%" }}
-                />
+                <img id="seafena-img" src={brandsTwo} alt="brands-1" />
               </a>
-            </div>
-            <Box id="down-right-images">
-              <Box sx={{ display: "flex", flexDirection: "column" }}>
-                <Box sx={{ display: "flex", flexDirection: "row" }}>
-                  <Box
-                    style={{
-                      marginRight: "1rem",
-                      width: "50%",
-                      height: "20%"
-                    }}
-                  >
-                    <a href="/leads-forge">
-                      <img
-                        src={leadBrand}
-                        style={{
-                          width: "100%",
-                          height: "100%"
-                        }}
-                      />
-                    </a>
-                  </Box>
-                  <Box
-                    style={{
-                      marginRight: "1rem",
-                      width: "50%",
-                      height: "auto"
-                    }}
-                  >
-                    <a href="/experiments">
-                      <img
-                        src={expirementsBrand}
-                        style={{
-                          width: "100%",
-                          height: "100%"
-                        }}
-                      />
-                    </a>
-                  </Box>
-                </Box>
+            </Box>
+            <Box
+              id="down-right-images"
+              sx={{
+                width: "100%",
+                height: "19.8rem",
+                display: "flex",
+                alignItems: "start",
+                justifyContent: "start",
+                gap: 4,
+                flexShrink: 0,
+                boxSizing: "border-box"
+              }}
+            >
+              <Box
+                id="right-images"
+                sx={{
+                  width: "30%",
+                  height: "100%",
+                  display: "flex",
+                  flexDirection: "column",
+                  gap: 4
+                }}
+              >
                 <Box
-                  style={{
-                    marginTop: "1rem",
-                    width: "47%",
-                    height: "20%"
+                  id="top-image"
+                  sx={{
+                    background: "pink",
+                    width: "100%",
+                    height: "35%"
                   }}
                 >
-                  <a href="teuser">
+                  <a href="/leads-forge">
                     <img
-                      src={teuserBrand}
-                      style={{
-                        width: "100%",
-                        height: "100%"
-                      }}
+                      id="lead-forge-img"
+                      src={leadBrand}
+                      alt="leads-forge-logo"
                     />
                   </a>
                 </Box>
+                <Box
+                  id="bottom-image"
+                  sx={{
+                    background: "pink",
+                    width: "100%",
+                    height: "60%"
+                  }}
+                >
+                  <a href="/teuser">
+                    <img id="teuser-img" src={teuserBrand} alt="teuser-logo" />
+                  </a>
+                </Box>
+              </Box>
+              <Box
+                id="left-image"
+                sx={{
+                  background: "salmon",
+                  width: "70%",
+                  height: "100%"
+                }}
+              >
+                <a href="/experiments">
+                  <img
+                    id="experiment-img"
+                    src={expirementsBrand}
+                    alt="experiments"
+                  />
+                </a>
               </Box>
             </Box>
-          </div>
-        </div>
+          </Box>
+        </Box>
       </Box>
     </Box>
   );
