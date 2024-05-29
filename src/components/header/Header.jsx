@@ -16,7 +16,13 @@ const Header = () => {
         gap: "65%",
         display: "flex",
         overflowX: "hidden",
-        marginBottom: "3vh"
+        marginBottom: "3vh",
+        [theme.breakpoints.down("md")]: {
+          gap: "65%"
+        },
+        [theme.breakpoints.down("sm")]: {
+          gap: "50%"
+        }
       }}
     >
       <Box
@@ -28,7 +34,15 @@ const Header = () => {
           position: "relative",
           width: "20%",
           height: "100%",
-          maxHeight: "100%"
+          maxHeight: "100%",
+          [theme.breakpoints.down("xxl")]: {
+            paddingLeft: "5vw",
+            paddingBottom: 4
+          },
+          [theme.breakpoints.down("md")]: {
+            width: "35%",
+            paddingLeft: "10"
+          }
         }}
       >
         <Link href="/" sx={{ marginTop: 3 }}>
@@ -39,7 +53,6 @@ const Header = () => {
       <Box
         id="nav-container"
         sx={{
-          background: "plum",
           display: "flex",
           flexDirection: "column",
           justifyContent: "center",
@@ -49,14 +62,16 @@ const Header = () => {
           height: "100%",
           maxHeight: "100%",
           paddingRight: "6vw",
-          paddingBottom: 1
-          
+          [theme.breakpoints.down("xxl")]: {
+            width: "18%",
+            paddingRight: "5vw"
+          }
         }}
       >
         {isMobile && <DropdownMenu />}
         {!isMobile && (
           <Box
-          id="links-container"
+            id="links-container"
             sx={{
               display: "flex",
               flexDirection: "column",
@@ -65,8 +80,7 @@ const Header = () => {
               position: "relative",
               width: "100%",
               height: "100%",
-              maxHeight: "100%",
-              
+              maxHeight: "100%"
             }}
           >
             <Typography
