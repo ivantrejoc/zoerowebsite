@@ -133,8 +133,7 @@ const ExperimentsSection = () => {
         >
           <Box
             id="left-images"
-            sx={{
-              background: "blue",
+            sx={{              
               width: "50.225rem",
               height: "50.225rem",
               flexShrink: 0,
@@ -313,7 +312,6 @@ const ExperimentsSection = () => {
                 <Box
                   id="bottom-image"
                   sx={{
-                    background: "pink",
                     width: "100%",
                     height: "60%",
                     [theme.breakpoints.down("xxl")]: {
@@ -343,7 +341,6 @@ const ExperimentsSection = () => {
               <Box
                 id="left-image"
                 sx={{
-                  background: "salmon",
                   width: "70%",
                   height: "100%",
                   [theme.breakpoints.down("md")]: {
