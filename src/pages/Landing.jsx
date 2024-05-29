@@ -31,7 +31,7 @@ const Landing = () => {
     >
       {/* Main area */}
       <Box
-        id="header-container"
+        id="hero-container"
         sx={{
           display: "flex",
           justifyContent: "start",
@@ -40,9 +40,33 @@ const Landing = () => {
           position: "relative",
           backgroundImage: `url(${mainBackground})`,
           backgroundRepeat: "no-repeat",
+          backgroundPosition: "cover",
           width: "100vw",
-          height: "100vh",
-          maxHeight: "100vh"
+          height: "80vh",
+          maxHeight: "100vh",
+          [theme.breakpoints.down("xxl")]: {
+            height: "90vh",
+            backgroundPosition: "center",
+            
+            
+          },
+          [theme.breakpoints.down("xl")]: {
+            fontSize: "7rem"
+          },
+          [theme.breakpoints.down("md")]: {
+            height: "70vh",
+            backgroundPosition: "center",
+            backgroundSize: "cover",
+            marginBottom: 6
+          },
+          [theme.breakpoints.down("sm")]: {
+            height: "50vh",
+            backgroundPosition: "center"
+          },
+          [theme.breakpoints.down("xs")]: {
+            height: "30vh",
+            backgroundPosition: "center"
+          }
         }}
       >
         <HeroSection />
@@ -78,6 +102,6 @@ const Landing = () => {
       <HeroTwoSection />
     </Box>
   );
-}
+};
 
 export default Landing;
