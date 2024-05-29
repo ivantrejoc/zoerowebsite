@@ -19,11 +19,25 @@
 }
 
 /* Reasoning Styles */
-#reasoning-text {
+/* #reasoning-text {
   width: 24.1875rem;
   height: 10.1875rem;
   flex-shrink: 0;
   box-sizing: border-box;
+} */
+
+@media (max-width: 577px){
+  #reasoning-image{
+    width: 22.275rem;
+    height: 22.275rem;
+  }
+}
+
+@media (max-width: 321px){
+  #reasoning-image{
+    width: 15.275rem;
+    height: 15.275rem;
+  }
 }
 
 /* Experiments Styles */
