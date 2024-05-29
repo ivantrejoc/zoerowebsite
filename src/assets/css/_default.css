@@ -109,11 +109,6 @@ letter-spacing: 0.15rem;
 }
 
 /* Footer Style */
-#left-items{  
-  display: flex;
-  flex-direction: column;
-  width: 30%;
-}
 
  #logo-footer{  
   width: 7.36156rem;
@@ -123,7 +118,7 @@ letter-spacing: 0.15rem;
 }
 
 .rights{
-  width: 65%;
+  width: 100%;
   color: var(--White, #FFF);
   font-family: Urbanist;
   font-size: 1.48225rem;
@@ -150,20 +145,6 @@ letter-spacing: 0.15rem;
   line-height: normal;
 }
 
-#right-items{
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 5rem;
-
-}
-
-#nav-1, #nav-2{
-  display: flex;
-  flex-direction: column;
-  gap: 1.85rem;
-}
-
 .footerLinks{
   color: var(--White, #FFF);
   font-family: Urbanist;
@@ -172,6 +153,12 @@ letter-spacing: 0.15rem;
   font-weight: 600;
   line-height: normal;
   text-decoration: none;
+}
+
+@media (max-width: 577px){
+  .footerLinks, .rights, #solvedText, .highlight{
+    font-size: 1.125rem;
+  }
 }
 
 .footerLinks:hover{

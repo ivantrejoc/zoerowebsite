@@ -1,6 +1,9 @@
 import { Box } from "@mui/material";
+import { useTheme } from "@mui/material/styles";
 import zoeroLogo from "../../assets/img/zoero-logo.svg";
+
 const Footer = () => {
+  const theme = useTheme();
   return (
     <Box
       id="footer-container"
@@ -12,7 +15,13 @@ const Footer = () => {
         width: "100%",
         height: "40vh",
         overflowX: "hidden",
-        marginBottom: "0"
+        marginBottom: "0",
+        [theme.breakpoints.down("md")]: {
+          height: "90vh"
+        },
+        [theme.breakpoints.down("sm")]: {
+          height: "60vh"
+        }
       }}
     >
       <Box
@@ -20,29 +29,115 @@ const Footer = () => {
         sx={{
           display: "flex",
           alignItems: "center",
-          justifyContent: "space-between",
+          justifyContent: "start",
           position: "relative",
           width: "84vw",
           height: "100%",
           margin: "0 8vw 0 8vw",
-          borderTop: "1px solid #FFF"
+          borderTop: "1px solid #FFF",
+          paddingTop: 3,
+          gap: "39.6%",
+          [theme.breakpoints.down("xxl")]: {
+            gap: "26.8%",
+            paddingBottom: 2
+          },
+          [theme.breakpoints.down("md")]: {
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "start",
+            justifyContent: "center",
+            paddingTop: 0,
+            paddingBottom: 0,
+            gap: 2
+          }
         }}
       >
-        <div id="left-items">
-          <div id="logo-container">
+        <Box
+          id="left-items"
+          sx={{
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "start",
+            justifyContent: "center",
+            width: "30%",
+            height: "100%",
+            maxHeight: "100%",
+            [theme.breakpoints.down("xxl")]: {
+              width: "32.5%"
+            },
+            [theme.breakpoints.down("md")]: {
+              width: "100%",
+              height: "50%"
+            }
+          }}
+        >
+          <Box
+            id="logo-container"
+            sx={{
+              [theme.breakpoints.down("xxl")]: {
+                marginTop: 2
+              },
+              [theme.breakpoints.down("md")]: {
+                width: "33%",
+                marginTop: 0
+              }
+            }}
+          >
             <img id="logo-footer" src={zoeroLogo} alt="zoero-logo" />
-          </div>
-          <p className="rights">
-            © Zoero Labs LTD. <br></br>
-            All Rights Reserved 2024.
-          </p>
-          <p id="solvedText">
-            Solved by <span className="highlight">@Omar</span> and{" "}
-            <span className="highlight">@Zakaria</span>
-          </p>
-        </div>
-        <div id="right-items">
-          <div id="nav-1">
+          </Box>
+          <Box
+            id="credits-container"
+            sx={{
+              [theme.breakpoints.down("md")]: {
+                width: "100%"
+              }
+            }}
+          >
+            <p className="rights">
+              © Zoero Labs LTD. <br></br>
+              All Rights Reserved 2024.
+            </p>
+            <p id="solvedText">
+              Solved by <span className="highlight">@Omar</span> and{" "}
+              <span className="highlight">@Zakaria</span>
+            </p>
+          </Box>
+        </Box>
+        <Box
+          id="right-items"
+          sx={{
+            display: "flex",
+            justifyContent: "start",
+            alignItems: "start",
+            gap: "5rem",
+            marginTop: 6,
+            [theme.breakpoints.down("xxl")]: {
+              gap: "5rem"
+            },
+            [theme.breakpoints.down("md")]: {
+              marginTop: 0
+            },
+            [theme.breakpoints.down("sm")]: {
+              width: "100%",
+              gap: "1rem",
+              justifyContent: "start"
+            }
+          }}
+        >
+          <Box
+            id="nav-1"
+            sx={{
+              display: "flex",
+              flexDirection: "column",
+              gap: "0.75rem",
+              [theme.breakpoints.down("xxl")]: {
+                gap: "1rem"
+              },
+              [theme.breakpoints.down("sm")]: {
+                width: "40%"
+              }
+            }}
+          >
             <a className="footerLinks" href="#">
               The Science
             </a>
@@ -52,8 +147,21 @@ const Footer = () => {
             <a className="footerLinks" href="/#coefficients">
               Coefficients
             </a>
-          </div>
-          <div id="nav-2">
+          </Box>
+          <Box
+            id="nav-2"
+            sx={{
+              display: "flex",
+              flexDirection: "column",
+              gap: "0.75rem",
+              [theme.breakpoints.down("xxl")]: {
+                gap: "1rem"
+              },
+              [theme.breakpoints.down("sm")]: {
+                width: "60%"
+              }
+            }}
+          >
             <a className="footerLinks" href="#">
               Knowledge
             </a>
@@ -63,8 +171,8 @@ const Footer = () => {
             <a className="footerLinks" href="/contact">
               Contact us
             </a>
-          </div>
-        </div>
+          </Box>
+        </Box>
       </Box>
     </Box>
   );
