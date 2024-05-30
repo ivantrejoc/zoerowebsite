@@ -327,7 +327,23 @@ const Experiments = () => {
           overflowX: "0px",
           height: "50vh",
           maxHeight: "50vh",
-          marginBottom: 12
+          marginBottom: 12,
+          [theme.breakpoints.down("xxl")]: {
+            height: "60vh",
+            maxHeight: "60vh"
+          },
+          [theme.breakpoints.down("md")]: {
+            height: "120vh",
+            maxHeight: "120vh"
+          },
+          [theme.breakpoints.down("sm")]: {
+            height: "59vh",
+            maxHeight: "59vh"
+          },
+          [theme.breakpoints.down("xs")]: {
+            height: "58vh",
+            maxHeight: "58vh"
+          }
         }}
       >
         <Box
@@ -345,11 +361,15 @@ const Experiments = () => {
           <Grid container columnGap={2} sx={{ height: "100%" }}>
             <Grid
               item
-              xs={5}
+              xxl={5}
+              xl={4.6}
               sx={{
                 display: "flex",
                 justifyContent: "start",
-                alignItems: "center"
+                alignItems: "center",
+                [theme.breakpoints.down("sm")]: {
+                  height: "25vh"
+                }
               }}
             >
               <Typography
@@ -359,7 +379,16 @@ const Experiments = () => {
                   fontSize: "4.575rem",
                   fontStyle: "normal",
                   fontWeight: "700",
-                  lineHeight: "100%"
+                  lineHeight: "100%",
+                  [theme.breakpoints.down("xxl")]: {
+                    fontSize: "4.275rem"
+                  },
+                  [theme.breakpoints.down("sm")]: {
+                    fontSize: "3.375rem"
+                  },
+                  [theme.breakpoints.down("xs")]: {
+                    fontSize: "2.1375rem"
+                  }
                 }}
               >
                 EXE APP EQUATIONS
@@ -367,11 +396,15 @@ const Experiments = () => {
             </Grid>
             <Grid
               item
-              xs={6.87}
+              xxl={6.87}
+              xl={7.2}
               sx={{
                 display: "flex",
                 justifyContent: "start",
-                alignItems: "center"
+                alignItems: "center",
+                [theme.breakpoints.down("sm")]: {
+                  height: "33vh"
+                }
               }}
             >
               <Typography
@@ -384,7 +417,16 @@ const Experiments = () => {
                   fontStyle: "normal",
                   fontWeight: "400",
                   lineHeight: "150%",
-                  letterSpacing: 0
+                  letterSpacing: 0,
+                  [theme.breakpoints.down("xxl")]: {
+                    fontSize: "2.31244rem"
+                  },
+                  [theme.breakpoints.down("sm")]: {
+                    fontSize: "1.25rem"
+                  },
+                  [theme.breakpoints.down("xs")]: {
+                    fontSize: "0.9375rem"
+                  }
                 }}
               >
                 EXE is an innovative workout tracker app that combines great
