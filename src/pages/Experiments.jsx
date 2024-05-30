@@ -462,7 +462,7 @@ const Experiments = () => {
       {/* GRID IMAGES */}
       <Box
         id="grid-image-container"
-        sx={{
+        sx={{          
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
@@ -480,12 +480,12 @@ const Experiments = () => {
           [theme.breakpoints.down("md")]: {
             height: "341vh",
             maxHeight: "341vh",
-            marginBottom: 4
+            marginBottom: 6
           },
           [theme.breakpoints.down("xs")]: {
             height: "200vh",
             maxHeight: "200vh",
-            marginBottom: 0
+            marginBottom: 6
           },
           [theme.breakpoints.down("xxs")]: {
             height: "250vh"
@@ -571,7 +571,7 @@ const Experiments = () => {
       {/* SCREENSHOTS SECTION */}
       <Box
         id="screenshots-container"
-        sx={{
+        sx={{          
           display: "flex",
           justifyContent: "start",
           alignItems: "center",
@@ -581,7 +581,27 @@ const Experiments = () => {
           overflowX: "0px",
           height: "135vh",
           maxHeight: "135vh",
-          marginBottom: 12
+          marginBottom: 12,
+          [theme.breakpoints.down("xxl")]: {
+            height: "128vh",
+            maxHeight: "128vh"
+          },
+          [theme.breakpoints.down("md")]: {
+            height: "110vh",
+            maxHeight: "110vh"
+          },
+          [theme.breakpoints.down("sm")]: {
+            height: "83vh",
+            maxHeight: "83vh"
+          },
+          [theme.breakpoints.down("xs")]: {
+            height: "55vh",
+            maxHeight: "55vh"
+          },
+          [theme.breakpoints.down("xxs")]: {
+            height: "46vh",
+            maxHeight: "46vh"
+          }
         }}
       >
         <Box
