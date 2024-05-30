@@ -326,7 +326,7 @@ const LeadsForge = () => {
       {/* LEADS FORGE EQUATIONS */}
       <Box
         id="leadsForge-equations-container"
-        sx={{
+        sx={{          
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
@@ -336,7 +336,28 @@ const LeadsForge = () => {
           overflowX: "0px",
           height: "90vh",
           maxHeight: "90vh",
-          marginBottom: 18
+          marginBottom: 18,
+          [theme.breakpoints.down("xxl")]: {
+            height: "120vh",
+            maxHeight: "120vh"
+          },
+          [theme.breakpoints.down("md")]: {
+            height: "208vh",
+            maxHeight: "208vh"
+          },
+          [theme.breakpoints.down("sm")]: {
+            height: "99vh",
+            maxHeight: "99vh",
+            marginBottom: 6,
+          },
+          [theme.breakpoints.down("xs")]: {
+            height: "77vh",
+            maxHeight: "77vh"
+          },
+          [theme.breakpoints.down("xxs")]: {
+            height: "87vh",
+            maxHeight: "87vh"
+          }
         }}
       >
         <Box
@@ -354,7 +375,8 @@ const LeadsForge = () => {
           <Grid container columnGap={2} sx={{ height: "100%" }}>
             <Grid
               item
-              xs={5}
+              xxl={5}
+              xl={4.6}
               sx={{
                 display: "flex",
                 justifyContent: "start",
@@ -368,7 +390,16 @@ const LeadsForge = () => {
                   fontSize: "4.575rem",
                   fontStyle: "normal",
                   fontWeight: "700",
-                  lineHeight: "100%"
+                  lineHeight: "100%",
+                  [theme.breakpoints.down("xxl")]: {
+                    fontSize: "4.275rem"
+                  },
+                  [theme.breakpoints.down("sm")]: {
+                    fontSize: "3.375rem"
+                  },
+                  [theme.breakpoints.down("xs")]: {
+                    fontSize: "2.1375rem"
+                  }
                 }}
               >
                 LEADS FORGE EQUATIONS
@@ -376,7 +407,8 @@ const LeadsForge = () => {
             </Grid>
             <Grid
               item
-              xs={6.87}
+              xxl={6.87}
+              xl={7.2}
               sx={{
                 display: "flex",
                 justifyContent: "start",
@@ -393,7 +425,16 @@ const LeadsForge = () => {
                   fontStyle: "normal",
                   fontWeight: "400",
                   lineHeight: "150%",
-                  letterSpacing: 0
+                  letterSpacing: 0,
+                  [theme.breakpoints.down("xxl")]: {
+                    fontSize: "2.31244rem"
+                  },
+                  [theme.breakpoints.down("sm")]: {
+                    fontSize: "1.25rem"
+                  },
+                  [theme.breakpoints.down("xs")]: {
+                    fontSize: "0.9375rem"
+                  }
                 }}
               >
                 For Leads Forge, we worked on crafting a comprehensive strategy
@@ -423,7 +464,14 @@ const LeadsForge = () => {
           overflowX: "0px",
           height: "60vh",
           maxHeight: "60vh",
-          marginBottom: 22
+          marginBottom: 22,
+          [theme.breakpoints.down("md")]: {
+            marginBottom: 10
+          },
+          [theme.breakpoints.down("xs")]: {
+            marginBottom: 6
+          }
+
         }}
       >
         <Box
