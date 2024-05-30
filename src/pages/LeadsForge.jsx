@@ -36,7 +36,28 @@ const LeadsForge = () => {
           overflowX: "0px",
           height: "30vh",
           maxHeight: "30vh",
-          marginBottom: 12
+          marginBottom: 12,
+          [theme.breakpoints.down("xxl")]: {
+            height: "39vh",
+            maxHeight: "39vh"
+          },
+          [theme.breakpoints.down("md")]: {
+            height: "44vh",
+            maxHeight: "44vh",
+            marginBottom: 6
+          },
+          [theme.breakpoints.down("sm")]: {
+            height: "39vh",
+            maxHeight: "39vh"
+          },
+          [theme.breakpoints.down("xs")]: {
+            height: "37vh",
+            maxHeight: "37vh"
+          },
+          [theme.breakpoints.down("xxs")]: {
+            height: "36vh",
+            maxHeight: "36vh"
+          }
         }}
       >
         <Box
@@ -58,7 +79,23 @@ const LeadsForge = () => {
               height: "9vh",
               display: "flex",
               gap: 1,
-              marginBottom: 2
+              marginBottom: 2,
+              [theme.breakpoints.down("xxl")]: {
+                width: "54%",
+                height: "11vh",
+                gap: 2
+              },
+              [theme.breakpoints.down("md")]: {
+                width: "100%",
+                gap: 2
+              },
+              [theme.breakpoints.down("sm")]: {
+                width: "100%",
+                height: "9vh"
+              },
+              [theme.breakpoints.down("xs")]: {
+                width: "100%"
+              }
             }}
           >
             <Typography
@@ -68,7 +105,21 @@ const LeadsForge = () => {
                 fontSize: "5rem",
                 fontStyle: "normal",
                 fontWeight: "700",
-                lineHeight: "100%"
+                lineHeight: "100%",
+                [theme.breakpoints.down("md")]: {
+                  width: "45%",
+                  fontSize: "2.825rem"
+                },
+                [theme.breakpoints.down("sm")]: {
+                  width: "51%",
+                  fontSize: "2.4375rem"
+                },
+                [theme.breakpoints.down("xs")]: {
+                  width: "78%"
+                },
+                [theme.breakpoints.down("xxs")]: {
+                  fontSize: "2.0675rem"
+                }
               }}
               component="h2"
             >
@@ -79,7 +130,18 @@ const LeadsForge = () => {
               component="p"
               sx={{
                 width: "10%",
-                paddingTop: 2
+                paddingTop: 2,
+                [theme.breakpoints.down("xxl")]: {
+                  width: "10%"
+                },
+                [theme.breakpoints.down("md")]: {
+                  width: "6%",
+                  fontSize: "0.9375rem",
+                  paddingTop: 1
+                },
+                [theme.breakpoints.down("sm")]: {
+                  fontSize: "0.7375rem"
+                }
               }}
             >
               Case Study
@@ -91,7 +153,18 @@ const LeadsForge = () => {
               height: "12vh",
               display: "flex",
               flexDirection: "column",
-              marginBottom: 4
+              marginBottom: 4,
+              [theme.breakpoints.down("xxl")]: {
+                width: "56%"
+              },
+              [theme.breakpoints.down("md")]: {
+                width: "69%",
+                height: "14vh"
+              },
+              [theme.breakpoints.down("sm")]: {
+                width: "100%",
+                height: "10vh"
+              }
             }}
           >
             <Typography
@@ -100,7 +173,16 @@ const LeadsForge = () => {
                 fontSize: "2.5rem",
                 fontStyle: "normal",
                 fontWeight: "600",
-                lineHeight: "112%"
+                lineHeight: "112%",
+                [theme.breakpoints.down("md")]: {
+                  fontSize: "1.725rem"
+                },
+                [theme.breakpoints.down("sm")]: {
+                  fontSize: "1.25rem"
+                },
+                [theme.breakpoints.down("xs")]: {
+                  fontSize: "1rem"
+                }
               }}
               component="p"
             >
@@ -112,13 +194,30 @@ const LeadsForge = () => {
               width: "30%",
               height: "5vh",
               display: "flex",
-              gap: 6
+              gap: 6,
+              [theme.breakpoints.down("xxl")]: {
+                width: "40%",
+                height: "6vh"
+              },
+              [theme.breakpoints.down("md")]: {
+                width: "100%",
+                height: "9vh"
+              },
+              [theme.breakpoints.down("sm")]: {
+                gap: 10
+              },
+              [theme.breakpoints.down("xs")]: {
+                gap: 4
+              }
             }}
           >
             <Box
               sx={{
                 display: "flex",
-                gap: 2
+                gap: 2,
+                [theme.breakpoints.down("xs")]: {
+                  width: "47.5%"
+                }
               }}
             >
               <img id="x-icon" src={xicon} alt="x-icon" />{" "}
@@ -126,7 +225,13 @@ const LeadsForge = () => {
                 variant="text"
                 sx={{
                   justifyItems: "center",
-                  alignContent: "center"
+                  alignContent: "center",
+                  [theme.breakpoints.down("sm")]: {
+                    fontSize: "0.91556rem"
+                  },
+                  [theme.breakpoints.down("xs")]: {
+                    fontSize: "0.85rem"
+                  }
                 }}
                 component="p"
               >
@@ -136,7 +241,10 @@ const LeadsForge = () => {
             <Box
               sx={{
                 display: "flex",
-                gap: 2
+                gap: 2,
+                [theme.breakpoints.down("xs")]: {
+                  width: "47.5%"
+                }
               }}
             >
               <img id="x-icon" src={xicon} alt="x-icon" />{" "}
@@ -144,7 +252,13 @@ const LeadsForge = () => {
                 variant="text"
                 sx={{
                   justifyItems: "center",
-                  alignContent: "center"
+                  alignContent: "center",
+                  [theme.breakpoints.down("sm")]: {
+                    fontSize: "0.91556rem"
+                  },
+                  [theme.breakpoints.down("xs")]: {
+                    fontSize: "0.85rem"
+                  }
                 }}
                 component="p"
               >
