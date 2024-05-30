@@ -104,6 +104,7 @@ const Contact = () => {
       <Box
         id="form-container"
         sx={{
+          background: "plum",
           display: "flex",
           justifyContent: "start",
           alignItems: "center",
@@ -113,11 +114,16 @@ const Contact = () => {
           overflowX: "0px",
           height: "140vh",
           maxHeight: "140vh",
-          marginBottom: 10
+          marginBottom: 10,
+          [theme.breakpoints.down("xxl")]: {
+            height: "500vh",
+            maxHeight: "500vh"
+          }
         }}
       >
         <Box
           sx={{
+            background: "gold",
             display: "flex",
             justifyContent: "start",
             alignItems: "start",
@@ -138,12 +144,34 @@ const Contact = () => {
               width: "100%",
               height: "10vh",
               padding: "5vh 0 5vh 0",
-              gap: "55%",
               maxHeight: "10vh",
-              marginBottom: 4
+              marginBottom: 4,
+              [theme.breakpoints.down("md")]: {
+                marginBottom: 2
+              },
+              [theme.breakpoints.down("sm")]: {
+                marginBottom: 1
+              }
             }}
           >
-            <Typography variant="h2" component="h2">
+            <Typography
+              variant="h2"
+              component="h2"
+              sx={{
+                [theme.breakpoints.down("xxl")]: {
+                  width: "60%"
+                },
+                [theme.breakpoints.down("md")]: {
+                  width: "80%"
+                },
+                [theme.breakpoints.down("sm")]: {
+                  fontSize: "1.375rem"
+                },
+                [theme.breakpoints.down("xxs")]: {
+                  fontSize: "1.175rem"
+                }
+              }}
+            >
               GENERAL VARIABLES
             </Typography>
           </Box>
@@ -157,12 +185,23 @@ const Contact = () => {
               height: "25vh",
               padding: 0,
               overflowX: "hidden",
-              marginBottom: 10
+              marginBottom: 10,
+              [theme.breakpoints.down("xxl")]: {
+                height: "33vh"
+              },
+              [theme.breakpoints.down("md")]: {
+                height: "95vh"
+              },
+              [theme.breakpoints.down("sm")]: {
+                height: "80vh"
+              }
             }}
           >
             <Grid
               item
-              xs={5.93}
+              xxs={12}
+              lg={5.91}
+              xxxl={5.93}
               sx={{
                 height: "fit-content",
                 display: "flex",
@@ -176,7 +215,14 @@ const Contact = () => {
               <Typography
                 variant="formLabel"
                 component="h3"
-                sx={{ marginBottom: 1, padding: 0, marginLeft: 0 }}
+                sx={{
+                  marginBottom: 1,
+                  padding: 0,
+                  marginLeft: 0,
+                  [theme.breakpoints.down("sm")]: {
+                    fontSize: "1.125rem"
+                  }
+                }}
               >
                 First & Last Name
               </Typography>
@@ -195,6 +241,9 @@ const Contact = () => {
                     },
                     "&.Mui-focused fieldset": {
                       borderColor: "green"
+                    },
+                    [theme.breakpoints.down("sm")]: {
+                      height: "2.75rem"
                     }
                   }
                 }}
@@ -205,7 +254,9 @@ const Contact = () => {
             </Grid>
             <Grid
               item
-              xs={5.93}
+              xxs={12}
+              lg={5.91}
+              xxxl={5.93}
               sx={{
                 height: "fit-content",
                 padding: 0,
@@ -215,7 +266,12 @@ const Contact = () => {
               <Typography
                 variant="formLabel"
                 component="h3"
-                sx={{ marginBottom: 1 }}
+                sx={{
+                  marginBottom: 1,
+                  [theme.breakpoints.down("sm")]: {
+                    fontSize: "1.125rem"
+                  }
+                }}
               >
                 Company Email
               </Typography>
@@ -234,6 +290,9 @@ const Contact = () => {
                     },
                     "&.Mui-focused fieldset": {
                       borderColor: "green"
+                    },
+                    [theme.breakpoints.down("sm")]: {
+                      height: "2.75rem"
                     }
                   }
                 }}
@@ -244,7 +303,9 @@ const Contact = () => {
             </Grid>
             <Grid
               item
-              xs={5.93}
+              xxs={12}
+              lg={5.91}
+              xxxl={5.93}
               sx={{
                 height: "fit-content",
                 padding: 0,
@@ -254,7 +315,12 @@ const Contact = () => {
               <Typography
                 variant="formLabel"
                 component="h3"
-                sx={{ marginBottom: 1 }}
+                sx={{
+                  marginBottom: 1,
+                  [theme.breakpoints.down("sm")]: {
+                    fontSize: "1.125rem"
+                  }
+                }}
               >
                 Company Name
               </Typography>
@@ -273,6 +339,9 @@ const Contact = () => {
                     },
                     "&.Mui-focused fieldset": {
                       borderColor: "green"
+                    },
+                    [theme.breakpoints.down("sm")]: {
+                      height: "2.75rem"
                     }
                   }
                 }}
@@ -283,7 +352,9 @@ const Contact = () => {
             </Grid>
             <Grid
               item
-              xs={5.93}
+              xxs={12}
+              lg={5.91}
+              xxxl={5.93}
               sx={{
                 height: "fit-content",
                 padding: 0,
@@ -293,7 +364,12 @@ const Contact = () => {
               <Typography
                 variant="formLabel"
                 component="h3"
-                sx={{ marginBottom: 1 }}
+                sx={{
+                  marginBottom: 1,
+                  [theme.breakpoints.down("sm")]: {
+                    fontSize: "1.125rem"
+                  }
+                }}
               >
                 Your Project’s Idea
               </Typography>
@@ -312,6 +388,9 @@ const Contact = () => {
                     },
                     "&.Mui-focused fieldset": {
                       borderColor: "green"
+                    },
+                    [theme.breakpoints.down("sm")]: {
+                      height: "2.75rem"
                     }
                   }
                 }}
