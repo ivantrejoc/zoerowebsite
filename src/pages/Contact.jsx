@@ -17,6 +17,7 @@ const Contact = () => {
         justifyContent: "center",
         alignItems: "stretch",
         flexDirection: "column",
+        overflowX: "hidden",
         position: "relative",
         backgroundColor: theme.palette.background.default,
         backgroundSize: "cover"
@@ -35,7 +36,20 @@ const Contact = () => {
           overflowX: "0px",
           height: "43vh",
           maxHeight: "43vh",
-          marginBottom: 12
+          marginBottom: 12,
+          [theme.breakpoints.down("xxl")]: {
+            height: "80vh",
+            justifyContent: "center"
+          },
+          [theme.breakpoints.down("sm")]: {
+            height: "30vh"
+          },
+          [theme.breakpoints.down("xs")]: {
+            height: "25vh"
+          },
+          [theme.breakpoints.down("xxs")]: {
+            height: "25vh"
+          }
         }}
       >
         <Box
@@ -48,7 +62,11 @@ const Contact = () => {
             width: "88%",
             height: "100%",
             margin: "0 6vw 0 6vw",
-            maxHeight: "100%"
+            maxHeight: "100%",
+            [theme.breakpoints.down("xxl")]: {
+              height: "80vh",
+              justifyContent: "center"
+            }
           }}
         >
           <Typography
@@ -57,7 +75,25 @@ const Contact = () => {
             sx={{
               width: "100%",
               marginTop: "2vh",
-              whiteSpace: "pre-line"
+              whiteSpace: "pre-line",
+              [theme.breakpoints.down("xxl")]: {
+                fontSize: "9rem"
+              },
+              [theme.breakpoints.down("xl")]: {
+                fontSize: "7rem"
+              },
+              [theme.breakpoints.down("md")]: {
+                fontSize: "5.4375rem"
+              },
+              [theme.breakpoints.down("sm")]: {
+                fontSize: "2.9375rem"
+              },
+              [theme.breakpoints.down("xs")]: {
+                fontSize: "2.5375rem"
+              },
+              [theme.breakpoints.down("xxs")]: {
+                fontSize: "2.2375rem"
+              }
             }}
           >
             LET’S SOLVE TOGETHER
