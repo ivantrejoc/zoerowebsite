@@ -81,10 +81,11 @@
   height: 56.5vh;
   display: grid;
   grid-template-columns: repeat(5, 1fr); 
-  justify-items: start;
-  align-items: start;
+  justify-items: center;
+  align-items: center;
   column-gap: 4.025rem; 
   }
+ 
 
 .item {
   height: 56.5vh;
@@ -93,8 +94,60 @@
   flex-direction: column;
   justify-content: space-around;
   align-items: stretch;
-  
-}
+  }
+
+  @media (max-width: 1530px){
+    #grid-container {
+      height: 59vh;
+      column-gap: 2.025rem; 
+    }
+    .item{
+      width: 11.813rem;
+    }    
+  }
+
+  @media (max-width: 768px){
+    #grid-container { 
+      width: fit-content;     
+      height: 170vh;
+      align-items: start;
+      justify-items: center;
+      grid-template-columns: repeat(2, 0.25fr);      
+      row-gap: 1rem; 
+      margin-left: 0;
+      column-gap: 2rem;
+      paddingLeft: 10rem;       
+    }
+    .item{
+      width: 10.913rem;
+          }  
+  }
+
+  @media (max-width: 376px){
+    #grid-container {
+      height: 129vh;
+      width: 100%;      
+      row-gap: 1rem;
+      grid-template-columns: repeat(2, 0.25fr);
+    }
+    .item{
+      height: auto;
+      width: 8.713rem;
+          }
+  }
+
+  @media (max-width: 321px){
+    #grid-container {
+      height: 119vh;
+      width: 100%;      
+      row-gap: 1rem;
+      grid-template-columns: repeat(2, 0.25fr);
+    }
+    .item{
+      height: auto;
+      width: 7.313rem;
+          }
+  }
 
 /* Binary frame Styles */
 .binary-frame{
