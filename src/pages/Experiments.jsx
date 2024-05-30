@@ -472,13 +472,30 @@ const Experiments = () => {
           overflowX: "0px",
           height: "130vh",
           maxHeight: "130vh",
-          marginBottom: 12
+          marginBottom: 12,
+          [theme.breakpoints.down("xxl")]: {
+            height: "110vh"
+          },
+
+          [theme.breakpoints.down("md")]: {
+            height: "341vh",
+            maxHeight: "341vh",
+            marginBottom: 4
+          },
+          [theme.breakpoints.down("xs")]: {
+            height: "200vh",
+            maxHeight: "200vh",
+            marginBottom: 0
+          },
+          [theme.breakpoints.down("xxs")]: {
+            height: "250vh"
+          }
         }}
       >
         <Box
           sx={{
             display: "flex",
-            justifyContent: "stretch",
+            justifyContent: "start",
             alignItems: "start",
             flexDirection: "column",
             position: "relative",
@@ -487,10 +504,24 @@ const Experiments = () => {
             margin: "0 7vw 0 7vw"
           }}
         >
-          <Grid container gap={5} sx={{ height: "100%" }}>
+          <Grid
+            container
+            gap={5}
+            sx={{
+              height: "100%",
+              [theme.breakpoints.down("xxl")]: {
+                gap: 3
+              },
+              [theme.breakpoints.down("xs")]: {
+                gap: 1
+              }
+            }}
+          >
             <Grid
               item
-              xs={5.838}
+              xxs={12}
+              lg={5.87}
+              xxl={5.838}
               sx={{
                 backgroundImage: `url(${exeGrid1})`,
                 backgroundSize: "100%",
@@ -500,7 +531,9 @@ const Experiments = () => {
             />
             <Grid
               item
-              xs={5.838}
+              xxs={12}
+              lg={5.87}
+              xxl={5.838}
               sx={{
                 backgroundImage: `url(${exeGrid2})`,
                 backgroundSize: "100%",
@@ -510,7 +543,9 @@ const Experiments = () => {
             />
             <Grid
               item
-              xs={5.838}
+              xxs={12}
+              lg={5.87}
+              xxl={5.838}
               sx={{
                 backgroundImage: `url(${exeGrid3})`,
                 backgroundSize: "100%",
@@ -520,7 +555,9 @@ const Experiments = () => {
             />
             <Grid
               item
-              xs={5.838}
+              xxs={12}
+              lg={5.87}
+              xxl={5.838}
               sx={{
                 backgroundImage: `url(${exeGrid4})`,
                 backgroundSize: "100%",
