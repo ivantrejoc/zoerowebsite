@@ -462,7 +462,7 @@ const Experiments = () => {
       {/* GRID IMAGES */}
       <Box
         id="grid-image-container"
-        sx={{          
+        sx={{
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
@@ -571,7 +571,7 @@ const Experiments = () => {
       {/* SCREENSHOTS SECTION */}
       <Box
         id="screenshots-container"
-        sx={{          
+        sx={{
           display: "flex",
           justifyContent: "start",
           alignItems: "center",
@@ -632,9 +632,29 @@ const Experiments = () => {
           position: "relative",
           width: "100%",
           overflowX: "0px",
-          height: "100vh",
-          maxHeight: "100vh",
-          marginBottom: 12
+          height: "65vh",
+          maxHeight: "65vh",
+          marginBottom: 12,
+          [theme.breakpoints.down("xxl")]: {
+            height: "62vh",
+            maxHeight: "62vh"
+          },
+          [theme.breakpoints.down("md")]: {
+            height: "78vh",
+            maxHeight: "78vh"
+          },
+          [theme.breakpoints.down("md")]: {
+            height: "62vh",
+            maxHeight: "62vh"
+          },
+          [theme.breakpoints.down("md")]: {
+            height: "77vh",
+            maxHeight: "77vh"
+          },
+          [theme.breakpoints.down("md")]: {
+            height: "89vh",
+            maxHeight: "89vh"
+          }
         }}
       >
         <Box
@@ -645,15 +665,32 @@ const Experiments = () => {
             flexDirection: "column",
             position: "relative",
             width: "60%",
-            height: "65%",
-            margin: "0 20vw 0 20vw"
+            height: "100%",
+            margin: "0 20vw 0 20vw",
+            [theme.breakpoints.down("xxl")]: {
+              width: "80%",
+              height: "100%",
+              margin: "0 10vw 0 10vw"
+            }
           }}
         >
           <Box
-            id="client-avatar-container"
-            sx={{ display: "flex", gap: 2, marginBottom: 2 }}
+            id="avatar-container"
+            sx={{
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              gap: "1.19rem",
+              marginBottom: 1,
+              [theme.breakpoints.down("sm")]: {
+                gap: "0.5rem"
+              },
+              [theme.breakpoints.down("xs")]: {
+                gap: "0.25rem"
+              }
+            }}
           >
-            <Box id="client-photo-container">
+            <Box id="photo-container">
               <Avatar
                 alt="bachir-rzama"
                 src={bachirAvatar}
@@ -661,16 +698,56 @@ const Experiments = () => {
                 sx={{
                   width: "4.375rem",
                   height: "4.375rem",
-                  flexShrink: "0"
+                  flexShrink: "0",
+                  [theme.breakpoints.down("xs")]: {
+                    width: "1.40688rem",
+                    height: "1.40688rem"
+                  }
                 }}
               />
             </Box>
-            <Box id="client-name-container">
-              <p id="name">Bachir RZAMA</p>
+            <Box
+              id="name-container"
+              sx={{ display: "flex", flexDirection: "column" }}
+            >
+              <Typography
+                id="name"
+                component="p"
+                sx={{
+                  fontFamily: "Neat Chalk",
+                  fontSize: "1.125rem",
+                  fontStyle: "normal",
+                  fontWeight: "400",
+                  lineHeight: "112%",
+                  letterSpacing: "0.15rem",
+                  textTransform: "uppercase",
+                  marginBottom: "0.5rem",
+                  [theme.breakpoints.down("md")]: {
+                    fontSize: "0.7738rem !important"
+                  },
+                  [theme.breakpoints.down("sm")]: {
+                    fontSize: "0.638rem !important"
+                  },
+                  [theme.breakpoints.down("xs")]: {
+                    fontSize: "0.36175rem !important",
+                    marginBottom: "0.2rem"
+                  }
+                }}
+              >
+                Bachir RZAMA
+              </Typography>
               <Typography
                 variant="workPosition"
                 component="p"
-                sx={{ margin: 0 }}
+                sx={{
+                  margin: 0,
+                  [theme.breakpoints.down("md")]: {
+                    fontSize: "0.7738rem !important"
+                  },
+                  [theme.breakpoints.down("xs")]: {
+                    fontSize: "0.48238rem !important"
+                  }
+                }}
               >
                 Happy Client
               </Typography>
@@ -685,7 +762,19 @@ const Experiments = () => {
               fontSize: "2.61244rem",
               fontStyle: "normal",
               fontWeight: "400",
-              lineHeight: "150%"
+              lineHeight: "150%",
+              [theme.breakpoints.down("xxl")]: {
+                fontSize: "2.21244rem !important"
+              },
+              [theme.breakpoints.down("md")]: {
+                fontSize: "1.5744rem !important"
+              },
+              [theme.breakpoints.down("sm")]: {
+                fontSize: "1.3744rem !important"
+              },
+              [theme.breakpoints.down("sm")]: {
+                fontSize: "1.1744rem !important"
+              }
             }}
           >
             “I'm proud to showcase a series of recent branding projects that we
