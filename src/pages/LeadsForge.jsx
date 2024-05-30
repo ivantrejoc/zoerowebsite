@@ -281,7 +281,27 @@ const LeadsForge = () => {
           overflowX: "0px",
           height: "120vh",
           maxHeight: "120vh",
-          marginBottom: 12
+          marginBottom: 12,
+          [theme.breakpoints.down("md")]: {
+            height: "100vh",
+            maxHeight: "100vh"
+          },
+          [theme.breakpoints.down("sm")]: {
+            height: "84vh",
+            maxHeight: "84vh"
+          },
+          [theme.breakpoints.down("sm")]: {
+            height: "83vh",
+            maxHeight: "83vh"
+          },
+          [theme.breakpoints.down("xs")]: {
+            height: "55vh",
+            maxHeight: "55vh"
+          },
+          [theme.breakpoints.down("xxs")]: {
+            height: "46vh",
+            maxHeight: "46vh"
+          }
         }}
       >
         <Box
@@ -298,8 +318,8 @@ const LeadsForge = () => {
             width: "86%",
             height: "100%",
             margin: "0 7vw 0 7vw",
-            maxHeight: "100%",
-            marginBottom: 12
+            maxHeight: "100%"
+            // marginBottom: 12
           }}
         />
       </Box>
