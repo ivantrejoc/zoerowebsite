@@ -33,7 +33,7 @@ const Experiments = () => {
       {/* MAIN HERO */}
       <Box
         id="hero-experiment-container"
-        sx={{          
+        sx={{
           display: "flex",
           justifyContent: "start",
           alignItems: "center",
@@ -277,7 +277,23 @@ const Experiments = () => {
           overflowX: "0px",
           height: "110vh",
           maxHeight: "110vh",
-          marginBottom: 12
+          marginBottom: 12,
+          [theme.breakpoints.down("xxl")]: {
+            height: "100vh",
+            maxHeight: "100vh"
+          },
+          [theme.breakpoints.down("sm")]: {
+            height: "80vh",
+            maxHeight: "80vh"
+          },
+          [theme.breakpoints.down("xs")]: {
+            height: "54.8vh",
+            maxHeight: "54.8vh"
+          },
+          [theme.breakpoints.down("xxs")]: {
+            height: "46.5vh",
+            maxHeight: "46.5vh"
+          }
         }}
       >
         <Box
@@ -294,8 +310,7 @@ const Experiments = () => {
             width: "86%",
             height: "100%",
             margin: "0 7vw 0 7vw",
-            maxHeight: "100%",
-            marginBottom: 12
+            maxHeight: "100%"
           }}
         />
       </Box>
