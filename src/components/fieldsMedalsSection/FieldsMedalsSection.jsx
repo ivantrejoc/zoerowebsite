@@ -19,15 +19,20 @@ const FieldsMedalsSection = () => {
         marginBottom: "15vh",
         width: "100vw",
         height: "90vh",
+        [theme.breakpoints.down("xl")]: {
+          marginBottom: "25vh",
+        },
         [theme.breakpoints.down("md")]: {
-          height: "200vh"
+          height: "200vh",
+          marginBottom: "10vh"
         },
         [theme.breakpoints.down("xs")]: {
           height: "150vh"
         },
         [theme.breakpoints.down("xxs")]: {
           height: "140vh"
-        }
+        },
+        
       }}
     >
       <Box
