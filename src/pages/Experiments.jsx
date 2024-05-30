@@ -1,5 +1,5 @@
 import { Box, Typography, Grid, Avatar } from "@mui/material";
-import { useTheme } from "@emotion/react";
+import { useTheme } from "@mui/material/styles";
 import ButtonArea from "../components/buttonArea/ButtonArea";
 import HeroTwoSection from "../components/heroTwoSection/HeroTwoSection";
 import xicon from "../assets/icons/x-icon.svg";
@@ -12,10 +12,6 @@ import exeGrid4 from "../assets/img/exe-grid-4.png";
 import exeScreenshots from "../assets/img/exe-screenshots.png";
 import bachirAvatar from "../assets/img/bachir-avatar.png";
 import binaryStripe from "../assets/img/binary-stripe.png";
-
-
-
-
 
 const Experiments = () => {
   const theme = useTheme();
@@ -37,7 +33,7 @@ const Experiments = () => {
       {/* MAIN HERO */}
       <Box
         id="hero-experiment-container"
-        sx={{
+        sx={{          
           display: "flex",
           justifyContent: "start",
           alignItems: "center",
@@ -47,7 +43,19 @@ const Experiments = () => {
           overflowX: "0px",
           height: "30vh",
           maxHeight: "30vh",
-          marginBottom: 12
+          marginBottom: 12,
+          [theme.breakpoints.down("xxl")]: {
+            height: "39vh",
+            maxHeight: "39vh"
+          },
+          [theme.breakpoints.down("md")]: {
+            height: "45vh",
+            maxHeight: "45vh"
+          },
+          [theme.breakpoints.down("sm")]: {
+            height: "35vh",
+            maxHeight: "35vh"
+          }
         }}
       >
         <Box
@@ -69,7 +77,22 @@ const Experiments = () => {
               height: "9vh",
               display: "flex",
               gap: 1,
-              marginBottom: 2
+              marginBottom: 2,
+              [theme.breakpoints.down("xxl")]: {
+                width: "13%",
+                height: "11vh",
+                gap: 1
+              },
+              [theme.breakpoints.down("md")]: {
+                gap: 2
+              },
+              [theme.breakpoints.down("sm")]: {
+                width: "15%",
+                height: "9vh"
+              },
+              [theme.breakpoints.down("xs")]: {
+                width: "22%"
+              }
             }}
           >
             <Typography
@@ -79,7 +102,13 @@ const Experiments = () => {
                 fontSize: "5rem",
                 fontStyle: "normal",
                 fontWeight: "700",
-                lineHeight: "100%"
+                lineHeight: "100%",
+                [theme.breakpoints.down("md")]: {
+                  fontSize: "2.825rem"
+                },
+                [theme.breakpoints.down("sm")]: {
+                  fontSize: "2.4375rem"
+                }
               }}
               component="h2"
             >
@@ -89,8 +118,19 @@ const Experiments = () => {
               variant="text"
               component="p"
               sx={{
-                width: "10%",
-                paddingTop: 2
+                width: "31%",
+                paddingTop: 2,
+                [theme.breakpoints.down("xxl")]: {
+                  width: "40%"
+                },
+                [theme.breakpoints.down("md")]: {
+                  width: "60%",
+                  fontSize: "0.9375rem",
+                  paddingTop: 1
+                },
+                [theme.breakpoints.down("sm")]: {
+                  fontSize: "0.7375rem"
+                }
               }}
             >
               Case Study
@@ -102,7 +142,24 @@ const Experiments = () => {
               height: "12vh",
               display: "flex",
               flexDirection: "column",
-              marginBottom: 2
+              marginBottom: 2,
+              [theme.breakpoints.down("xxl")]: {
+                width: "80%",
+                height: "14vh",
+                marginBottom: 2
+              },
+              [theme.breakpoints.down("md")]: {
+                width: "100%",
+                height: "15vh"
+              },
+              [theme.breakpoints.down("sm")]: {
+                width: "100%",
+                height: "10vh"
+              },
+              [theme.breakpoints.down("xs")]: {
+                height: "12vh",
+                marginBottom: 1
+              }
             }}
           >
             <Typography
@@ -111,7 +168,16 @@ const Experiments = () => {
                 fontSize: "2.5rem",
                 fontStyle: "normal",
                 fontWeight: "600",
-                lineHeight: "112%"
+                lineHeight: "112%",
+                [theme.breakpoints.down("md")]: {
+                  fontSize: "1.725rem"
+                },
+                [theme.breakpoints.down("sm")]: {
+                  fontSize: "1.25rem"
+                },
+                [theme.breakpoints.down("xs")]: {
+                  fontSize: "1rem"
+                }
               }}
               component="p"
             >
@@ -124,13 +190,30 @@ const Experiments = () => {
               width: "30%",
               height: "5vh",
               display: "flex",
-              gap: 6
+              gap: 6,
+              [theme.breakpoints.down("xxl")]: {
+                width: "40%",
+                height: "6vh"
+              },
+              [theme.breakpoints.down("md")]: {
+                width: "100%",
+                height: "9vh"
+              },
+              [theme.breakpoints.down("sm")]: {
+                gap: 10
+              },
+              [theme.breakpoints.down("xs")]: {
+                gap: 5
+              }
             }}
           >
             <Box
               sx={{
                 display: "flex",
-                gap: 2
+                gap: 2,
+                [theme.breakpoints.down("xs")]: {
+                  width: "47.5%"
+                }
               }}
             >
               <img id="x-icon" src={xicon} alt="x-icon" />{" "}
@@ -138,7 +221,13 @@ const Experiments = () => {
                 variant="text"
                 sx={{
                   justifyItems: "center",
-                  alignContent: "center"
+                  alignContent: "center",
+                  [theme.breakpoints.down("sm")]: {
+                    fontSize: "0.91556rem"
+                  },
+                  [theme.breakpoints.down("xs")]: {
+                    fontSize: "0.85rem"
+                  }
                 }}
                 component="p"
               >
@@ -148,7 +237,10 @@ const Experiments = () => {
             <Box
               sx={{
                 display: "flex",
-                gap: 2
+                gap: 2,
+                [theme.breakpoints.down("xs")]: {
+                  width: "47.5%"
+                }
               }}
             >
               <img id="x-icon" src={xicon} alt="x-icon" />{" "}
@@ -156,7 +248,13 @@ const Experiments = () => {
                 variant="text"
                 sx={{
                   justifyItems: "center",
-                  alignContent: "center"
+                  alignContent: "center",
+                  [theme.breakpoints.down("sm")]: {
+                    fontSize: "0.91556rem"
+                  },
+                  [theme.breakpoints.down("xs")]: {
+                    fontSize: "0.85rem"
+                  }
                 }}
                 component="p"
               >
