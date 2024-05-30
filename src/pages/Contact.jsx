@@ -106,7 +106,7 @@ const Contact = () => {
       {/* FORM SECTION */}
       <Box
         id="form-container"
-        sx={{          
+        sx={{
           display: "flex",
           justifyContent: "start",
           alignItems: "center",
@@ -470,11 +470,6 @@ const Contact = () => {
                 alt="coefficients-image"
               />
             )}
-            {/* <img
-              id="coefficient-image"
-              src={coefficientsImage}
-              alt="coefficients-image"
-            /> */}
           </Box>
         </Box>
       </Box>
@@ -495,6 +490,7 @@ const Contact = () => {
           marginBottom: "15vh"
         }}
       />
+      {/* BUTTON AREA */}
       <Box
         id="button-container"
         sx={{
@@ -504,19 +500,50 @@ const Contact = () => {
           flexDirection: "column",
           position: "relative",
           backgroundImage: `url(${buttonBackground})`,
-          backgroundSize: "100%",
+          backgroundSize: "100% 100%",
           backgroundRepeat: "no-repeat",
           backgroundPosition: "center",
           paddingTop: "2vh",
           width: "100%",
-          overflowX: "hidden",
           height: "33vh",
-          marginBottom: "20vh"
+          marginBottom: "20vh",
+          [theme.breakpoints.down("md")]: {
+            height: "30vh"
+          },
+          [theme.breakpoints.down("xs")]: {
+            height: "25vh"
+          },
+          [theme.breakpoints.down("xxs")]: {
+            height: "23vh"
+          }
         }}
       >
-        <Button>SEND US YOUR EQUATION</Button>
+        <Button
+          id="submit-button"
+          sx={{
+            [theme.breakpoints.down("xxl")]: {
+              width: "23.125rem !important",
+              height: "5.525rem !important",
+              fontSize: "1.325rem !important"
+            },
+            [theme.breakpoints.down("md")]: {
+              width: "12.71506rem !important",
+              height: "3.19375rem !important",
+              fontSize: "0.682rem !important",
+              strokeWidth: "2.194px !important",
+              border: "solid 5px #22505D !important"
+            },
+            [theme.breakpoints.down("xs")]: {
+              border: "solid 4px #22505D !important"
+            },
+            [theme.breakpoints.down("xxs")]: {
+              border: "solid 3.5px #22505D !important"
+            }
+          }}
+        >
+          SEND US YOUR EQUATION
+        </Button>
       </Box>
-
       <HeroTwoSection />
     </Box>
   );
