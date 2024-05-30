@@ -1,13 +1,16 @@
 import { Box, Typography, Grid, TextField, Button } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
+import { useMediaQuery } from "@mui/material";
 import HeroTwoSection from "../components/heroTwoSection/HeroTwoSection";
 import CheckIcon from "@mui/icons-material/Check";
 import coefficientsImage from "../assets/img/coefficients-image.png";
 import buttonBackground from "../assets/img/vector-104-stroke.png";
 import binaryStripe from "../assets/img/binary-stripe.png";
+import coefficientsMobile from "../assets/img/coefficientes-mobile.png";
 
 const Contact = () => {
   const theme = useTheme();
+  const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
 
   return (
     <Box
@@ -103,8 +106,7 @@ const Contact = () => {
       {/* FORM SECTION */}
       <Box
         id="form-container"
-        sx={{
-          background: "plum",
+        sx={{          
           display: "flex",
           justifyContent: "start",
           alignItems: "center",
@@ -113,17 +115,21 @@ const Contact = () => {
           width: "100%",
           overflowX: "0px",
           height: "140vh",
-          maxHeight: "140vh",
           marginBottom: 10,
           [theme.breakpoints.down("xxl")]: {
-            height: "500vh",
-            maxHeight: "500vh"
+            height: "135vh",
+            marginBottom: 15
+          },
+          [theme.breakpoints.down("md")]: {
+            height: "198vh"
+          },
+          [theme.breakpoints.down("sm")]: {
+            height: "170vh"
           }
         }}
       >
         <Box
           sx={{
-            background: "gold",
             display: "flex",
             justifyContent: "start",
             alignItems: "start",
@@ -190,10 +196,11 @@ const Contact = () => {
                 height: "33vh"
               },
               [theme.breakpoints.down("md")]: {
-                height: "95vh"
+                height: "130vh"
               },
               [theme.breakpoints.down("sm")]: {
-                height: "80vh"
+                height: "80vh",
+                marginBottom: 3
               }
             }}
           >
@@ -412,10 +419,24 @@ const Contact = () => {
               padding: "5vh 0 5vh 0",
               gap: "55%",
               maxHeight: "10vh",
-              marginBottom: 4
+              marginBottom: 4,
+              [theme.breakpoints.down("sm")]: {
+                marginBottom: 1
+              }
             }}
           >
-            <Typography variant="h2" component="h2">
+            <Typography
+              variant="h2"
+              component="h2"
+              sx={{
+                [theme.breakpoints.down("sm")]: {
+                  fontSize: "1.375rem"
+                },
+                [theme.breakpoints.down("xxs")]: {
+                  fontSize: "1.315rem"
+                }
+              }}
+            >
               SELECT YOUR COEFFICIENTS
             </Typography>
           </Box>
@@ -428,17 +449,52 @@ const Contact = () => {
               position: "relative",
               width: "74vw",
               height: "70vh",
-              margin: "0 auto 0 8vw"
+              margin: "0 auto 0 7vw",
+              [theme.breakpoints.down("xxl")]: {
+                height: "60vh",
+                margin: "0 auto 0 6vw"
+              }
             }}
           >
-            <img
+            {isMobile && (
+              <img
+                id="coefficient-image"
+                src={coefficientsMobile}
+                alt="coefficients-image"
+              />
+            )}
+            {!isMobile && (
+              <img
+                id="coefficient-image"
+                src={coefficientsImage}
+                alt="coefficients-image"
+              />
+            )}
+            {/* <img
               id="coefficient-image"
               src={coefficientsImage}
               alt="coefficients-image"
-            />
+            /> */}
           </Box>
         </Box>
       </Box>
+      {/* BINARY STRIPE */}
+      <Box
+        id="binary-stripe-container"
+        sx={{
+          display: "flex",
+          justifyContent: "start",
+          alignItems: "center",
+          position: "relative",
+          backgroundImage: `url(${binaryStripe})`,
+          backgroundSize: "100%",
+          backgroundRepeat: "no-repeat",
+          width: "100%",
+          overflowX: "hidden",
+          height: "20vh",
+          marginBottom: "15vh"
+        }}
+      />
       <Box
         id="button-container"
         sx={{
@@ -460,22 +516,7 @@ const Contact = () => {
       >
         <Button>SEND US YOUR EQUATION</Button>
       </Box>
-      <Box
-        id="binary-stripe-container"
-        sx={{
-          display: "flex",
-          justifyContent: "start",
-          alignItems: "center",
-          position: "relative",
-          backgroundImage: `url(${binaryStripe})`,
-          backgroundSize: "100%",
-          backgroundRepeat: "no-repeat",
-          width: "100%",
-          overflowX: "hidden",
-          height: "20vh",
-          marginBottom: "15vh"
-        }}
-      />
+
       <HeroTwoSection />
     </Box>
   );
