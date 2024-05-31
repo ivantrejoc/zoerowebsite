@@ -682,6 +682,171 @@ const Seafena = () => {
         id="testimony-container"
         sx={{
           display: "flex",
+          justifyContent: "start",
+          alignItems: "center",
+          flexDirection: "column",
+          position: "relative",
+          width: "100%",
+          overflowX: "hidden",
+          height: "64vh",
+          maxHeight: "64vh",
+          marginBottom: 12,
+          [theme.breakpoints.down("xxl")]: {
+            height: "62vh",
+            maxHeight: "62vh"
+          },
+          [theme.breakpoints.down("md")]: {
+            height: "78vh",
+            maxHeight: "78vh"
+          },
+          [theme.breakpoints.down("sm")]: {
+            height: "62vh",
+            maxHeight: "62vh"
+          },
+          [theme.breakpoints.down("xs")]: {
+            height: "71vh",
+            maxHeight: "71vh"
+          },
+          [theme.breakpoints.down("xxs")]: {
+            height: "83vh",
+            maxHeight: "83vh"
+          }
+        }}
+      >
+        <Box
+          sx={{
+            display: "flex",
+            justifyContent: "stretch",
+            alignItems: "start",
+            flexDirection: "column",
+            position: "relative",
+            width: "60%",
+            height: "100%",
+            margin: "0 20vw 0 20vw",
+            [theme.breakpoints.down("xxl")]: {
+              width: "80%",
+              height: "100%",
+              margin: "0 10vw 0 10vw"
+            }
+          }}
+        >
+          <Box
+            id="avatar-container"
+            sx={{
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              gap: "1.19rem",
+              marginBottom: 1,
+              [theme.breakpoints.down("sm")]: {
+                gap: "0.5rem"
+              },
+              [theme.breakpoints.down("xs")]: {
+                gap: "0.25rem"
+              }
+            }}
+          >
+            <Box id="photo-container">
+              <Avatar
+                alt="salah moutaouakil"
+                src={salahAvatar}
+                variant="rounded"
+                sx={{
+                  width: "4.375rem",
+                  height: "4.375rem",
+                  flexShrink: "0",
+                  [theme.breakpoints.down("xs")]: {
+                    width: "1.40688rem",
+                    height: "1.40688rem"
+                  }
+                }}
+              />
+            </Box>
+            <Box
+              id="name-container"
+              sx={{ display: "flex", flexDirection: "column" }}
+            >
+              <Typography
+                id="name"
+                component="p"
+                sx={{
+                  fontFamily: "Neat Chalk",
+                  fontSize: "1.125rem",
+                  fontStyle: "normal",
+                  fontWeight: "400",
+                  lineHeight: "112%",
+                  letterSpacing: "0.15rem",
+                  textTransform: "uppercase",
+                  marginBottom: "0.5rem",
+                  [theme.breakpoints.down("md")]: {
+                    fontSize: "0.7738rem !important"
+                  },
+                  [theme.breakpoints.down("sm")]: {
+                    fontSize: "0.638rem !important"
+                  },
+                  [theme.breakpoints.down("xs")]: {
+                    fontSize: "0.36175rem !important",
+                    marginBottom: "0.2rem"
+                  }
+                }}
+              >
+                SALAH MOUTAOUAKIL
+              </Typography>
+              <Typography
+                variant="workPosition"
+                component="p"
+                sx={{
+                  margin: 0,
+                  [theme.breakpoints.down("md")]: {
+                    fontSize: "0.7738rem !important"
+                  },
+                  [theme.breakpoints.down("xs")]: {
+                    fontSize: "0.48238rem !important"
+                  }
+                }}
+              >
+                CEO & Founder
+              </Typography>
+            </Box>
+          </Box>
+
+          <Typography
+            variant="text"
+            component="p"
+            sx={{
+              color: "#fff",
+              fontFamily: "Urbanist",
+              fontSize: "2.61244rem",
+              fontStyle: "normal",
+              fontWeight: "400",
+              lineHeight: "150%",
+              [theme.breakpoints.down("xxl")]: {
+                fontSize: "2.21244rem !important"
+              },
+              [theme.breakpoints.down("md")]: {
+                fontSize: "1.5744rem !important"
+              },
+              [theme.breakpoints.down("sm")]: {
+                fontSize: "1.3744rem !important"
+              },
+              [theme.breakpoints.down("xs")]: {
+                fontSize: "1.1744rem !important"
+              }
+            }}
+          >
+            &quot;As CEO, I see our path much like navigating the vast ocean,
+            constantly adjusting to the winds of market trends and technological
+            shifts. Our collaboration with Zoero has been pivotal in developing
+            our innovative digital product, blending their tech prowess with our
+            industry insights to forge ahead into new waters of opportunity and
+            growth.&quot;
+          </Typography>
+        </Box>
+      </Box>
+      {/* <Box
+        id="testimony-container"
+        sx={{
+          display: "flex",
           justifyContent: "center",
           alignItems: "center",
           flexDirection: "column",
@@ -752,7 +917,7 @@ const Seafena = () => {
             growth.&quot;
           </Typography>
         </Box>
-      </Box>
+      </Box> */}
       <ButtonArea />
       {/* BINARY STRIPE */}
       <Box
