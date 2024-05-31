@@ -285,6 +285,7 @@ const Teuser = () => {
           </Box>
         </Box>
       </Box>
+      {/* MAIN IMAGE */}
       <Box
         id="main-image-container"
         sx={{
@@ -295,9 +296,29 @@ const Teuser = () => {
           position: "relative",
           width: "100%",
           overflowX: "0px",
-          height: "110vh",
-          maxHeight: "110vh",
-          marginBottom: 12
+          height: "137vh",
+          maxHeight: "137vh",
+          marginBottom: 12,
+          [theme.breakpoints.down("xxl")]: {
+            height: "127vh",
+            maxHeight: "127vh"
+          },
+          [theme.breakpoints.down("md")]: {
+            height: "112vh",
+            maxHeight: "112vh"
+          },
+          [theme.breakpoints.down("sm")]: {
+            height: "84vh",
+            maxHeight: "84vh"
+          },
+          [theme.breakpoints.down("xs")]: {
+            height: "54vh",
+            maxHeight: "54vh"
+          },
+          [theme.breakpoints.down("xxs")]: {
+            height: "46vh",
+            maxHeight: "46vh"
+          }
         }}
       >
         <Box
@@ -314,8 +335,7 @@ const Teuser = () => {
             width: "86%",
             height: "100%",
             margin: "0 7vw 0 7vw",
-            maxHeight: "100%",
-            marginBottom: 12
+            maxHeight: "100%"
           }}
         />
       </Box>
