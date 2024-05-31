@@ -288,7 +288,6 @@ const DomainExpansion = () => {
       <Box
         id="main-image-container"
         sx={{
-          background: "plum",
           display: "flex",
           justifyContent: "start",
           alignItems: "center",
@@ -302,7 +301,7 @@ const DomainExpansion = () => {
           [theme.breakpoints.down("md")]: {
             height: "110vh",
             maxHeight: "110vh"
-          },          
+          },
           [theme.breakpoints.down("sm")]: {
             height: "83vh",
             maxHeight: "83vh"
@@ -348,7 +347,29 @@ const DomainExpansion = () => {
           overflowX: "0px",
           height: "50vh",
           maxHeight: "50vh",
-          marginBottom: 12
+          marginBottom: 12,
+          [theme.breakpoints.down("xxl")]: {
+            height: "60vh",
+            maxHeight: "60vh"
+          },
+          [theme.breakpoints.down("md")]: {
+            height: "120vh",
+            maxHeight: "120vh"
+          },
+          [theme.breakpoints.down("sm")]: {
+            height: "59vh",
+            maxHeight: "59vh",
+            marginBottom: 6
+          },
+          [theme.breakpoints.down("xs")]: {
+            height: "49vh",
+            maxHeight: "49vh",
+            marginBottom: 4
+          },
+          [theme.breakpoints.down("xxs")]: {
+            height: "52vh",
+            maxHeight: "52vh"
+          }
         }}
       >
         <Box
@@ -366,7 +387,8 @@ const DomainExpansion = () => {
           <Grid container columnGap={2} sx={{ height: "100%" }}>
             <Grid
               item
-              xs={5}
+              xxl={5}
+              xl={4.6}
               sx={{
                 display: "flex",
                 justifyContent: "start",
@@ -380,7 +402,16 @@ const DomainExpansion = () => {
                   fontSize: "4.575rem",
                   fontStyle: "normal",
                   fontWeight: "700",
-                  lineHeight: "100%"
+                  lineHeight: "100%",
+                  [theme.breakpoints.down("xxl")]: {
+                    fontSize: "4.275rem"
+                  },
+                  [theme.breakpoints.down("sm")]: {
+                    fontSize: "3.375rem"
+                  },
+                  [theme.breakpoints.down("xs")]: {
+                    fontSize: "2.1375rem"
+                  }
                 }}
               >
                 BRANDING EQUATIONS
@@ -388,7 +419,8 @@ const DomainExpansion = () => {
             </Grid>
             <Grid
               item
-              xs={6.87}
+              xxl={6.87}
+              xl={7.2}
               sx={{
                 display: "flex",
                 justifyContent: "start",
@@ -405,7 +437,16 @@ const DomainExpansion = () => {
                   fontStyle: "normal",
                   fontWeight: "400",
                   lineHeight: "150%",
-                  letterSpacing: 0
+                  letterSpacing: 0,
+                  [theme.breakpoints.down("xxl")]: {
+                    fontSize: "2.31244rem"
+                  },
+                  [theme.breakpoints.down("sm")]: {
+                    fontSize: "1.25rem"
+                  },
+                  [theme.breakpoints.down("xs")]: {
+                    fontSize: "0.9375rem"
+                  }
                 }}
               >
                 “Pony really understood what we were trying achieve and was very
