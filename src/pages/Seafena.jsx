@@ -17,7 +17,7 @@ import seafenaBoat from "../assets/img/seafena-boat.png";
 
 const Seafena = () => {
   const theme = useTheme();
-  const isMobile = useMediaQuery(theme.breakpoints.down("md"));
+  const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
 
   return (
     <Box
@@ -467,7 +467,6 @@ const Seafena = () => {
         <Box
           id="seafena-image-container"
           sx={{
-            background: "plum",
             display: "flex",
             justifyContent: "center",
             alignItems: "center",
@@ -485,7 +484,7 @@ const Seafena = () => {
             [theme.breakpoints.down("sm")]: {
               height: "84vh",
               maxHeight: "84vh",
-              marginBottom: 6,
+              marginBottom: 6
             },
             [theme.breakpoints.down("xs")]: {
               height: "55vh",
@@ -502,7 +501,6 @@ const Seafena = () => {
         <Box
           id="seafena-image-container"
           sx={{
-            background: "plum",
             display: "flex",
             justifyContent: "center",
             alignItems: "center",
@@ -518,7 +516,10 @@ const Seafena = () => {
             backgroundPosition: "center",
             marginBottom: 12,
             [theme.breakpoints.down("xxl")]: {
-              height: "97vh"
+              height: "96vh"
+            },
+            [theme.breakpoints.down("md")]: {
+              height: "84vh"
             }
           }}
         />
@@ -527,7 +528,7 @@ const Seafena = () => {
       {/* GRID IMAGES */}
       <Box
         id="grid-image-container"
-        sx={{
+        sx={{          
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
@@ -537,7 +538,29 @@ const Seafena = () => {
           overflowX: "0px",
           height: "130vh",
           maxHeight: "130vh",
-          marginBottom: 12
+          marginBottom: 12,
+          [theme.breakpoints.down("xxl")]: {
+            height: "110vh"
+          },
+
+          [theme.breakpoints.down("md")]: {
+            height: "390vh",
+            maxHeight: "390vh",
+            marginBottom: 6
+          },
+          [theme.breakpoints.down("sm")]: {
+            height: "360vh",
+            maxHeight: "360vh",
+            marginBottom: 6
+          },
+          [theme.breakpoints.down("xs")]: {
+            height: "200vh",
+            maxHeight: "200vh",
+            marginBottom: 6
+          },
+          [theme.breakpoints.down("xxs")]: {
+            height: "250vh"
+          }
         }}
       >
         <Box
@@ -555,7 +578,9 @@ const Seafena = () => {
           <Grid container gap={5} sx={{ height: "100%" }}>
             <Grid
               item
-              xs={5.838}
+              xxs={12}
+              lg={5.783}
+              xxl={5.838}
               sx={{
                 backgroundImage: `url(${seafenaGrid1})`,
                 backgroundSize: "100%",
@@ -565,7 +590,9 @@ const Seafena = () => {
             />
             <Grid
               item
-              xs={5.838}
+              xxs={12}
+              lg={5.783}
+              xxl={5.838}
               sx={{
                 backgroundImage: `url(${seafenaGrid2})`,
                 backgroundSize: "100%",
@@ -575,7 +602,9 @@ const Seafena = () => {
             />
             <Grid
               item
-              xs={5.838}
+              xxs={12}
+              lg={5.783}
+              xxl={5.838}
               sx={{
                 backgroundImage: `url(${seafenaGrid3})`,
                 backgroundSize: "100%",
@@ -585,7 +614,9 @@ const Seafena = () => {
             />
             <Grid
               item
-              xs={5.838}
+              xxs={12}
+              lg={5.783}
+              xxl={5.838}
               sx={{
                 backgroundImage: `url(${seafenaGrid4})`,
                 backgroundSize: "100%",
