@@ -21,8 +21,9 @@ const Terms = () => {
       }}
     >
       <Box
-        id="hero-experiment-container"
+        id="title-container"
         sx={{
+          background: "plum",
           display: "flex",
           justifyContent: "start",
           alignItems: "center",
@@ -57,7 +58,13 @@ const Terms = () => {
               fontSize: "3.75rem",
               fontStyle: "normal",
               fontWeight: "600",
-              lineHeight: "normal"
+              lineHeight: "normal",
+              [theme.breakpoints.down("sm")]: {
+                fontSize: "1.375rem"
+              },
+              [theme.breakpoints.down("xs")]: {
+                fontSize: "1.175rem"
+              }
             }}
           >
             Privacy Policy
@@ -69,7 +76,13 @@ const Terms = () => {
               fontSize: "1.5625rem",
               fontStyle: "normal",
               fontWeight: "400",
-              lineHeight: "141.5%"
+              lineHeight: "141.5%",
+              [theme.breakpoints.down("sm")]: {
+                fontSize: "1.175rem"
+              },
+              [theme.breakpoints.down("xs")]: {
+                fontSize: "1rem"
+              }
             }}
           >
             Last updated: Feb 4th, 2023
@@ -274,8 +287,9 @@ const Terms = () => {
             habitant est tortor. Erat consequat habitasse cursus placerat ornare
             sit scelerisque lectus. Dolor dictum proin etiam.
           </Typography>
-        </Box>
-        <ButtonArea />
+        </Box>        
+      </Box>
+      <ButtonArea />
         {/* BINARY STRIPE */}
         <Box
           id="binary-stripe-container"
@@ -293,7 +307,6 @@ const Terms = () => {
           }}
         />
         <HeroTwoSection />
-      </Box>
     </Box>
   );
 };
