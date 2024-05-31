@@ -319,14 +319,13 @@ const LeadsForge = () => {
             height: "100%",
             margin: "0 7vw 0 7vw",
             maxHeight: "100%"
-            // marginBottom: 12
           }}
         />
       </Box>
       {/* LEADS FORGE EQUATIONS */}
       <Box
         id="leadsForge-equations-container"
-        sx={{          
+        sx={{
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
@@ -348,7 +347,7 @@ const LeadsForge = () => {
           [theme.breakpoints.down("sm")]: {
             height: "99vh",
             maxHeight: "99vh",
-            marginBottom: 6,
+            marginBottom: 6
           },
           [theme.breakpoints.down("xs")]: {
             height: "77vh",
@@ -471,7 +470,6 @@ const LeadsForge = () => {
           [theme.breakpoints.down("xs")]: {
             marginBottom: 6
           }
-
         }}
       >
         <Box

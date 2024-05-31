@@ -32,7 +32,7 @@ const DomainExpansion = () => {
       {/* MAIN HERO */}
       <Box
         id="main-hero-container"
-        sx={{          
+        sx={{
           display: "flex",
           justifyContent: "start",
           alignItems: "center",
@@ -284,9 +284,11 @@ const DomainExpansion = () => {
           </Box>
         </Box>
       </Box>
+      {/* MAIN IMAGE */}
       <Box
         id="main-image-container"
         sx={{
+          background: "plum",
           display: "flex",
           justifyContent: "start",
           alignItems: "center",
@@ -296,7 +298,23 @@ const DomainExpansion = () => {
           overflowX: "0px",
           height: "110vh",
           maxHeight: "110vh",
-          marginBottom: 12
+          marginBottom: 12,
+          [theme.breakpoints.down("md")]: {
+            height: "110vh",
+            maxHeight: "110vh"
+          },          
+          [theme.breakpoints.down("sm")]: {
+            height: "83vh",
+            maxHeight: "83vh"
+          },
+          [theme.breakpoints.down("xs")]: {
+            height: "55vh",
+            maxHeight: "55vh"
+          },
+          [theme.breakpoints.down("xxs")]: {
+            height: "46vh",
+            maxHeight: "46vh"
+          }
         }}
       >
         <Box
@@ -313,8 +331,7 @@ const DomainExpansion = () => {
             width: "86%",
             height: "100%",
             margin: "0 7vw 0 7vw",
-            maxHeight: "100%",
-            marginBottom: 12
+            maxHeight: "100%"
           }}
         />
       </Box>
