@@ -4,9 +4,10 @@ import HeroTwoSection from "../components/heroTwoSection/HeroTwoSection";
 import xicon from "../assets/icons/x-icon.svg";
 import fullWidthTeuser from "../assets/img/fullWidthTeuser.png";
 import imageTeuserMain from "../assets/img/imageTeuserMain.png";
-import teuserGrid2 from "../assets/img/teuserGrid2.png";
-import teuserGrid3 from "../assets/img/teuserGrid3.png";
-import teuserGrid4 from "../assets/img/teuserGrid4.png";
+import teuserGrid1 from "../assets/img/frame-309.png";
+import teuserGrid2 from "../assets/img/frame-306.png";
+import teuserGrid3 from "../assets/img/frame-307.png";
+import teuserGrid4 from "../assets/img/frame-308.png";
 import teuserBrands from "../assets/img/teuserBrands.png";
 import omarAvatar from "../assets/img/omarAvatar.png";
 import binaryStripe from "../assets/img/binary-stripe.png";
@@ -473,7 +474,6 @@ const Teuser = () => {
       <Box
         id="banner-container"
         sx={{
-          background: "plum",
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
@@ -490,11 +490,11 @@ const Teuser = () => {
           marginBottom: 12,
           [theme.breakpoints.down("md")]: {
             height: "90vh",
-          maxHeight: "90vh"         
+            maxHeight: "90vh"
           },
           [theme.breakpoints.down("xs")]: {
             height: "60vh",
-          maxHeight: "60vh"         
+            maxHeight: "60vh"
           }
         }}
       >
@@ -505,16 +505,16 @@ const Teuser = () => {
             fontFamily: "Urbanist",
             fontWeight: 700,
             [theme.breakpoints.down("md")]: {
-              fontSize: 30,
+              fontSize: 30
             },
             [theme.breakpoints.down("sm")]: {
-              fontSize: 20,
+              fontSize: 20
             },
             [theme.breakpoints.down("xs")]: {
-              fontSize: 15,
+              fontSize: 15
             },
             [theme.breakpoints.down("xs")]: {
-              fontSize: 12,
+              fontSize: 12
             }
           }}
         >
@@ -531,10 +531,32 @@ const Teuser = () => {
           flexDirection: "column",
           position: "relative",
           width: "100%",
-          overflowX: "0px",
-          height: "130vh",
-          maxHeight: "130vh",
-          marginBottom: 12
+          overflowX: "hidden",
+          height: "140vh",
+          maxHeight: "140vh",
+          marginBottom: 12,
+          [theme.breakpoints.down("xxl")]: {
+            height: "110vh"
+          },
+
+          [theme.breakpoints.down("md")]: {
+            height: "390vh",
+            maxHeight: "390vh",
+            marginBottom: 6
+          },
+          [theme.breakpoints.down("sm")]: {
+            height: "360vh",
+            maxHeight: "360vh",
+            marginBottom: 6
+          },
+          [theme.breakpoints.down("xs")]: {
+            height: "230vh",
+            maxHeight: "230vh",
+            marginBottom: 6
+          },
+          [theme.breakpoints.down("xxs")]: {
+            height: "250vh"
+          }
         }}
       >
         <Box
@@ -552,63 +574,64 @@ const Teuser = () => {
           <Grid container gap={5} sx={{ height: "100%" }}>
             <Grid
               item
-              xs={5.838}
+              xxs={12}
+              lg={5.78}
+              xxl={5.838}
               sx={{
-                display: "flex",
-                justifyContent: "center",
-                alignItems: "center",
-                textAlign: "center"
+                // background: "#414141",
+                backgroundImage: `url(${teuserGrid1})`,
+                backgroundSize: "80%",
+                backgroundRepeat: "no-repeat",
+                backgroundPosition: "center",
+                height: "auto"
               }}
-            >
-              <Typography
-                sx={{
-                  color: "#FF0000",
-                  fontSize: 70,
-                  fontWeight: 700,
-                  lineHeight: "200px",
-                  fontFamily: "Urbanist"
-                }}
-              >
-                WE SOLVE EQUATIONS
-              </Typography>
-            </Grid>
+            />
+
             <Grid
               item
-              xs={5.838}
+              xxs={12}
+              lg={5.78}
+              xxl={5.838}
               sx={{
                 background: "#414141",
                 backgroundImage: `url(${teuserGrid2})`,
                 backgroundSize: "80%",
                 backgroundRepeat: "no-repeat",
-                backgroundPosition: "center"
+                backgroundPosition: "center",
+                height: "auto"
               }}
             />
             <Grid
               item
-              xs={5.838}
+              xxs={12}
+              lg={5.78}
+              xxl={5.838}
               sx={{
                 background: "#414141",
                 backgroundImage: `url(${teuserGrid3})`,
                 backgroundSize: "80%",
                 backgroundRepeat: "no-repeat",
-                backgroundPosition: "center"
+                backgroundPosition: "center",
+                height: "auto"
               }}
             />
             <Grid
               item
-              xs={5.838}
+              xxs={12}
+              lg={5.78}
+              xxl={5.838}
               sx={{
                 background: "#414141",
                 backgroundImage: `url(${teuserGrid4})`,
                 backgroundSize: "80%",
                 backgroundRepeat: "no-repeat",
-                backgroundPosition: "center"
+                backgroundPosition: "center",
+                height: "auto"
               }}
             />
           </Grid>
         </Box>
       </Box>
-
       {/* BRANDS SECTION */}
       <Box
         id="brands-container"
