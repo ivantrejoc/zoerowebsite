@@ -62,16 +62,38 @@ const NotFound = () => {
             paddingTop: "2vh",
             width: "100%",
             height: "33vh",
-            marginBottom: "5vh"
+            marginBottom: "5vh",
+            [theme.breakpoints.down("md")]: {
+              height: "30vh"
+            },
+            [theme.breakpoints.down("xs")]: {
+              height: "25vh"
+            },
+            [theme.breakpoints.down("xxs")]: {
+              height: "23vh"
+            }
           }}
         >
           <Button
             sx={{
-              width: "18.0625rem !important",
-              height: "6.125rem",
-              padding: "10px 20px",
-              flexShrink: 0,
-              boxSizing: "border-box"
+              [theme.breakpoints.down("xxl")]: {
+                width: "23.125rem !important",
+                height: "5.525rem !important",
+                fontSize: "1.325rem !important"
+              },
+              [theme.breakpoints.down("md")]: {
+                width: "12.71506rem !important",
+                height: "3.19375rem !important",
+                fontSize: "0.682rem !important",
+                strokeWidth: "2.194px !important",
+                border: "solid 5px #22505D !important"
+              },
+              [theme.breakpoints.down("xs")]: {
+                border: "solid 4px #22505D !important"
+              },
+              [theme.breakpoints.down("xxs")]: {
+                border: "solid 3.5px #22505D !important"
+              }
             }}
             href="/"
           >
@@ -80,7 +102,6 @@ const NotFound = () => {
         </Box>
       </Box>
     </Box>
-  
   );
 };
 export default NotFound;
