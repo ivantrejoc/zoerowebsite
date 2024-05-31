@@ -477,7 +477,7 @@ const DomainExpansion = () => {
           backgroundRepeat: "no-repeat",
           backgroundPosition: "center",
           marginBottom: 12,
-          [theme.breakpoints.down("sm")]:{
+          [theme.breakpoints.down("sm")]: {
             marginBottom: 6
           }
         }}
@@ -495,7 +495,24 @@ const DomainExpansion = () => {
           overflowX: "0px",
           height: "130vh",
           maxHeight: "130vh",
-          marginBottom: 12
+          marginBottom: 12,
+          [theme.breakpoints.down("xxl")]: {
+            height: "110vh"
+          },
+
+          [theme.breakpoints.down("md")]: {
+            height: "341vh",
+            maxHeight: "341vh",
+            marginBottom: 6
+          },
+          [theme.breakpoints.down("xs")]: {
+            height: "200vh",
+            maxHeight: "200vh",
+            marginBottom: 6
+          },
+          [theme.breakpoints.down("xxs")]: {
+            height: "250vh"
+          }
         }}
       >
         <Box
@@ -510,10 +527,24 @@ const DomainExpansion = () => {
             margin: "0 7vw 0 7vw"
           }}
         >
-          <Grid container gap={5} sx={{ height: "100%" }}>
+          <Grid
+            container
+            gap={5}
+            sx={{
+              height: "100%",
+              [theme.breakpoints.down("xxl")]: {
+                gap: 3
+              },
+              [theme.breakpoints.down("xs")]: {
+                gap: 1
+              }
+            }}
+          >
             <Grid
               item
-              xs={5.838}
+              xxs={12}
+              lg={5.87}
+              xxl={5.838}
               sx={{
                 backgroundImage: `url(${domainGrid1})`,
                 backgroundSize: "100%",
@@ -523,17 +554,21 @@ const DomainExpansion = () => {
             />
             <Grid
               item
-              xs={5.838}
+              xxs={12}
+              lg={5.87}
+              xxl={5.838}
               sx={{
                 backgroundImage: `url(${domainGrid2})`,
-                backgroundSize: "100%",
+                backgroundSize: "102%",
                 backgroundRepeat: "no-repeat",
                 backgroundPosition: "center"
               }}
             />
             <Grid
               item
-              xs={5.838}
+              xxs={12}
+              lg={5.87}
+              xxl={5.838}
               sx={{
                 backgroundImage: `url(${domainGrid3})`,
                 backgroundSize: "100%",
@@ -543,7 +578,9 @@ const DomainExpansion = () => {
             />
             <Grid
               item
-              xs={5.838}
+              xxs={12}
+              lg={5.87}
+              xxl={5.838}
               sx={{
                 backgroundImage: `url(${domainGrid4})`,
                 backgroundSize: "100%",
