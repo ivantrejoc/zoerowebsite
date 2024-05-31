@@ -177,7 +177,13 @@ const Terms = () => {
               fontStyle: "normal",
               fontWeight: "600",
               lineHeight: "normal",
-              marginBottom: 3
+              marginBottom: 3,
+              [theme.breakpoints.down("sm")]: {
+                fontSize: "1.375rem"
+              },
+              [theme.breakpoints.down("xs")]: {
+                fontSize: "1.175rem"
+              }
             }}
           >
             Privacy Settings
@@ -190,7 +196,13 @@ const Terms = () => {
               fontStyle: "normal",
               fontWeight: "400",
               lineHeight: "141.5%",
-              marginBottom: 1.5
+              marginBottom: 1.5,
+              [theme.breakpoints.down("sm")]: {
+                fontSize: "1.175rem"
+              },
+              [theme.breakpoints.down("xs")]: {
+                fontSize: "1rem"
+              }
             }}
           >
             Arcu eget ut tortor eros in et risus. Egestas ipsum dui, fringilla
@@ -299,26 +311,26 @@ const Terms = () => {
             habitant est tortor. Erat consequat habitasse cursus placerat ornare
             sit scelerisque lectus. Dolor dictum proin etiam.
           </Typography>
-        </Box>        
+        </Box>
       </Box>
       <ButtonArea />
-        {/* BINARY STRIPE */}
-        <Box
-          id="binary-stripe-container"
-          sx={{
-            display: "flex",
-            justifyContent: "start",
-            alignItems: "center",
-            position: "relative",
-            backgroundImage: `url(${binaryStripe})`,
-            backgroundSize: "100%",
-            backgroundRepeat: "no-repeat",
-            width: "100vw",
-            height: "20vh",
-            marginBottom: "15vh"
-          }}
-        />
-        <HeroTwoSection />
+      {/* BINARY STRIPE */}
+      <Box
+        id="binary-stripe-container"
+        sx={{
+          display: "flex",
+          justifyContent: "start",
+          alignItems: "center",
+          position: "relative",
+          backgroundImage: `url(${binaryStripe})`,
+          backgroundSize: "100%",
+          backgroundRepeat: "no-repeat",
+          width: "100vw",
+          height: "20vh",
+          marginBottom: "15vh"
+        }}
+      />
+      <HeroTwoSection />
     </Box>
   );
 };
