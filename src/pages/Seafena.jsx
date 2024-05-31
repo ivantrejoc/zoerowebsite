@@ -335,7 +335,7 @@ const Seafena = () => {
       </Box>
       {/* DOMAIN APP SECTION */}
       <Box
-        id="domain-app-container"
+        id="seafena-app-container"
         sx={{
           display: "flex",
           justifyContent: "center",
@@ -346,7 +346,29 @@ const Seafena = () => {
           overflowX: "0px",
           height: "50vh",
           maxHeight: "50vh",
-          marginBottom: 12
+          marginBottom: 12,
+          [theme.breakpoints.down("xxl")]: {
+            height: "69vh",
+            maxHeight: "69vh"
+          },
+          [theme.breakpoints.down("md")]: {
+            height: "131vh",
+            maxHeight: "131vh"
+          },
+          [theme.breakpoints.down("sm")]: {
+            height: "70vh",
+            maxHeight: "70vh",
+            marginBottom: 6
+          },
+          [theme.breakpoints.down("xs")]: {
+            height: "49vh",
+            maxHeight: "49vh",
+            marginBottom: 4
+          },
+          [theme.breakpoints.down("xxs")]: {
+            height: "56vh",
+            maxHeight: "56vh"
+          }
         }}
       >
         <Box
@@ -364,7 +386,8 @@ const Seafena = () => {
           <Grid container columnGap={2} sx={{ height: "100%" }}>
             <Grid
               item
-              xs={5}
+              xxl={5}
+              xl={4.6}
               sx={{
                 display: "flex",
                 justifyContent: "start",
@@ -378,7 +401,16 @@ const Seafena = () => {
                   fontSize: "4.575rem",
                   fontStyle: "normal",
                   fontWeight: "700",
-                  lineHeight: "100%"
+                  lineHeight: "100%",
+                  [theme.breakpoints.down("xxl")]: {
+                    fontSize: "4.275rem"
+                  },
+                  [theme.breakpoints.down("sm")]: {
+                    fontSize: "3.375rem"
+                  },
+                  [theme.breakpoints.down("xs")]: {
+                    fontSize: "2.1375rem"
+                  }
                 }}
               >
                 SEAFENA EQUATIONS
@@ -386,7 +418,8 @@ const Seafena = () => {
             </Grid>
             <Grid
               item
-              xs={6.87}
+              xxl={6.87}
+              xl={7.2}
               sx={{
                 display: "flex",
                 justifyContent: "start",
@@ -403,7 +436,16 @@ const Seafena = () => {
                   fontStyle: "normal",
                   fontWeight: "400",
                   lineHeight: "150%",
-                  letterSpacing: 0
+                  letterSpacing: 0,
+                  [theme.breakpoints.down("xxl")]: {
+                    fontSize: "2.31244rem"
+                  },
+                  [theme.breakpoints.down("sm")]: {
+                    fontSize: "1.25rem"
+                  },
+                  [theme.breakpoints.down("xs")]: {
+                    fontSize: "0.9375rem"
+                  }
                 }}
               >
                 “Seafena is an invitation to the extraordinary, a passage
