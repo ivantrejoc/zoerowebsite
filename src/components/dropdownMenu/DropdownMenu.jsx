@@ -1,4 +1,12 @@
-import { Box, Button, Menu, MenuItem, Fade, Typography } from "@mui/material";
+import {
+  Box,
+  Button,
+  Menu,
+  MenuItem,
+  Fade,
+  Typography,
+  Link
+} from "@mui/material";
 import { useState } from "react";
 import { useTheme } from "@emotion/react";
 
@@ -68,7 +76,15 @@ const DropdownMenu = () => {
           href="/#reasoning"
           onClick={handleClose}
         >
-          REASONING
+          <Link
+            sx={{
+              color: "#AAAAAA",
+              textDecoration: "none"
+            }}
+            href="/#reasoning"
+          >
+            REASONING
+          </Link>
         </MenuItem>
         <MenuItem
           sx={{
@@ -81,7 +97,15 @@ const DropdownMenu = () => {
           }}
           onClick={handleClose}
         >
-          EXPERIMENTS
+          <Link
+            sx={{
+              color: "#AAAAAA",
+              textDecoration: "none"
+            }}
+            href="/#experiments"
+          >
+            EXPERIMENTS
+          </Link>
         </MenuItem>
         <MenuItem
           sx={{
@@ -94,7 +118,15 @@ const DropdownMenu = () => {
           }}
           onClick={handleClose}
         >
-          COEFFICIENTS
+          <Link
+            sx={{
+              color: "#AAAAAA",
+              textDecoration: "none"
+            }}
+            href="/#coefficients"
+          >
+            COEFFICIENTS
+          </Link>
         </MenuItem>
         <MenuItem
           sx={{
@@ -107,7 +139,15 @@ const DropdownMenu = () => {
           }}
           onClick={handleClose}
         >
-          LET’S SOLVE
+          <Link
+            sx={{
+              color: "#AAAAAA",
+              textDecoration: "none"
+            }}
+            href="/contact"
+          >
+            LET’S SOLVE
+          </Link>
         </MenuItem>
       </Menu>
     </Box>
