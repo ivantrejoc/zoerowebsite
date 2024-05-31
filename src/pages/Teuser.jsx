@@ -359,17 +359,18 @@ const Teuser = () => {
           },
           [theme.breakpoints.down("md")]: {
             height: "120vh",
-            maxHeight: "120vh"
+            maxHeight: "120vh",
+            marginBottom: 16
           },
           [theme.breakpoints.down("sm")]: {
             height: "60vh",
             maxHeight: "60vh",
-            marginBottom: 6
+            marginBottom: 10
           },
           [theme.breakpoints.down("xs")]: {
             height: "39vh",
             maxHeight: "39vh",
-            marginBottom: 4
+            marginBottom: 10
           },
           [theme.breakpoints.down("xxs")]: {
             height: "52vh",
@@ -468,10 +469,11 @@ const Teuser = () => {
           </Grid>
         </Box>
       </Box>
-      {/* TEUSER IMAGE */}
+      {/* SOMETHING COOL BANNER */}
       <Box
-        id="teuser-image-container"
+        id="banner-container"
         sx={{
+          background: "plum",
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
@@ -482,10 +484,18 @@ const Teuser = () => {
           height: "50vh",
           maxHeight: "50vh",
           backgroundImage: `url(${fullWidthTeuser})`,
-          backgroundSize: "100%",
+          backgroundSize: "cover",
           backgroundRepeat: "no-repeat",
           backgroundPosition: "center",
-          marginBottom: 12
+          marginBottom: 12,
+          [theme.breakpoints.down("md")]: {
+            height: "90vh",
+          maxHeight: "90vh"         
+          },
+          [theme.breakpoints.down("xs")]: {
+            height: "60vh",
+          maxHeight: "60vh"         
+          }
         }}
       >
         <Typography
@@ -493,7 +503,19 @@ const Teuser = () => {
             color: "#E20202",
             fontSize: 40,
             fontFamily: "Urbanist",
-            fontWeight: 700
+            fontWeight: 700,
+            [theme.breakpoints.down("md")]: {
+              fontSize: 30,
+            },
+            [theme.breakpoints.down("sm")]: {
+              fontSize: 20,
+            },
+            [theme.breakpoints.down("xs")]: {
+              fontSize: 15,
+            },
+            [theme.breakpoints.down("xs")]: {
+              fontSize: 12,
+            }
           }}
         >
           SOMETHING COOL ABOUT THE TEUSER PROJECT
