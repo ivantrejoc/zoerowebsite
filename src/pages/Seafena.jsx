@@ -528,7 +528,7 @@ const Seafena = () => {
       {/* GRID IMAGES */}
       <Box
         id="grid-image-container"
-        sx={{          
+        sx={{
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
@@ -638,10 +638,25 @@ const Seafena = () => {
           flexDirection: "column",
           position: "relative",
           width: "100%",
-          overflowX: "0px",
-          height: "135vh",
-          maxHeight: "135vh",
-          marginBottom: 12
+          overflowX: "hidden",
+          height: "100vh",
+          maxHeight: "100vh",
+          marginBottom: 12,
+          [theme.breakpoints.down("md")]: {
+            height: "87vh"
+          },
+          [theme.breakpoints.down("sm")]: {
+            height: "65vh",
+            marginBottom: 6
+          },
+          [theme.breakpoints.down("xs")]: {
+            height: "42vh",
+            marginBottom: 6
+          },
+          [theme.breakpoints.down("xxs")]: {
+            height: "36vh",
+            marginBottom: 6
+          }
         }}
       >
         <Box
