@@ -23,14 +23,15 @@ const Teuser = () => {
         justifyContent: "center",
         alignItems: "stretch",
         flexDirection: "column",
+        overflow: "hidden",
         position: "relative",
         backgroundColor: theme.palette.background.default,
-        backgroundSize: "cover",
+        backgroundSize: "cover"
       }}
     >
       {/* MAIN HERO */}
       <Box
-        id="hero-two-container"
+        id="main-hero-container"
         sx={{
           display: "flex",
           justifyContent: "start",
@@ -39,9 +40,31 @@ const Teuser = () => {
           position: "relative",
           width: "100%",
           overflowX: "0px",
-          height: "43vh",
-          maxHeight: "43vh",
+          height: "30vh",
+          maxHeight: "30vh",
           marginBottom: 12,
+          [theme.breakpoints.down("xxl")]: {
+            height: "36vh",
+            maxHeight: "36vh"
+          },
+          [theme.breakpoints.down("md")]: {
+            height: "40vh",
+            maxHeight: "40vh",
+            marginBottom: 6
+          },
+          [theme.breakpoints.down("sm")]: {
+            height: "35vh",
+            maxHeight: "35vh",
+            marginBottom: 4
+          },
+          [theme.breakpoints.down("xs")]: {
+            height: "33vh",
+            maxHeight: "33vh"
+          },
+          [theme.breakpoints.down("xxs")]: {
+            height: "36vh",
+            maxHeight: "36vh"
+          }
         }}
       >
         <Box
@@ -54,7 +77,7 @@ const Teuser = () => {
             width: "86%",
             height: "100%",
             margin: "0 7vw 0 7vw",
-            maxHeight: "100%",
+            maxHeight: "100%"
           }}
         >
           <Box
@@ -64,6 +87,23 @@ const Teuser = () => {
               display: "flex",
               gap: 1,
               marginBottom: 2,
+              [theme.breakpoints.down("xxl")]: {
+                width: "33%",
+                height: "11vh",
+                gap: 2
+              },
+              [theme.breakpoints.down("md")]: {
+                width: "100%",
+                gap: 1
+              },
+              [theme.breakpoints.down("sm")]: {
+                width: "75%",
+                height: "9vh",
+                gap: 1
+              },
+              [theme.breakpoints.down("xs")]: {
+                width: "70%"
+              }
             }}
           >
             <Typography
@@ -74,6 +114,20 @@ const Teuser = () => {
                 fontStyle: "normal",
                 fontWeight: "700",
                 lineHeight: "100%",
+                [theme.breakpoints.down("md")]: {
+                  width: "30%",
+                  fontSize: "2.825rem"
+                },
+                [theme.breakpoints.down("sm")]: {
+                  width: "47%",
+                  fontSize: "2.4375rem"
+                },
+                [theme.breakpoints.down("xs")]: {
+                  width: "78%"
+                },
+                [theme.breakpoints.down("xxs")]: {
+                  fontSize: "2.0675rem"
+                }
               }}
               component="h2"
             >
@@ -85,6 +139,20 @@ const Teuser = () => {
               sx={{
                 width: "10%",
                 paddingTop: 2,
+                [theme.breakpoints.down("xxl")]: {
+                  width: "10%"
+                },
+                [theme.breakpoints.down("md")]: {
+                  width: "6%",
+                  fontSize: "0.9375rem",
+                  paddingTop: 1
+                },
+                [theme.breakpoints.down("sm")]: {
+                  fontSize: "0.7375rem"
+                },
+                [theme.breakpoints.down("sm")]: {
+                  fontSize: "0.7375rem"
+                }
               }}
             >
               Case Study
@@ -97,6 +165,21 @@ const Teuser = () => {
               display: "flex",
               flexDirection: "column",
               marginBottom: 2,
+              [theme.breakpoints.down("xxl")]: {
+                width: "70%",
+                height: "14vh"
+              },
+              [theme.breakpoints.down("md")]: {
+                width: "82%"
+              },
+              [theme.breakpoints.down("sm")]: {
+                width: "100%",
+                height: "10vh"
+              },
+              [theme.breakpoints.down("xxs")]: {
+                width: "100%",
+                height: "20vh"
+              }
             }}
           >
             <Typography
@@ -107,6 +190,15 @@ const Teuser = () => {
                 fontStyle: "normal",
                 fontWeight: "600",
                 lineHeight: "112%",
+                [theme.breakpoints.down("md")]: {
+                  fontSize: "1.725rem"
+                },
+                [theme.breakpoints.down("sm")]: {
+                  fontSize: "1.25rem"
+                },
+                [theme.breakpoints.down("xs")]: {
+                  fontSize: "1rem"
+                }
               }}
               component="p"
             >
@@ -120,12 +212,29 @@ const Teuser = () => {
               height: "5vh",
               display: "flex",
               gap: 6,
+              [theme.breakpoints.down("xxl")]: {
+                width: "40%",
+                height: "6vh"
+              },
+              [theme.breakpoints.down("md")]: {
+                width: "100%",
+                height: "9vh"
+              },
+              [theme.breakpoints.down("sm")]: {
+                gap: 10
+              },
+              [theme.breakpoints.down("xs")]: {
+                gap: 4
+              }
             }}
           >
             <Box
               sx={{
                 display: "flex",
                 gap: 2,
+                [theme.breakpoints.down("xs")]: {
+                  width: "47.5%"
+                }
               }}
             >
               <img id="x-icon" src={xicon} alt="x-icon" />{" "}
@@ -134,6 +243,12 @@ const Teuser = () => {
                 sx={{
                   justifyItems: "center",
                   alignContent: "center",
+                  [theme.breakpoints.down("sm")]: {
+                    fontSize: "0.91556rem"
+                  },
+                  [theme.breakpoints.down("xs")]: {
+                    fontSize: "0.85rem"
+                  }
                 }}
                 component="p"
               >
@@ -144,6 +259,9 @@ const Teuser = () => {
               sx={{
                 display: "flex",
                 gap: 2,
+                [theme.breakpoints.down("xs")]: {
+                  width: "47.5%"
+                }
               }}
             >
               <img id="x-icon" src={xicon} alt="x-icon" />{" "}
@@ -152,6 +270,12 @@ const Teuser = () => {
                 sx={{
                   justifyItems: "center",
                   alignContent: "center",
+                  [theme.breakpoints.down("sm")]: {
+                    fontSize: "0.91556rem"
+                  },
+                  [theme.breakpoints.down("xs")]: {
+                    fontSize: "0.85rem"
+                  }
                 }}
                 component="p"
               >
@@ -173,7 +297,7 @@ const Teuser = () => {
           overflowX: "0px",
           height: "110vh",
           maxHeight: "110vh",
-          marginBottom: 12,
+          marginBottom: 12
         }}
       >
         <Box
@@ -191,7 +315,7 @@ const Teuser = () => {
             height: "100%",
             margin: "0 7vw 0 7vw",
             maxHeight: "100%",
-            marginBottom: 12,
+            marginBottom: 12
           }}
         />
       </Box>
@@ -208,7 +332,7 @@ const Teuser = () => {
           overflowX: "0px",
           height: "50vh",
           maxHeight: "50vh",
-          marginBottom: 12,
+          marginBottom: 12
         }}
       >
         <Box
@@ -220,7 +344,7 @@ const Teuser = () => {
             position: "relative",
             width: "86%",
             height: "100%",
-            margin: "0 7vw 0 7vw",
+            margin: "0 7vw 0 7vw"
           }}
         >
           <Grid container columnGap={2} sx={{ height: "100%" }}>
@@ -230,7 +354,7 @@ const Teuser = () => {
               sx={{
                 display: "flex",
                 justifyContent: "start",
-                alignItems: "center",
+                alignItems: "center"
               }}
             >
               <Typography
@@ -240,7 +364,7 @@ const Teuser = () => {
                   fontSize: "4.575rem",
                   fontStyle: "normal",
                   fontWeight: "700",
-                  lineHeight: "100%",
+                  lineHeight: "100%"
                 }}
               >
                 TEUSER EQUATIONS
@@ -252,7 +376,7 @@ const Teuser = () => {
               sx={{
                 display: "flex",
                 justifyContent: "start",
-                alignItems: "center",
+                alignItems: "center"
               }}
             >
               <Typography
@@ -266,7 +390,7 @@ const Teuser = () => {
                   fontStyle: "normal",
                   fontWeight: "400",
                   lineHeight: "150%",
-                  letterSpacing: 0,
+                  letterSpacing: 0
                 }}
               >
                 “Pony really understood what we were trying achieve and was very
@@ -296,7 +420,7 @@ const Teuser = () => {
           backgroundSize: "100%",
           backgroundRepeat: "no-repeat",
           backgroundPosition: "center",
-          marginBottom: 12,
+          marginBottom: 12
         }}
       >
         <Typography
@@ -304,7 +428,7 @@ const Teuser = () => {
             color: "#E20202",
             fontSize: 40,
             fontFamily: "Urbanist",
-            fontWeight: 700,
+            fontWeight: 700
           }}
         >
           SOMETHING COOL ABOUT THE TEUSER PROJECT
@@ -323,7 +447,7 @@ const Teuser = () => {
           overflowX: "0px",
           height: "130vh",
           maxHeight: "130vh",
-          marginBottom: 12,
+          marginBottom: 12
         }}
       >
         <Box
@@ -335,7 +459,7 @@ const Teuser = () => {
             position: "relative",
             width: "86%",
             height: "100%",
-            margin: "0 7vw 0 7vw",
+            margin: "0 7vw 0 7vw"
           }}
         >
           <Grid container gap={5} sx={{ height: "100%" }}>
@@ -346,7 +470,7 @@ const Teuser = () => {
                 display: "flex",
                 justifyContent: "center",
                 alignItems: "center",
-                textAlign: "center",
+                textAlign: "center"
               }}
             >
               <Typography
@@ -355,7 +479,7 @@ const Teuser = () => {
                   fontSize: 70,
                   fontWeight: 700,
                   lineHeight: "200px",
-                  fontFamily: "Urbanist",
+                  fontFamily: "Urbanist"
                 }}
               >
                 WE SOLVE EQUATIONS
@@ -369,7 +493,7 @@ const Teuser = () => {
                 backgroundImage: `url(${teuserGrid2})`,
                 backgroundSize: "80%",
                 backgroundRepeat: "no-repeat",
-                backgroundPosition: "center",
+                backgroundPosition: "center"
               }}
             />
             <Grid
@@ -380,7 +504,7 @@ const Teuser = () => {
                 backgroundImage: `url(${teuserGrid3})`,
                 backgroundSize: "80%",
                 backgroundRepeat: "no-repeat",
-                backgroundPosition: "center",
+                backgroundPosition: "center"
               }}
             />
             <Grid
@@ -391,7 +515,7 @@ const Teuser = () => {
                 backgroundImage: `url(${teuserGrid4})`,
                 backgroundSize: "80%",
                 backgroundRepeat: "no-repeat",
-                backgroundPosition: "center",
+                backgroundPosition: "center"
               }}
             />
           </Grid>
@@ -411,7 +535,7 @@ const Teuser = () => {
           overflowX: "0px",
           height: "135vh",
           maxHeight: "135vh",
-          marginBottom: 12,
+          marginBottom: 12
         }}
       >
         <Box
@@ -427,7 +551,7 @@ const Teuser = () => {
             backgroundImage: `url(${teuserBrands})`,
             backgroundSize: "100%",
             backgroundRepeat: "no-repeat",
-            backgroundPosition: "center",
+            backgroundPosition: "center"
           }}
         />
       </Box>
@@ -445,7 +569,7 @@ const Teuser = () => {
           overflowX: "0px",
           height: "100vh",
           maxHeight: "100vh",
-          marginBottom: 12,
+          marginBottom: 12
         }}
       >
         <Box
@@ -457,7 +581,7 @@ const Teuser = () => {
             position: "relative",
             width: "60%",
             height: "65%",
-            margin: "0 20vw 0 20vw",
+            margin: "0 20vw 0 20vw"
           }}
         >
           <Box
@@ -472,7 +596,7 @@ const Teuser = () => {
                 sx={{
                   width: "4.375rem",
                   height: "4.375rem",
-                  flexShrink: "0",
+                  flexShrink: "0"
                 }}
               />
             </Box>
@@ -496,7 +620,7 @@ const Teuser = () => {
               fontSize: "2.61244rem",
               fontStyle: "normal",
               fontWeight: "400",
-              lineHeight: "150%",
+              lineHeight: "150%"
             }}
           >
             “I&apos;m proud to showcase a series of recent branding projects
@@ -522,7 +646,7 @@ const Teuser = () => {
           backgroundRepeat: "no-repeat",
           width: "auto",
           height: "20vh",
-          marginBottom: "15vh",
+          marginBottom: "15vh"
         }}
       />
       {/* HERO TWO */}
