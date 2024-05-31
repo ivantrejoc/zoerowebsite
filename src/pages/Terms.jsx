@@ -114,7 +114,13 @@ const Terms = () => {
               fontStyle: "normal",
               fontWeight: "600",
               lineHeight: "normal",
-              marginBottom: 3
+              marginBottom: 3,
+              [theme.breakpoints.down("sm")]: {
+                fontSize: "1.375rem"
+              },
+              [theme.breakpoints.down("xs")]: {
+                fontSize: "1.175rem"
+              }
             }}
           >
             Cookies Settings
@@ -126,7 +132,13 @@ const Terms = () => {
               fontSize: "1.5625rem",
               fontStyle: "normal",
               fontWeight: "400",
-              lineHeight: "141.5%"
+              lineHeight: "141.5%",
+              [theme.breakpoints.down("sm")]: {
+                fontSize: "1.175rem"
+              },
+              [theme.breakpoints.down("xs")]: {
+                fontSize: "1rem"
+              }
             }}
           >
             Sit vel orci et malesuada nam eu. Hac sed auctor mus ipsum amet.
