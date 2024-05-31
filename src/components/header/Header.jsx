@@ -1,5 +1,5 @@
 import { Box, Typography, Link } from "@mui/material";
-import DropdownMenu from "../dropDownMenu/DropdownMenu";
+import DropdownMenu from "../dropdownMenu/DropdownMenu";
 import { useMediaQuery } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
 import zoeroLogo from "../../assets/img/zoero-logo.svg";
