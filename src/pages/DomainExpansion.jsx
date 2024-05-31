@@ -596,6 +596,7 @@ const DomainExpansion = () => {
       <Box
         id="brands-container"
         sx={{
+          background: "plum",
           display: "flex",
           justifyContent: "start",
           alignItems: "center",
@@ -605,7 +606,29 @@ const DomainExpansion = () => {
           overflowX: "0px",
           height: "135vh",
           maxHeight: "135vh",
-          marginBottom: 12
+          marginBottom: 12,
+          [theme.breakpoints.down("xxl")]:{
+            height: "128vh",
+          },
+          [theme.breakpoints.down("md")]:{
+            height: "111vh",
+          },
+          [theme.breakpoints.down("sm")]:{
+            height: "83vh",
+            marginBottom: 6,
+          },
+          [theme.breakpoints.down("xs")]:{
+            height: "54vh",
+            marginBottom: 6,
+          },
+          [theme.breakpoints.down("xs")]:{
+            height: "54vh",
+            marginBottom: 6,
+          },
+          [theme.breakpoints.down("xxs")]:{
+            height: "46vh",
+            marginBottom: 6,
+          }
         }}
       >
         <Box
