@@ -17,21 +17,22 @@ const DomainExpansion = () => {
   const theme = useTheme();
   return (
     <Box
-      id="contact-main-body"
+      id="domain-main-body"
       sx={{
         display: "flex",
         justifyContent: "center",
         alignItems: "stretch",
         flexDirection: "column",
+        overflowX: "hidden",
         position: "relative",
         backgroundColor: theme.palette.background.default,
-        backgroundSize: "cover",
+        backgroundSize: "cover"
       }}
     >
       {/* MAIN HERO */}
       <Box
-        id="hero-two-container"
-        sx={{
+        id="main-hero-container"
+        sx={{          
           display: "flex",
           justifyContent: "start",
           alignItems: "center",
@@ -39,9 +40,31 @@ const DomainExpansion = () => {
           position: "relative",
           width: "100%",
           overflowX: "0px",
-          height: "43vh",
-          maxHeight: "43vh",
+          height: "30vh",
+          maxHeight: "30vh",
           marginBottom: 12,
+          [theme.breakpoints.down("xxl")]: {
+            height: "36vh",
+            maxHeight: "36vh"
+          },
+          [theme.breakpoints.down("md")]: {
+            height: "41vh",
+            maxHeight: "41vh",
+            marginBottom: 6
+          },
+          [theme.breakpoints.down("sm")]: {
+            height: "35vh",
+            maxHeight: "35vh",
+            marginBottom: 4
+          },
+          [theme.breakpoints.down("xs")]: {
+            height: "33vh",
+            maxHeight: "33vh"
+          },
+          [theme.breakpoints.down("xxs")]: {
+            height: "36vh",
+            maxHeight: "36vh"
+          }
         }}
       >
         <Box
@@ -54,16 +77,33 @@ const DomainExpansion = () => {
             width: "86%",
             height: "100%",
             margin: "0 7vw 0 7vw",
-            maxHeight: "100%",
+            maxHeight: "100%"
           }}
         >
           <Box
             sx={{
-              width: "15%",
+              width: "33%",
               height: "9vh",
               display: "flex",
               gap: 1,
               marginBottom: 2,
+              [theme.breakpoints.down("xxl")]: {
+                width: "44%",
+                height: "11vh",
+                gap: 2
+              },
+              [theme.breakpoints.down("md")]: {
+                width: "100%",
+                gap: 1
+              },
+              [theme.breakpoints.down("sm")]: {
+                width: "100%",
+                height: "9vh",
+                gap: 1
+              },
+              [theme.breakpoints.down("xs")]: {
+                width: "100%"
+              }
             }}
           >
             <Typography
@@ -74,6 +114,20 @@ const DomainExpansion = () => {
                 fontStyle: "normal",
                 fontWeight: "700",
                 lineHeight: "100%",
+                [theme.breakpoints.down("md")]: {
+                  width: "41%",
+                  fontSize: "2.825rem"
+                },
+                [theme.breakpoints.down("sm")]: {
+                  width: "47%",
+                  fontSize: "2.4375rem"
+                },
+                [theme.breakpoints.down("xs")]: {
+                  width: "78%"
+                },
+                [theme.breakpoints.down("xxs")]: {
+                  fontSize: "2.0675rem"
+                }
               }}
               component="h2"
             >
@@ -85,6 +139,20 @@ const DomainExpansion = () => {
               sx={{
                 width: "10%",
                 paddingTop: 2,
+                [theme.breakpoints.down("xxl")]: {
+                  width: "10%"
+                },
+                [theme.breakpoints.down("md")]: {
+                  width: "6%",
+                  fontSize: "0.9375rem",
+                  paddingTop: 1
+                },
+                [theme.breakpoints.down("sm")]: {
+                  fontSize: "0.7375rem"
+                },
+                [theme.breakpoints.down("sm")]: {
+                  fontSize: "0.7375rem"
+                }
               }}
             >
               Case Study
@@ -97,6 +165,21 @@ const DomainExpansion = () => {
               display: "flex",
               flexDirection: "column",
               marginBottom: 2,
+              [theme.breakpoints.down("xxl")]: {
+                width: "70%",
+                height: "14vh"
+              },
+              [theme.breakpoints.down("md")]: {
+                width: "82%"
+              },
+              [theme.breakpoints.down("sm")]: {
+                width: "100%",
+                height: "10vh"
+              },
+              [theme.breakpoints.down("xxs")]: {
+                width: "100%",
+                height: "20vh"
+              }
             }}
           >
             <Typography
@@ -106,6 +189,15 @@ const DomainExpansion = () => {
                 fontStyle: "normal",
                 fontWeight: "600",
                 lineHeight: "112%",
+                [theme.breakpoints.down("md")]: {
+                  fontSize: "1.725rem"
+                },
+                [theme.breakpoints.down("sm")]: {
+                  fontSize: "1.25rem"
+                },
+                [theme.breakpoints.down("xs")]: {
+                  fontSize: "1rem"
+                }
               }}
               component="p"
             >
@@ -119,12 +211,29 @@ const DomainExpansion = () => {
               height: "5vh",
               display: "flex",
               gap: 6,
+              [theme.breakpoints.down("xxl")]: {
+                width: "40%",
+                height: "6vh"
+              },
+              [theme.breakpoints.down("md")]: {
+                width: "100%",
+                height: "9vh"
+              },
+              [theme.breakpoints.down("sm")]: {
+                gap: 10
+              },
+              [theme.breakpoints.down("xs")]: {
+                gap: 4
+              }
             }}
           >
             <Box
               sx={{
                 display: "flex",
                 gap: 2,
+                [theme.breakpoints.down("xs")]: {
+                  width: "47.5%"
+                }
               }}
             >
               <img id="x-icon" src={xicon} alt="x-icon" />{" "}
@@ -133,6 +242,12 @@ const DomainExpansion = () => {
                 sx={{
                   justifyItems: "center",
                   alignContent: "center",
+                  [theme.breakpoints.down("sm")]: {
+                    fontSize: "0.91556rem"
+                  },
+                  [theme.breakpoints.down("xs")]: {
+                    fontSize: "0.85rem"
+                  }
                 }}
                 component="p"
               >
@@ -143,6 +258,9 @@ const DomainExpansion = () => {
               sx={{
                 display: "flex",
                 gap: 2,
+                [theme.breakpoints.down("xs")]: {
+                  width: "47.5%"
+                }
               }}
             >
               <img id="x-icon" src={xicon} alt="x-icon" />{" "}
@@ -151,6 +269,12 @@ const DomainExpansion = () => {
                 sx={{
                   justifyItems: "center",
                   alignContent: "center",
+                  [theme.breakpoints.down("sm")]: {
+                    fontSize: "0.91556rem"
+                  },
+                  [theme.breakpoints.down("xs")]: {
+                    fontSize: "0.85rem"
+                  }
                 }}
                 component="p"
               >
@@ -172,7 +296,7 @@ const DomainExpansion = () => {
           overflowX: "0px",
           height: "110vh",
           maxHeight: "110vh",
-          marginBottom: 12,
+          marginBottom: 12
         }}
       >
         <Box
@@ -190,7 +314,7 @@ const DomainExpansion = () => {
             height: "100%",
             margin: "0 7vw 0 7vw",
             maxHeight: "100%",
-            marginBottom: 12,
+            marginBottom: 12
           }}
         />
       </Box>
@@ -207,7 +331,7 @@ const DomainExpansion = () => {
           overflowX: "0px",
           height: "50vh",
           maxHeight: "50vh",
-          marginBottom: 12,
+          marginBottom: 12
         }}
       >
         <Box
@@ -219,7 +343,7 @@ const DomainExpansion = () => {
             position: "relative",
             width: "86%",
             height: "100%",
-            margin: "0 7vw 0 7vw",
+            margin: "0 7vw 0 7vw"
           }}
         >
           <Grid container columnGap={2} sx={{ height: "100%" }}>
@@ -229,7 +353,7 @@ const DomainExpansion = () => {
               sx={{
                 display: "flex",
                 justifyContent: "start",
-                alignItems: "center",
+                alignItems: "center"
               }}
             >
               <Typography
@@ -239,7 +363,7 @@ const DomainExpansion = () => {
                   fontSize: "4.575rem",
                   fontStyle: "normal",
                   fontWeight: "700",
-                  lineHeight: "100%",
+                  lineHeight: "100%"
                 }}
               >
                 BRANDING EQUATIONS
@@ -251,7 +375,7 @@ const DomainExpansion = () => {
               sx={{
                 display: "flex",
                 justifyContent: "start",
-                alignItems: "center",
+                alignItems: "center"
               }}
             >
               <Typography
@@ -264,7 +388,7 @@ const DomainExpansion = () => {
                   fontStyle: "normal",
                   fontWeight: "400",
                   lineHeight: "150%",
-                  letterSpacing: 0,
+                  letterSpacing: 0
                 }}
               >
                 “Pony really understood what we were trying achieve and was very
@@ -294,7 +418,7 @@ const DomainExpansion = () => {
           backgroundSize: "100%",
           backgroundRepeat: "no-repeat",
           backgroundPosition: "center",
-          marginBottom: 12,
+          marginBottom: 12
         }}
       />
       {/* GRID IMAGES */}
@@ -310,7 +434,7 @@ const DomainExpansion = () => {
           overflowX: "0px",
           height: "130vh",
           maxHeight: "130vh",
-          marginBottom: 12,
+          marginBottom: 12
         }}
       >
         <Box
@@ -322,7 +446,7 @@ const DomainExpansion = () => {
             position: "relative",
             width: "86%",
             height: "100%",
-            margin: "0 7vw 0 7vw",
+            margin: "0 7vw 0 7vw"
           }}
         >
           <Grid container gap={5} sx={{ height: "100%" }}>
@@ -333,7 +457,7 @@ const DomainExpansion = () => {
                 backgroundImage: `url(${domainGrid1})`,
                 backgroundSize: "100%",
                 backgroundRepeat: "no-repeat",
-                backgroundPosition: "center",
+                backgroundPosition: "center"
               }}
             />
             <Grid
@@ -343,7 +467,7 @@ const DomainExpansion = () => {
                 backgroundImage: `url(${domainGrid2})`,
                 backgroundSize: "100%",
                 backgroundRepeat: "no-repeat",
-                backgroundPosition: "center",
+                backgroundPosition: "center"
               }}
             />
             <Grid
@@ -353,7 +477,7 @@ const DomainExpansion = () => {
                 backgroundImage: `url(${domainGrid3})`,
                 backgroundSize: "100%",
                 backgroundRepeat: "no-repeat",
-                backgroundPosition: "center",
+                backgroundPosition: "center"
               }}
             />
             <Grid
@@ -363,7 +487,7 @@ const DomainExpansion = () => {
                 backgroundImage: `url(${domainGrid4})`,
                 backgroundSize: "100%",
                 backgroundRepeat: "no-repeat",
-                backgroundPosition: "center",
+                backgroundPosition: "center"
               }}
             />
           </Grid>
@@ -383,7 +507,7 @@ const DomainExpansion = () => {
           overflowX: "0px",
           height: "135vh",
           maxHeight: "135vh",
-          marginBottom: 12,
+          marginBottom: 12
         }}
       >
         <Box
@@ -399,7 +523,7 @@ const DomainExpansion = () => {
             backgroundImage: `url(${domainBrands})`,
             backgroundSize: "100%",
             backgroundRepeat: "no-repeat",
-            backgroundPosition: "center",
+            backgroundPosition: "center"
           }}
         />
       </Box>
@@ -417,7 +541,7 @@ const DomainExpansion = () => {
           overflowX: "0px",
           height: "100vh",
           maxHeight: "100vh",
-          marginBottom: 12,
+          marginBottom: 12
         }}
       >
         <Box
@@ -429,7 +553,7 @@ const DomainExpansion = () => {
             position: "relative",
             width: "60%",
             height: "65%",
-            margin: "0 20vw 0 20vw",
+            margin: "0 20vw 0 20vw"
           }}
         >
           <Box
@@ -444,7 +568,7 @@ const DomainExpansion = () => {
                 sx={{
                   width: "4.375rem",
                   height: "4.375rem",
-                  flexShrink: "0",
+                  flexShrink: "0"
                 }}
               />
             </Box>
@@ -468,7 +592,7 @@ const DomainExpansion = () => {
               fontSize: "2.61244rem",
               fontStyle: "normal",
               fontWeight: "400",
-              lineHeight: "150%",
+              lineHeight: "150%"
             }}
           >
             “I&apos;m proud to showcase a series of recent branding projects
@@ -494,7 +618,7 @@ const DomainExpansion = () => {
           backgroundRepeat: "no-repeat",
           width: "auto",
           height: "20vh",
-          marginBottom: "15vh",
+          marginBottom: "15vh"
         }}
       />
       {/* HERO TWO */}
