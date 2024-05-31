@@ -476,7 +476,10 @@ const DomainExpansion = () => {
           backgroundSize: "100%",
           backgroundRepeat: "no-repeat",
           backgroundPosition: "center",
-          marginBottom: 12
+          marginBottom: 12,
+          [theme.breakpoints.down("sm")]:{
+            marginBottom: 6
+          }
         }}
       />
       {/* GRID IMAGES */}
