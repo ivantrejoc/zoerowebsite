@@ -1,4 +1,6 @@
 import { Box, Typography, Grid, Avatar } from "@mui/material";
+import { useTheme } from "@mui/material/styles";
+import { useMediaQuery } from "@mui/material";
 import ButtonArea from "../components/buttonArea/ButtonArea";
 import HeroTwoSection from "../components/heroTwoSection/HeroTwoSection";
 import xicon from "../assets/icons/x-icon.svg";
@@ -11,10 +13,12 @@ import seafenaGrid4 from "../assets/img/seafenaGrid4.png";
 import seaferaImage from "../assets/img/seaferaImage.png";
 import salahAvatar from "../assets/img/salah-moutaouakil.png";
 import binaryStripe from "../assets/img/binary-stripe.png";
-import { useTheme } from "@mui/material/styles";
+import seafenaBoat from "../assets/img/seafena-boat.png";
 
 const Seafena = () => {
   const theme = useTheme();
+  const isMobile = useMediaQuery(theme.breakpoints.down("md"));
+
   return (
     <Box
       id="contact-main-body"
@@ -459,25 +463,67 @@ const Seafena = () => {
         </Box>
       </Box>
       {/* SEAFENA IMAGE */}
-      <Box
-        id="seafena-image-container"
-        sx={{
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-          flexDirection: "column",
-          position: "relative",
-          width: "100%",
-          overflowX: "0px",
-          height: "100vh",
-          maxHeight: "100vh",
-          backgroundImage: `url(${seafenaBanner})`,
-          backgroundSize: "100%",
-          backgroundRepeat: "no-repeat",
-          backgroundPosition: "center",
-          marginBottom: 12
-        }}
-      />
+      {isMobile && (
+        <Box
+          id="seafena-image-container"
+          sx={{
+            background: "plum",
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            flexDirection: "column",
+            position: "relative",
+            width: "100%",
+            overflowX: "0px",
+            height: "110vh",
+            maxHeight: "110vh",
+            backgroundImage: `url(${seafenaBoat})`,
+            backgroundSize: "100%",
+            backgroundRepeat: "no-repeat",
+            backgroundPosition: "center",
+            marginBottom: 6,
+            [theme.breakpoints.down("sm")]: {
+              height: "84vh",
+              maxHeight: "84vh",
+              marginBottom: 6,
+            },
+            [theme.breakpoints.down("xs")]: {
+              height: "55vh",
+              maxHeight: "55vh"
+            },
+            [theme.breakpoints.down("xxs")]: {
+              height: "46vh",
+              maxHeight: "46vh"
+            }
+          }}
+        />
+      )}
+      {!isMobile && (
+        <Box
+          id="seafena-image-container"
+          sx={{
+            background: "plum",
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            flexDirection: "column",
+            position: "relative",
+            width: "100%",
+            overflowX: "0px",
+            height: "100vh",
+            maxHeight: "100vh",
+            backgroundImage: `url(${seafenaBanner})`,
+            backgroundSize: "100%",
+            backgroundRepeat: "no-repeat",
+            backgroundPosition: "center",
+            marginBottom: 12,
+            [theme.breakpoints.down("xxl")]: {
+              height: "97vh"
+            }
+          }}
+        />
+      )}
+
       {/* GRID IMAGES */}
       <Box
         id="grid-image-container"
