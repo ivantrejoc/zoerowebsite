@@ -578,7 +578,6 @@ const Teuser = () => {
               lg={5.78}
               xxl={5.838}
               sx={{
-                // background: "#414141",
                 backgroundImage: `url(${teuserGrid1})`,
                 backgroundSize: "80%",
                 backgroundRepeat: "no-repeat",
@@ -645,7 +644,26 @@ const Teuser = () => {
           overflowX: "0px",
           height: "135vh",
           maxHeight: "135vh",
-          marginBottom: 12
+          marginBottom: 12,
+          [theme.breakpoints.down("xxl")]: {
+            height: "128vh",
+            maxHeight: "128vh"
+          },
+          [theme.breakpoints.down("md")]: {
+            height: "112vh"
+          },
+          [theme.breakpoints.down("sm")]: {
+            height: "83vh",
+            marginBottom: 6
+          },
+          [theme.breakpoints.down("xs")]: {
+            height: "55vh",
+            marginBottom: 6
+          },
+          [theme.breakpoints.down("xxs")]: {
+            height: "46vh",
+            marginBottom: 6
+          }
         }}
       >
         <Box
