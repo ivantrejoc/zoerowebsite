@@ -20,7 +20,7 @@ const Footer = () => {
           height: "90vh"
         },
         [theme.breakpoints.down("sm")]: {
-          height: "60vh"
+          height: "61vh"
         }
       }}
     >
@@ -68,6 +68,11 @@ const Footer = () => {
             [theme.breakpoints.down("md")]: {
               width: "100%",
               height: "50%"
+            },
+            [theme.breakpoints.down("sm")]: {
+              width: "100%",
+              height: "52%",
+              marginTop: 2
             }
           }}
         >
@@ -79,7 +84,7 @@ const Footer = () => {
               },
               [theme.breakpoints.down("md")]: {
                 width: "33%",
-                marginTop: 0
+                marginTop: 2
               }
             }}
           >
