@@ -103,17 +103,15 @@ export default createTheme({
         }
       },
       dropDown: {
-        style:{
+        style: {
           width: "6rem",
           height: "3rem"
         }
       }
-
     }
   },
   breakpoints: {
     values: {
-      xxxs: 220,
       xxs: 321,
       xs: 376,
       sm: 577,
