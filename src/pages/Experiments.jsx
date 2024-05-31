@@ -643,15 +643,15 @@ const Experiments = () => {
             height: "78vh",
             maxHeight: "78vh"
           },
-          [theme.breakpoints.down("md")]: {
+          [theme.breakpoints.down("sm")]: {
             height: "62vh",
             maxHeight: "62vh"
           },
-          [theme.breakpoints.down("md")]: {
+          [theme.breakpoints.down("xs")]: {
             height: "77vh",
             maxHeight: "77vh"
           },
-          [theme.breakpoints.down("md")]: {
+          [theme.breakpoints.down("xxs")]: {
             height: "89vh",
             maxHeight: "89vh"
           }
@@ -777,9 +777,9 @@ const Experiments = () => {
               }
             }}
           >
-            “I'm proud to showcase a series of recent branding projects that we
+            “I&apos;m proud to showcase a series of recent branding projects that we
             passionately brought to life. Each project was approached with a
-            deep understanding of our clients' unique objectives. From crafting
+            deep understanding of our clients&apos; unique objectives. From crafting
             compelling visual identities to designing cohesive brand systems, we
             ensured that every element resonated authentically with our clients'
             target audiences.”
