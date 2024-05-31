@@ -21,21 +21,19 @@ const Terms = () => {
       }}
     >
       <Box
-        id="title-container"
+        id="terms-main-container"
         sx={{
-          background: "plum",
           display: "flex",
           justifyContent: "start",
           alignItems: "center",
           flexDirection: "column",
           position: "relative",
           width: "100%",
-          overflowX: "0px",
           marginBottom: 12
         }}
       >
         <Box
-          id="terms-container"
+          id="title-container"
           sx={{
             display: "flex",
             justifyContent: "start",
@@ -221,7 +219,13 @@ const Terms = () => {
               fontSize: "1.5625rem",
               fontStyle: "normal",
               fontWeight: "400",
-              lineHeight: "141.5%"
+              lineHeight: "141.5%",
+              [theme.breakpoints.down("sm")]: {
+                fontSize: "1.175rem"
+              },
+              [theme.breakpoints.down("xs")]: {
+                fontSize: "1rem"
+              }
             }}
           >
             Commodo volutpat placerat molestie morbi quis lorem ante
@@ -261,7 +265,13 @@ const Terms = () => {
               fontStyle: "normal",
               fontWeight: "600",
               lineHeight: "normal",
-              marginBottom: 3
+              marginBottom: 3,
+              [theme.breakpoints.down("sm")]: {
+                fontSize: "1.375rem"
+              },
+              [theme.breakpoints.down("xs")]: {
+                fontSize: "1.175rem"
+              }
             }}
           >
             Usage Settings
@@ -274,7 +284,13 @@ const Terms = () => {
               fontStyle: "normal",
               fontWeight: "400",
               lineHeight: "141.5%",
-              marginBottom: 1.5
+              marginBottom: 1.5,
+              [theme.breakpoints.down("sm")]: {
+                fontSize: "1.175rem"
+              },
+              [theme.breakpoints.down("xs")]: {
+                fontSize: "1rem"
+              }
             }}
           >
             Sagittis dolor id adipiscing euismod gravida nibh platea sapien,
@@ -297,7 +313,13 @@ const Terms = () => {
               fontSize: "1.5625rem",
               fontStyle: "normal",
               fontWeight: "400",
-              lineHeight: "141.5%"
+              lineHeight: "141.5%",
+              [theme.breakpoints.down("sm")]: {
+                fontSize: "1.175rem"
+              },
+              [theme.breakpoints.down("xs")]: {
+                fontSize: "1rem"
+              }
             }}
           >
             Nullam gravida nisl ultrices risus augue risus dolor dis.
