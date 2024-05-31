@@ -293,10 +293,26 @@ const Seafena = () => {
           flexDirection: "column",
           position: "relative",
           width: "100%",
-          overflowX: "0px",
-          height: "150vh",
-          maxHeight: "150vh",
-          marginBottom: 12
+          overflowX: "hidden",
+          height: "120vh",
+          maxHeight: "120vh",
+          marginBottom: 12,
+          [theme.breakpoints.down("md")]: {
+            height: "110vh",
+            maxHeight: "110vh"
+          },
+          [theme.breakpoints.down("sm")]: {
+            height: "83vh",
+            maxHeight: "83vh"
+          },
+          [theme.breakpoints.down("xs")]: {
+            height: "55vh",
+            maxHeight: "55vh"
+          },
+          [theme.breakpoints.down("xxs")]: {
+            height: "46vh",
+            maxHeight: "46vh"
+          }
         }}
       >
         <Box
@@ -313,8 +329,7 @@ const Seafena = () => {
             width: "86%",
             height: "100%",
             margin: "0 7vw 0 7vw",
-            maxHeight: "100%",
-            marginBottom: 12
+            maxHeight: "100%"
           }}
         />
       </Box>
