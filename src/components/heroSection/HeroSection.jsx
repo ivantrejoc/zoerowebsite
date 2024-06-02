@@ -6,7 +6,7 @@ const HeroSection = () => {
 
   return (
     <Box
-      sx={{        
+      sx={{
         display: "flex",
         justifyContent: "start",
         alignItems: "start",
@@ -32,7 +32,7 @@ const HeroSection = () => {
           [theme.breakpoints.down("xxxl")]: {
             fontSize: "10.275rem"
           },
-          
+
           [theme.breakpoints.down("xxl")]: {
             fontSize: "9rem"
           },
@@ -46,15 +46,14 @@ const HeroSection = () => {
             fontSize: "5.4375rem"
           },
           [theme.breakpoints.down("sm")]: {
-            fontSize: "2.7375rem"
+            fontSize: "3.3375rem"
           },
           [theme.breakpoints.down("xs")]: {
-            fontSize: "2.5375rem"
+            fontSize: "2.6375rem"
           },
           [theme.breakpoints.down("xxs")]: {
             fontSize: "2.2375rem"
           }
-
         }}
       >
         &nbsp;WE SOLVE THE &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;♦&nbsp;MILLENNIUM

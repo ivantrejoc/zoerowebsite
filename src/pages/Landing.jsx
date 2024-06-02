@@ -56,17 +56,13 @@ const Landing = () => {
           },
           [theme.breakpoints.down("md")]: {
             height: "70vh",
-            // backgroundPosition: "center",
-            // backgroundSize: "cover",
-            marginBottom: 6
+            marginBottom: 4
           },
           [theme.breakpoints.down("sm")]: {
-            height: "30vh",
-            // backgroundPosition: "center"
+            height: "30vh"
           },
           [theme.breakpoints.down("xs")]: {
-            height: "30vh",
-            // backgroundPosition: "center"
+            height: "30vh"
           }
         }}
       >

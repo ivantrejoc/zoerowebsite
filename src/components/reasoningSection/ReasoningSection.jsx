@@ -6,7 +6,7 @@ const ReasoningSection = () => {
   return (
     <Box
       id="reasoning"
-      sx={{
+      sx={{       
         display: "flex",
         justifyContent: "start",
         alignItems: "center",
@@ -16,15 +16,17 @@ const ReasoningSection = () => {
         height: "100vh",
         maxHeight: "100vh",
         marginTop: "1vh",
+        [theme.breakpoints.down("lg")]: {
+          height: "60vh"
+        },
         [theme.breakpoints.down("md")]: {
           height: "140vh",
           maxHeight: "140vh",
-          marginBottom: 10
+          marginBottom: 4
         },
         [theme.breakpoints.down("sm")]: {
-          height: "110vh",
-          maxHeight: "110vh",
-          marginBottom: 10
+          height: "80vh",
+          marginBottom: 3
         }
       }}
     >
@@ -38,7 +40,12 @@ const ReasoningSection = () => {
           width: "100vw",
           height: "10vh",
           padding: "10vh 0 10vh 0",
-          maxHeight: "100vh"
+          [theme.breakpoints.down("lg")]: {
+            padding: "5vh 0 5vh 0"
+          },
+          [theme.breakpoints.down("md")]: {
+            marginBottom: 2
+          }
         }}
       >
         <Typography
@@ -74,6 +81,9 @@ const ReasoningSection = () => {
           [theme.breakpoints.down("xl")]: {
             padding: "0 15vw 0 15vw"
           },
+          [theme.breakpoints.down("lg")]: {
+            height: "60vh"
+          },
           [theme.breakpoints.down("md")]: {
             flexDirection: "column",
             height: "100%",
@@ -82,14 +92,14 @@ const ReasoningSection = () => {
           [theme.breakpoints.down("sm")]: {
             justifyContent: "center",
             alignItems: "start",
-            padding: "0 3vw 0 3vw"
+            padding: "0 30vw 0 30vw",
+            height: "80vh"
           },
           [theme.breakpoints.down("xs")]: {
-            justifyContent: "center"
+            padding: "0 30vw 0 30vw"
           },
           [theme.breakpoints.down("xxs")]: {
-            justifyContent: "center",
-            padding: "0 8vw 0 8vw"
+            padding: "0 25vw 0 25vw"
           }
         }}
       >
@@ -100,7 +110,7 @@ const ReasoningSection = () => {
               margin: "0 11vw 0 11vw"
             },
             [theme.breakpoints.down("sm")]: {
-              margin: "0 5vw 0 5vw"
+              margin: "0 3vw 0 3vw"
             },
             [theme.breakpoints.down("xs")]: {
               margin: "0 0.02vw 0 0.02vw"

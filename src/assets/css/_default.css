@@ -18,25 +18,17 @@
   box-sizing: border-box;
 }
 
-/* Reasoning Styles */
-/* #reasoning-text {
-  width: 24.1875rem;
-  height: 10.1875rem;
-  flex-shrink: 0;
-  box-sizing: border-box;
-} */
 
-@media (max-width: 577px){
+@media (max-width: 576px){
   #reasoning-image{
-    width: 22.275rem;
-    height: 22.275rem;
+    width: 10.275rem;
+    height: 10.275rem;
   }
 }
 
-@media (max-width: 321px){
+@media (max-width: 377px){
   #reasoning-image{
-    width: 15.275rem;
-    height: 15.275rem;
+    
   }
 }
 

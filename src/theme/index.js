@@ -112,12 +112,12 @@ export default createTheme({
   },
   breakpoints: {
     values: {
-      xxs: 321,
-      xs: 377,
-      sm: 481,
+      xxs: 322,
+      xs: 426,
+      sm: 576,
       md: 769,
-      lg: 835,
-      xl: 1441,
+      lg: 993,
+      xl: 1201,
       xxl: 1531,
       xxxl: 1711
     }
