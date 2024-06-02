@@ -40,32 +40,33 @@ const Landing = () => {
           position: "relative",
           backgroundImage: `url(${mainBackground})`,
           backgroundRepeat: "no-repeat",
-          backgroundPosition: "cover",
+          backgroundPosition: "center",
+          backgroundSize: "cover",
           width: "100vw",
-          height: "80vh",
+          height: "70vh",
           maxHeight: "100vh",
           [theme.breakpoints.down("xxl")]: {
-            height: "90vh",
-            backgroundPosition: "center",
-            
-            
+            height: "90vh"
           },
           [theme.breakpoints.down("xl")]: {
-            fontSize: "7rem"
+            height: "85vh"
+          },
+          [theme.breakpoints.down("lg")]: {
+            height: "30vh"
           },
           [theme.breakpoints.down("md")]: {
             height: "70vh",
-            backgroundPosition: "center",
-            backgroundSize: "cover",
+            // backgroundPosition: "center",
+            // backgroundSize: "cover",
             marginBottom: 6
           },
           [theme.breakpoints.down("sm")]: {
-            height: "50vh",
-            backgroundPosition: "center"
+            height: "30vh",
+            // backgroundPosition: "center"
           },
           [theme.breakpoints.down("xs")]: {
             height: "30vh",
-            backgroundPosition: "center"
+            // backgroundPosition: "center"
           }
         }}
       >

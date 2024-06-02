@@ -6,7 +6,7 @@ const HeroSection = () => {
 
   return (
     <Box
-      sx={{
+      sx={{        
         display: "flex",
         justifyContent: "start",
         alignItems: "start",
@@ -29,17 +29,24 @@ const HeroSection = () => {
           width: "100%",
           marginTop: "2vh",
           whiteSpace: "pre-line",
+          [theme.breakpoints.down("xxxl")]: {
+            fontSize: "10.275rem"
+          },
+          
           [theme.breakpoints.down("xxl")]: {
             fontSize: "9rem"
           },
           [theme.breakpoints.down("xl")]: {
-            fontSize: "7rem"
+            fontSize: "8.5rem"
+          },
+          [theme.breakpoints.down("lg")]: {
+            fontSize: "5.3375rem"
           },
           [theme.breakpoints.down("md")]: {
             fontSize: "5.4375rem"
           },
           [theme.breakpoints.down("sm")]: {
-            fontSize: "2.9375rem"
+            fontSize: "2.7375rem"
           },
           [theme.breakpoints.down("xs")]: {
             fontSize: "2.5375rem"
