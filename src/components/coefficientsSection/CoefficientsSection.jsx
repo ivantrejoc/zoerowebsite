@@ -18,7 +18,10 @@ const CoefficientsSection = () => {
         position: "relative",
         marginBottom: "15vh",
         width: "100vw",
-        height: "100vh"
+        height: "100vh",
+        [theme.breakpoints.down("xs")]: {
+          marginBottom: 4
+        }
       }}
     >
       <Box

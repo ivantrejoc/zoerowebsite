@@ -76,7 +76,7 @@ const Landing = () => {
       {/* Binary Stripe */}
       <Box
         id="binary-stripe-container"
-        sx={{
+        sx={{          
           display: "flex",
           justifyContent: "start",
           alignItems: "center",
@@ -86,7 +86,27 @@ const Landing = () => {
           backgroundRepeat: "no-repeat",
           width: "100vw",
           height: "20vh",
-          marginBottom: "15vh"
+          marginBottom: "15vh",
+          [theme.breakpoints.down("md")]:{
+            marginBottom: 4,
+         height: "17vh"
+          },
+          [theme.breakpoints.down("sm")]:{
+            marginBottom: 4,
+         height: "13vh"
+          },
+          [theme.breakpoints.down("xs")]:{
+            marginBottom: 4,
+         height: "9vh"
+          },
+          [theme.breakpoints.down("xxs")]:{
+            marginBottom: 4,
+         height: "8vh"
+          },
+          [theme.breakpoints.down("xxxs")]:{
+            marginBottom: 4,
+         height: "7vh"
+          }
         }}
       />
       {/* Coeficients Section */}

@@ -10,7 +10,7 @@ const FieldsMedalsSection = () => {
   return (
     <Box
       id="fields-medals-container"
-      sx={{
+      sx={{        
         display: "flex",
         justifyContent: "start",
         alignItems: "center",
@@ -23,28 +23,35 @@ const FieldsMedalsSection = () => {
           marginBottom: "25vh",
         },
         [theme.breakpoints.down("md")]: {
-          height: "200vh",
-          marginBottom: "10vh"
+          height: "183vh",
+          marginBottom: 4
         },
         [theme.breakpoints.down("xs")]: {
-          height: "150vh"
+          height: "180vh"
         },
         [theme.breakpoints.down("xxs")]: {
-          height: "140vh"
+          height: "150vh"
+        },
+        [theme.breakpoints.down("xxxs")]: {
+          height: "130vh"
         },
         
       }}
     >
       <Box
         id="title-container"
-        sx={{
+        sx={{          
           display: "flex",
           justifyContent: "start",
           alignItems: "center",
           position: "relative",
           width: "100vw",
           height: "5vh",
-          padding: "10vh 0 10vh 0"
+          padding: "10vh 0 10vh 0",
+          [theme.breakpoints.down("md")]:{
+            padding: "5vh 0 5vh 0",
+            marginBottom: 2
+          }
         }}
       >
         <Typography
@@ -62,7 +69,7 @@ const FieldsMedalsSection = () => {
       </Box>
       <Box
         id="data-container"
-        sx={{
+        sx={{          
           display: "flex",
           justifyContent: "start",
           alignItems: "start",

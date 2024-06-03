@@ -9,7 +9,6 @@ const ButtonArea = () => {
     <Box
       id="button-container"
       sx={{
-        background: "plum",
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
@@ -25,7 +24,7 @@ const ButtonArea = () => {
         marginBottom: "20vh",
         [theme.breakpoints.down("md")]: {
           height: "30vh",
-          marginBottom: 4,
+          marginBottom: 4
         },
         [theme.breakpoints.down("xs")]: {
           height: "25vh"

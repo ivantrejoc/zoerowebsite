@@ -19,23 +19,28 @@ const ExperimentsSection = () => {
         alignItems: "center",
         flexDirection: "column",
         position: "relative",
+        overflow: "hidden",
         marginBottom: "15vh",
         width: "100%",
-        height: "140vh",
+        height: "120vh",
         [theme.breakpoints.down("xxl")]: {
           height: "120vh"
         },
         [theme.breakpoints.down("md")]: {
-          height: "220vh"
+          height: "221vh",
+          marginBottom: 4
         },
         [theme.breakpoints.down("sm")]: {
-          height: "171vh"
+          height: "173vh"
         },
         [theme.breakpoints.down("xs")]: {
-          height: "134.2vh"
+          height: "142vh"
         },
         [theme.breakpoints.down("xxs")]: {
-          height: "117.4vh"
+          height: "124vh"
+        },
+        [theme.breakpoints.down("xxxs")]: {
+          height: "113.5vh"
         }
       }}
     >
@@ -56,6 +61,9 @@ const ExperimentsSection = () => {
           },
           [theme.breakpoints.down("md")]: {
             gap: "20vw"
+          },
+          [theme.breakpoints.down("sm")]: {
+            padding: "5vh 0 5vh 0"
           },
           [theme.breakpoints.down("xs")]: {
             gap: "27vw"
@@ -128,12 +136,18 @@ const ExperimentsSection = () => {
             },
             [theme.breakpoints.down("sm")]: {
               gap: 2
+            },
+            [theme.breakpoints.down("xs")]: {
+              gap: 7
+            },
+            [theme.breakpoints.down("xxxs")]: {
+              gap: 1
             }
           }}
         >
           <Box
             id="left-images"
-            sx={{              
+            sx={{
               width: "50.225rem",
               height: "50.225rem",
               flexShrink: 0,
@@ -168,6 +182,7 @@ const ExperimentsSection = () => {
               width: "37.2rem",
               height: "100%",
               display: "flex",
+              overflow: "hidden",
               flexDirection: "column",
               justifyContent: "start",
               alignItems: "start",
@@ -184,6 +199,9 @@ const ExperimentsSection = () => {
               [theme.breakpoints.down("sm")]: {
                 height: "12rem",
                 gap: "0.5rem"
+              },
+              [theme.breakpoints.down("xs")]: {
+                height: "12rem"
               },
               [theme.breakpoints.down("xxs")]: {
                 height: "10rem"
@@ -260,7 +278,7 @@ const ExperimentsSection = () => {
                   [theme.breakpoints.down("md")]: {
                     flexDirection: "row",
                     width: "52%",
-                    height: "12rem"
+                    height: "7rem"
                   },
                   [theme.breakpoints.down("sm")]: {
                     height: "6rem",
@@ -268,11 +286,11 @@ const ExperimentsSection = () => {
                     gap: 1
                   },
                   [theme.breakpoints.down("xs")]: {
-                    width: "40.95%",
+                    width: "47.9%",
                     height: "5rem"
                   },
                   [theme.breakpoints.down("xxs")]: {
-                    width: "41.6%",
+                    width: "50.3%",
                     height: "4rem"
                   }
                 }}
@@ -286,18 +304,21 @@ const ExperimentsSection = () => {
                       height: "6.1rem"
                     },
                     [theme.breakpoints.down("md")]: {
-                      height: "10rem"
+                      height: "7rem"
                     },
                     [theme.breakpoints.down("sm")]: {
                       height: "6rem",
                       width: "8rem"
                     },
                     [theme.breakpoints.down("xs")]: {
-                      width: "5rem",
+                      width: "7rem",
                       height: "5rem"
                     },
                     [theme.breakpoints.down("xxs")]: {
                       height: "4rem"
+                    },
+                    [theme.breakpoints.down("xxxs")]: {
+                      width: "3.5rem"
                     }
                   }}
                 >
@@ -318,18 +339,21 @@ const ExperimentsSection = () => {
                       height: "9.45rem"
                     },
                     [theme.breakpoints.down("md")]: {
-                      height: "10rem"
+                      height: "7rem"
                     },
                     [theme.breakpoints.down("sm")]: {
                       height: "6rem",
                       width: "8rem"
                     },
                     [theme.breakpoints.down("xs")]: {
-                      width: "5rem",
+                      width: "7rem",
                       height: "5rem"
                     },
                     [theme.breakpoints.down("xxs")]: {
                       height: "4rem"
+                    },
+                    [theme.breakpoints.down("xxxs")]: {
+                      width: "3.5rem"
                     }
                   }}
                 >
@@ -352,11 +376,11 @@ const ExperimentsSection = () => {
                     height: "5.5rem"
                   },
                   [theme.breakpoints.down("xs")]: {
-                    width: "8.69rem",
+                    width: "11.49rem",
                     height: "6.5rem"
                   },
                   [theme.breakpoints.down("xxs")]: {
-                    width: "7.5rem",
+                    width: "50.3%",
                     height: "5.5rem"
                   }
                 }}
