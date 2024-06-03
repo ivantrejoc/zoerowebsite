@@ -50,7 +50,8 @@ const Experiments = () => {
           },
           [theme.breakpoints.down("md")]: {
             height: "45vh",
-            maxHeight: "45vh"
+            maxHeight: "45vh",
+            marginBottom: 4
           },
           [theme.breakpoints.down("sm")]: {
             height: "35vh",
@@ -280,19 +281,27 @@ const Experiments = () => {
           marginBottom: 12,
           [theme.breakpoints.down("xxl")]: {
             height: "100vh",
-            maxHeight: "100vh"
+            maxHeight: "100vh",
+            [theme.breakpoints.down("md")]: {
+              height: "81vh",
+              marginBottom: 4
+            }
           },
           [theme.breakpoints.down("sm")]: {
             height: "80vh",
             maxHeight: "80vh"
           },
           [theme.breakpoints.down("xs")]: {
-            height: "54.8vh",
-            maxHeight: "54.8vh"
+            height: "45vh",
+            maxHeight: "45vh"
           },
           [theme.breakpoints.down("xxs")]: {
-            height: "46.5vh",
-            maxHeight: "46.5vh"
+            height: "40vh",
+            maxHeight: "40vh"
+          },
+          [theme.breakpoints.down("xxxs")]: {
+            height: "34vh",
+            maxHeight: "34vh"
           }
         }}
       >
@@ -334,7 +343,8 @@ const Experiments = () => {
           },
           [theme.breakpoints.down("md")]: {
             height: "120vh",
-            maxHeight: "120vh"
+            maxHeight: "120vh",
+            marginBottom: 4
           },
           [theme.breakpoints.down("sm")]: {
             height: "59vh",
@@ -456,7 +466,20 @@ const Experiments = () => {
           backgroundSize: "100%",
           backgroundRepeat: "no-repeat",
           backgroundPosition: "center",
-          marginBottom: 12
+          marginBottom: 12,
+          [theme.breakpoints.down("md")]: {
+            height: "39vh",
+            marginBottom: 4
+          },
+          [theme.breakpoints.down("xs")]: {
+            height: "21vh"
+          },
+          [theme.breakpoints.down("xxs")]: {
+            height: "19vh"
+          },
+          [theme.breakpoints.down("xxxs")]: {
+            height: "16vh"
+          }
         }}
       />
       {/* GRID IMAGES */}
@@ -480,15 +503,17 @@ const Experiments = () => {
           [theme.breakpoints.down("md")]: {
             height: "341vh",
             maxHeight: "341vh",
-            marginBottom: 6
+            marginBottom: 4
           },
           [theme.breakpoints.down("xs")]: {
-            height: "200vh",
-            maxHeight: "200vh",
-            marginBottom: 6
+            height: "180vh",
+            maxHeight: "180vh"
           },
           [theme.breakpoints.down("xxs")]: {
-            height: "250vh"
+            height: "160vh"
+          },
+          [theme.breakpoints.down("xxxs")]: {
+            height: "140vh"
           }
         }}
       >
@@ -519,7 +544,7 @@ const Experiments = () => {
           >
             <Grid
               item
-              xxs={12}
+              xxxxs={12}
               lg={5.87}
               xxl={5.838}
               sx={{
@@ -531,7 +556,7 @@ const Experiments = () => {
             />
             <Grid
               item
-              xxs={12}
+              xxxxs={12}
               lg={5.87}
               xxl={5.838}
               sx={{
@@ -543,7 +568,7 @@ const Experiments = () => {
             />
             <Grid
               item
-              xxs={12}
+              xxxxs={12}
               lg={5.87}
               xxl={5.838}
               sx={{
@@ -555,7 +580,7 @@ const Experiments = () => {
             />
             <Grid
               item
-              xxs={12}
+              xxxxs={12}
               lg={5.87}
               xxl={5.838}
               sx={{
@@ -587,20 +612,21 @@ const Experiments = () => {
             maxHeight: "128vh"
           },
           [theme.breakpoints.down("md")]: {
-            height: "110vh",
-            maxHeight: "110vh"
-          },
-          [theme.breakpoints.down("sm")]: {
-            height: "83vh",
-            maxHeight: "83vh"
+            height: "81vh",
+            maxHeight: "81vh",
+            marginBottom: 4
           },
           [theme.breakpoints.down("xs")]: {
-            height: "55vh",
-            maxHeight: "55vh"
+            height: "45vh",
+            maxHeight: "45vh"
           },
           [theme.breakpoints.down("xxs")]: {
-            height: "46vh",
-            maxHeight: "46vh"
+            height: "40vh",
+            maxHeight: "40vh"
+          },
+          [theme.breakpoints.down("xxxs")]: {
+            height: "34vh",
+            maxHeight: "34vh"
           }
         }}
       >
@@ -640,20 +666,21 @@ const Experiments = () => {
             maxHeight: "62vh"
           },
           [theme.breakpoints.down("md")]: {
-            height: "78vh",
-            maxHeight: "78vh"
-          },
-          [theme.breakpoints.down("sm")]: {
-            height: "62vh",
-            maxHeight: "62vh"
+            height: "58vh",
+            maxHeight: "58vh",
+            marginBottom: 4
           },
           [theme.breakpoints.down("xs")]: {
-            height: "77vh",
-            maxHeight: "77vh"
+            height: "52vh",
+            maxHeight: "52vh"
           },
           [theme.breakpoints.down("xxs")]: {
-            height: "89vh",
-            maxHeight: "89vh"
+            height: "57vh",
+            maxHeight: "57vh"
+          },
+          [theme.breakpoints.down("xxxs")]: {
+            height: "65vh",
+            maxHeight: "65vh"
           }
         }}
       >
@@ -777,12 +804,12 @@ const Experiments = () => {
               }
             }}
           >
-            “I&apos;m proud to showcase a series of recent branding projects that we
-            passionately brought to life. Each project was approached with a
-            deep understanding of our clients&apos; unique objectives. From crafting
-            compelling visual identities to designing cohesive brand systems, we
-            ensured that every element resonated authentically with our clients'
-            target audiences.”
+            “I&apos;m proud to showcase a series of recent branding projects
+            that we passionately brought to life. Each project was approached
+            with a deep understanding of our clients&apos; unique objectives.
+            From crafting compelling visual identities to designing cohesive
+            brand systems, we ensured that every element resonated authentically
+            with our clients&apos; target audiences.”
           </Typography>
         </Box>
       </Box>
@@ -791,6 +818,7 @@ const Experiments = () => {
       <Box
         id="binary-stripe-container"
         sx={{
+          background: "plum",
           display: "flex",
           justifyContent: "start",
           alignItems: "center",
@@ -800,7 +828,20 @@ const Experiments = () => {
           backgroundRepeat: "no-repeat",
           width: "100vw",
           height: "20vh",
-          marginBottom: "15vh"
+          marginBottom: "15vh",
+          [theme.breakpoints.down("md")]: {
+            height: "12vh",
+            marginBottom: 4
+          },
+          [theme.breakpoints.down("xs")]: {
+            height: "7vh"
+          },
+          [theme.breakpoints.down("xxs")]: {
+            height: "6vh"
+          },
+          [theme.breakpoints.down("xxxs")]: {
+            height: "5vh"
+          }
         }}
       />
       {/* HERO TWO */}
