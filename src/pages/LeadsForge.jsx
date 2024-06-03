@@ -34,29 +34,25 @@ const LeadsForge = () => {
           position: "relative",
           width: "100%",
           overflowX: "0px",
-          height: "30vh",
-          maxHeight: "30vh",
+          height: "31vh",
+          maxHeight: "31vh",
           marginBottom: 12,
           [theme.breakpoints.down("xxl")]: {
             height: "39vh",
             maxHeight: "39vh"
           },
           [theme.breakpoints.down("md")]: {
-            height: "44vh",
-            maxHeight: "44vh",
-            marginBottom: 6
-          },
-          [theme.breakpoints.down("sm")]: {
-            height: "39vh",
-            maxHeight: "39vh"
+            height: "32vh",
+            maxHeight: "32vh",
+            marginBottom: 4
           },
           [theme.breakpoints.down("xs")]: {
-            height: "37vh",
-            maxHeight: "37vh"
+            height: "27vh",
+            maxHeight: "27vh"
           },
           [theme.breakpoints.down("xxs")]: {
-            height: "36vh",
-            maxHeight: "36vh"
+            height: "26vh",
+            maxHeight: "26vh"
           }
         }}
       >
@@ -283,24 +279,21 @@ const LeadsForge = () => {
           maxHeight: "120vh",
           marginBottom: 12,
           [theme.breakpoints.down("md")]: {
-            height: "100vh",
-            maxHeight: "100vh"
-          },
-          [theme.breakpoints.down("sm")]: {
-            height: "84vh",
-            maxHeight: "84vh"
-          },
-          [theme.breakpoints.down("sm")]: {
-            height: "83vh",
-            maxHeight: "83vh"
+            height: "82vh",
+            maxHeight: "82vh",
+            marginBottom: 4
           },
           [theme.breakpoints.down("xs")]: {
-            height: "55vh",
-            maxHeight: "55vh"
+            height: "45vh",
+            maxHeight: "45vh"
           },
           [theme.breakpoints.down("xxs")]: {
-            height: "46vh",
-            maxHeight: "46vh"
+            height: "40vh",
+            maxHeight: "40vh"
+          },
+          [theme.breakpoints.down("xxxs")]: {
+            height: "34vh",
+            maxHeight: "34vh"
           }
         }}
       >
@@ -341,21 +334,21 @@ const LeadsForge = () => {
             maxHeight: "120vh"
           },
           [theme.breakpoints.down("md")]: {
-            height: "208vh",
-            maxHeight: "208vh"
-          },
-          [theme.breakpoints.down("sm")]: {
-            height: "99vh",
-            maxHeight: "99vh",
-            marginBottom: 6
+            height: "150vh",
+            maxHeight: "150vh",
+            marginBottom: 4
           },
           [theme.breakpoints.down("xs")]: {
-            height: "77vh",
-            maxHeight: "77vh"
+            height: "54vh",
+            maxHeight: "54vh"
           },
           [theme.breakpoints.down("xxs")]: {
-            height: "87vh",
-            maxHeight: "87vh"
+            height: "56vh",
+            maxHeight: "56vh"
+          },
+          [theme.breakpoints.down("xxxs")]: {
+            height: "63vh",
+            maxHeight: "63vh"
           }
         }}
       >
@@ -465,10 +458,25 @@ const LeadsForge = () => {
           maxHeight: "60vh",
           marginBottom: 22,
           [theme.breakpoints.down("md")]: {
-            marginBottom: 10
+            height: "41vh",
+            maxHeight: "41vh",
+            marginBottom: 4
           },
           [theme.breakpoints.down("xs")]: {
-            marginBottom: 6
+            height: "22vh",
+            maxHeight: "22vh"
+          },
+          [theme.breakpoints.down("xxs")]: {
+            height: "20vh",
+            maxHeight: "20vh"
+          },
+          [theme.breakpoints.down("xxs")]: {
+            height: "20vh",
+            maxHeight: "20vh"
+          },
+          [theme.breakpoints.down("xxxs")]: {
+            height: "17vh",
+            maxHeight: "17vh"
           }
         }}
       >
@@ -503,7 +511,20 @@ const LeadsForge = () => {
           backgroundRepeat: "no-repeat",
           width: "100vw",
           height: "20vh",
-          marginBottom: "15vh"
+          marginBottom: "15vh",
+          [theme.breakpoints.down("md")]: {
+            height: "12vh",
+            marginBottom: 4
+          },
+          [theme.breakpoints.down("xs")]: {
+            height: "7vh"
+          },
+          [theme.breakpoints.down("xxs")]: {
+            height: "6vh"
+          },
+          [theme.breakpoints.down("xxxs")]: {
+            height: "5vh"
+          }
         }}
       />
       <HeroTwoSection />
