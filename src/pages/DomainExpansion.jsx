@@ -48,22 +48,17 @@ const DomainExpansion = () => {
             maxHeight: "36vh"
           },
           [theme.breakpoints.down("md")]: {
-            height: "41vh",
-            maxHeight: "41vh",
-            marginBottom: 6
-          },
-          [theme.breakpoints.down("sm")]: {
-            height: "35vh",
-            maxHeight: "35vh",
+            height: "29vh",
+            maxHeight: "29vh",
             marginBottom: 4
           },
           [theme.breakpoints.down("xs")]: {
-            height: "33vh",
-            maxHeight: "33vh"
+            height: "24vh",
+            maxHeight: "24vh"
           },
-          [theme.breakpoints.down("xxs")]: {
-            height: "36vh",
-            maxHeight: "36vh"
+          [theme.breakpoints.down("xxxs")]: {
+            height: "26vh",
+            maxHeight: "26vh"
           }
         }}
       >
@@ -299,20 +294,21 @@ const DomainExpansion = () => {
           maxHeight: "110vh",
           marginBottom: 12,
           [theme.breakpoints.down("md")]: {
-            height: "110vh",
-            maxHeight: "110vh"
-          },
-          [theme.breakpoints.down("sm")]: {
-            height: "83vh",
-            maxHeight: "83vh"
+            height: "81vh",
+            maxHeight: "81vh",
+            marginBottom: 4
           },
           [theme.breakpoints.down("xs")]: {
-            height: "55vh",
-            maxHeight: "55vh"
+            height: "45vh",
+            maxHeight: "45vh"
           },
           [theme.breakpoints.down("xxs")]: {
-            height: "46vh",
-            maxHeight: "46vh"
+            height: "40vh",
+            maxHeight: "40vh"
+          },
+          [theme.breakpoints.down("xxxs")]: {
+            height: "34vh",
+            maxHeight: "34vh"
           }
         }}
       >
@@ -353,22 +349,22 @@ const DomainExpansion = () => {
             maxHeight: "60vh"
           },
           [theme.breakpoints.down("md")]: {
-            height: "120vh",
-            maxHeight: "120vh"
-          },
-          [theme.breakpoints.down("sm")]: {
-            height: "59vh",
-            maxHeight: "59vh",
-            marginBottom: 6
-          },
-          [theme.breakpoints.down("xs")]: {
-            height: "49vh",
-            maxHeight: "49vh",
+            height: "86vh",
+            maxHeight: "86vh",
             marginBottom: 4
           },
+
+          [theme.breakpoints.down("xs")]: {
+            height: "30vh",
+            maxHeight: "30vh"
+          },
           [theme.breakpoints.down("xxs")]: {
-            height: "52vh",
-            maxHeight: "52vh"
+            height: "34vh",
+            maxHeight: "34vh"
+          },
+          [theme.breakpoints.down("xxxs")]: {
+            height: "37vh",
+            maxHeight: "37vh"
           }
         }}
       >
@@ -477,8 +473,18 @@ const DomainExpansion = () => {
           backgroundRepeat: "no-repeat",
           backgroundPosition: "center",
           marginBottom: 12,
-          [theme.breakpoints.down("sm")]: {
-            marginBottom: 6
+          [theme.breakpoints.down("md")]: {
+            height: "38vh",
+            marginBottom: 4
+          },
+          [theme.breakpoints.down("xs")]: {
+            height: "21vh"
+          },
+          [theme.breakpoints.down("xxs")]: {
+            height: "19vh"
+          },
+          [theme.breakpoints.down("xxxs")]: {
+            height: "16vh"
           }
         }}
       />
@@ -503,15 +509,19 @@ const DomainExpansion = () => {
           [theme.breakpoints.down("md")]: {
             height: "341vh",
             maxHeight: "341vh",
-            marginBottom: 6
+            marginBottom: 4
           },
           [theme.breakpoints.down("xs")]: {
-            height: "200vh",
-            maxHeight: "200vh",
-            marginBottom: 6
+            height: "190vh",
+            maxHeight: "190vh"
           },
           [theme.breakpoints.down("xxs")]: {
-            height: "250vh"
+            height: "164vh",
+            maxHeight: "164vh"
+          },
+          [theme.breakpoints.down("xxs")]: {
+            height: "140vh",
+            maxHeight: "140vh"
           }
         }}
       >
@@ -542,7 +552,7 @@ const DomainExpansion = () => {
           >
             <Grid
               item
-              xxs={12}
+              xxxxs={12}
               lg={5.87}
               xxl={5.838}
               sx={{
@@ -554,7 +564,7 @@ const DomainExpansion = () => {
             />
             <Grid
               item
-              xxs={12}
+              xxxxs={12}
               lg={5.87}
               xxl={5.838}
               sx={{
@@ -566,7 +576,7 @@ const DomainExpansion = () => {
             />
             <Grid
               item
-              xxs={12}
+              xxxxs={12}
               lg={5.87}
               xxl={5.838}
               sx={{
@@ -578,7 +588,7 @@ const DomainExpansion = () => {
             />
             <Grid
               item
-              xxs={12}
+              xxxxs={12}
               lg={5.87}
               xxl={5.838}
               sx={{
@@ -610,23 +620,17 @@ const DomainExpansion = () => {
             height: "128vh"
           },
           [theme.breakpoints.down("md")]: {
-            height: "111vh"
-          },
-          [theme.breakpoints.down("sm")]: {
-            height: "83vh",
-            marginBottom: 6
+            height: "81vh",
+            marginBottom: 4
           },
           [theme.breakpoints.down("xs")]: {
-            height: "54vh",
-            marginBottom: 6
-          },
-          [theme.breakpoints.down("xs")]: {
-            height: "54vh",
-            marginBottom: 6
+            height: "45vh"
           },
           [theme.breakpoints.down("xxs")]: {
-            height: "46vh",
-            marginBottom: 6
+            height: "40vh"
+          },
+          [theme.breakpoints.down("xxxs")]: {
+            height: "34vh"
           }
         }}
       >
@@ -667,20 +671,21 @@ const DomainExpansion = () => {
             maxHeight: "62vh"
           },
           [theme.breakpoints.down("md")]: {
-            height: "78vh",
-            maxHeight: "78vh"
-          },
-          [theme.breakpoints.down("sm")]: {
-            height: "62vh",
-            maxHeight: "62vh"
+            height: "50vh",
+            maxHeight: "50vh",
+            marginBottom: 4
           },
           [theme.breakpoints.down("xs")]: {
-            height: "77vh",
-            maxHeight: "77vh"
+            height: "51vh",
+            maxHeight: "51vh"
           },
           [theme.breakpoints.down("xxs")]: {
-            height: "89vh",
-            maxHeight: "89vh"
+            height: "56vh",
+            maxHeight: "56vh"
+          },
+          [theme.breakpoints.down("xxxs")]: {
+            height: "65vh",
+            maxHeight: "65vh"
           }
         }}
       >
@@ -819,6 +824,7 @@ const DomainExpansion = () => {
       <Box
         id="binary-stripe-container"
         sx={{
+          background: "plum",
           display: "flex",
           justifyContent: "start",
           alignItems: "center",
@@ -828,7 +834,20 @@ const DomainExpansion = () => {
           backgroundRepeat: "no-repeat",
           width: "auto",
           height: "20vh",
-          marginBottom: "15vh"
+          marginBottom: "15vh",
+          [theme.breakpoints.down("md")]: {
+            height: "12vh",
+            marginBottom: 4
+          },
+          [theme.breakpoints.down("xs")]: {
+            height: "7vh"
+          },
+          [theme.breakpoints.down("xxs")]: {
+            height: "6vh"
+          },
+          [theme.breakpoints.down("xxxs")]: {
+            height: "5vh"
+          }
         }}
       />
       {/* HERO TWO */}
