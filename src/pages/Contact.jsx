@@ -36,13 +36,16 @@ const Contact = () => {
           flexDirection: "column",
           position: "relative",
           width: "100%",
-          overflowX: "0px",
+          overflow: "hidden",
           height: "43vh",
           maxHeight: "43vh",
           marginBottom: 12,
           [theme.breakpoints.down("xxl")]: {
             height: "80vh",
             justifyContent: "center"
+          },
+          [theme.breakpoints.down("md")]: {
+            marginBottom: 4
           },
           [theme.breakpoints.down("sm")]: {
             height: "30vh"
@@ -121,10 +124,11 @@ const Contact = () => {
             marginBottom: 15
           },
           [theme.breakpoints.down("md")]: {
-            height: "198vh"
+            height: "165vh",
+            marginBottom: 4
           },
-          [theme.breakpoints.down("sm")]: {
-            height: "170vh"
+          [theme.breakpoints.down("xs")]: {
+            height: "145vh"
           }
         }}
       >
@@ -196,17 +200,17 @@ const Contact = () => {
                 height: "33vh"
               },
               [theme.breakpoints.down("md")]: {
-                height: "130vh"
+                height: "70vh",
+                marginBottom: 4
               },
-              [theme.breakpoints.down("sm")]: {
-                height: "80vh",
-                marginBottom: 3
+              [theme.breakpoints.down("xs")]: {
+                height: "55vh"
               }
             }}
           >
             <Grid
               item
-              xxs={12}
+              xxxs={12}
               lg={5.91}
               xxxl={5.93}
               sx={{
@@ -261,7 +265,7 @@ const Contact = () => {
             </Grid>
             <Grid
               item
-              xxs={12}
+              xxxs={12}
               lg={5.91}
               xxxl={5.93}
               sx={{
@@ -310,7 +314,7 @@ const Contact = () => {
             </Grid>
             <Grid
               item
-              xxs={12}
+              xxxs={12}
               lg={5.91}
               xxxl={5.93}
               sx={{
@@ -359,7 +363,7 @@ const Contact = () => {
             </Grid>
             <Grid
               item
-              xxs={12}
+              xxxs={12}
               lg={5.91}
               xxxl={5.93}
               sx={{
@@ -487,7 +491,20 @@ const Contact = () => {
           width: "100%",
           overflowX: "hidden",
           height: "20vh",
-          marginBottom: "15vh"
+          marginBottom: "15vh",
+          [theme.breakpoints.down("md")]: {
+            height: "12vh",
+            marginBottom: 4
+          },
+          [theme.breakpoints.down("xs")]: {
+            height: "7vh"
+          },
+          [theme.breakpoints.down("xxs")]: {
+            height: "6vh"
+          },
+          [theme.breakpoints.down("xxxs")]: {
+            height: "5vh"
+          }
         }}
       />
       {/* BUTTON AREA */}
@@ -508,7 +525,8 @@ const Contact = () => {
           height: "33vh",
           marginBottom: "20vh",
           [theme.breakpoints.down("md")]: {
-            height: "30vh"
+            height: "30vh",
+            marginBottom: 4
           },
           [theme.breakpoints.down("xs")]: {
             height: "25vh"
