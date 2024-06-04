@@ -52,22 +52,21 @@ const Seafena = () => {
             maxHeight: "36vh"
           },
           [theme.breakpoints.down("md")]: {
-            height: "40vh",
-            maxHeight: "40vh",
-            marginBottom: 6
-          },
-          [theme.breakpoints.down("sm")]: {
-            height: "35vh",
-            maxHeight: "35vh",
+            height: "30vh",
+            maxHeight: "30vh",
             marginBottom: 4
           },
           [theme.breakpoints.down("xs")]: {
-            height: "33vh",
-            maxHeight: "33vh"
+            height: "25vh",
+            maxHeight: "25vh"
           },
           [theme.breakpoints.down("xxs")]: {
-            height: "32vh",
-            maxHeight: "32vh"
+            height: "23vh",
+            maxHeight: "23vh"
+          },
+          [theme.breakpoints.down("xxxs")]: {
+            height: "23vh",
+            maxHeight: "23vh"
           }
         }}
       >
@@ -288,6 +287,7 @@ const Seafena = () => {
           </Box>
         </Box>
       </Box>
+      {/* MAIN IMAGE */}
       <Box
         id="main-image-container"
         sx={{
@@ -302,20 +302,21 @@ const Seafena = () => {
           maxHeight: "120vh",
           marginBottom: 12,
           [theme.breakpoints.down("md")]: {
-            height: "110vh",
-            maxHeight: "110vh"
-          },
-          [theme.breakpoints.down("sm")]: {
-            height: "83vh",
-            maxHeight: "83vh"
+            height: "82vh",
+            maxHeight: "82vh",
+            marginBottom: 4
           },
           [theme.breakpoints.down("xs")]: {
-            height: "55vh",
-            maxHeight: "55vh"
+            height: "45vh",
+            maxHeight: "45vh"
           },
           [theme.breakpoints.down("xxs")]: {
-            height: "46vh",
-            maxHeight: "46vh"
+            height: "40vh",
+            maxHeight: "40vh"
+          },
+          [theme.breakpoints.down("xxxs")]: {
+            height: "34vh",
+            maxHeight: "34vh"
           }
         }}
       >
@@ -356,22 +357,22 @@ const Seafena = () => {
             maxHeight: "69vh"
           },
           [theme.breakpoints.down("md")]: {
-            height: "131vh",
-            maxHeight: "131vh"
-          },
-          [theme.breakpoints.down("sm")]: {
-            height: "70vh",
-            maxHeight: "70vh",
-            marginBottom: 6
+            height: "100vh",
+            maxHeight: "100vh",
+            marginBottom: 4
           },
           [theme.breakpoints.down("xs")]: {
-            height: "49vh",
-            maxHeight: "49vh",
+            height: "30vh",
+            maxHeight: "30vh",
             marginBottom: 4
           },
           [theme.breakpoints.down("xxs")]: {
-            height: "56vh",
-            maxHeight: "56vh"
+            height: "35vh",
+            maxHeight: "35vh"
+          },
+          [theme.breakpoints.down("xxxs")]: {
+            height: "41vh",
+            maxHeight: "41vh"
           }
         }}
       >
@@ -480,19 +481,19 @@ const Seafena = () => {
             backgroundSize: "100%",
             backgroundRepeat: "no-repeat",
             backgroundPosition: "center",
-            marginBottom: 6,
-            [theme.breakpoints.down("sm")]: {
-              height: "84vh",
-              maxHeight: "84vh",
-              marginBottom: 6
-            },
+            marginBottom: 4,
+
             [theme.breakpoints.down("xs")]: {
-              height: "55vh",
-              maxHeight: "55vh"
+              height: "45vh",
+              maxHeight: "45vh"
             },
             [theme.breakpoints.down("xxs")]: {
-              height: "46vh",
-              maxHeight: "46vh"
+              height: "40vh",
+              maxHeight: "40vh"
+            },
+            [theme.breakpoints.down("xxxs")]: {
+              height: "34vh",
+              maxHeight: "34vh"
             }
           }}
         />
@@ -519,7 +520,8 @@ const Seafena = () => {
               height: "96vh"
             },
             [theme.breakpoints.down("md")]: {
-              height: "84vh"
+              height: "84vh",
+              marginBottom: 4
             }
           }}
         />
@@ -544,22 +546,21 @@ const Seafena = () => {
           },
 
           [theme.breakpoints.down("md")]: {
-            height: "390vh",
-            maxHeight: "390vh",
-            marginBottom: 6
-          },
-          [theme.breakpoints.down("sm")]: {
-            height: "360vh",
-            maxHeight: "360vh",
-            marginBottom: 6
+            height: "343vh",
+            maxHeight: "343vh",
+            marginBottom: 4
           },
           [theme.breakpoints.down("xs")]: {
-            height: "200vh",
-            maxHeight: "200vh",
-            marginBottom: 6
+            height: "170vh",
+            maxHeight: "170vh"
           },
           [theme.breakpoints.down("xxs")]: {
-            height: "250vh"
+            height: "160vh",
+            maxHeight: "160vh"
+          },
+          [theme.breakpoints.down("xxxs")]: {
+            height: "140vh",
+            maxHeight: "140vh"
           }
         }}
       >
@@ -578,7 +579,7 @@ const Seafena = () => {
           <Grid container gap={5} sx={{ height: "100%" }}>
             <Grid
               item
-              xxs={12}
+              xxxxs={12}
               lg={5.783}
               xxl={5.838}
               sx={{
@@ -590,7 +591,7 @@ const Seafena = () => {
             />
             <Grid
               item
-              xxs={12}
+              xxxxs={12}
               lg={5.783}
               xxl={5.838}
               sx={{
@@ -602,7 +603,7 @@ const Seafena = () => {
             />
             <Grid
               item
-              xxs={12}
+              xxxxs={12}
               lg={5.783}
               xxl={5.838}
               sx={{
@@ -614,7 +615,7 @@ const Seafena = () => {
             />
             <Grid
               item
-              xxs={12}
+              xxxxs={12}
               lg={5.783}
               xxl={5.838}
               sx={{
@@ -643,19 +644,17 @@ const Seafena = () => {
           maxHeight: "100vh",
           marginBottom: 12,
           [theme.breakpoints.down("md")]: {
-            height: "87vh"
-          },
-          [theme.breakpoints.down("sm")]: {
-            height: "65vh",
-            marginBottom: 6
+            height: "63vh",
+            marginBottom: 4
           },
           [theme.breakpoints.down("xs")]: {
-            height: "42vh",
-            marginBottom: 6
+            height: "35vh"
           },
           [theme.breakpoints.down("xxs")]: {
-            height: "36vh",
-            marginBottom: 6
+            height: "31vh"
+          },
+          [theme.breakpoints.down("xxxs")]: {
+            height: "26vh"
           }
         }}
       >
@@ -696,20 +695,21 @@ const Seafena = () => {
             maxHeight: "62vh"
           },
           [theme.breakpoints.down("md")]: {
-            height: "78vh",
-            maxHeight: "78vh"
-          },
-          [theme.breakpoints.down("sm")]: {
-            height: "62vh",
-            maxHeight: "62vh"
+            height: "56vh",
+            maxHeight: "56vh",
+            marginBottom: 4
           },
           [theme.breakpoints.down("xs")]: {
-            height: "71vh",
-            maxHeight: "71vh"
+            height: "47vh",
+            maxHeight: "47vh"
           },
           [theme.breakpoints.down("xxs")]: {
-            height: "83vh",
-            maxHeight: "83vh"
+            height: "52vh",
+            maxHeight: "52vh"
+          },
+          [theme.breakpoints.down("xxxs")]: {
+            height: "61vh",
+            maxHeight: "61vh"
           }
         }}
       >
@@ -843,86 +843,12 @@ const Seafena = () => {
           </Typography>
         </Box>
       </Box>
-      {/* <Box
-        id="testimony-container"
-        sx={{
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-          flexDirection: "column",
-          position: "relative",
-          width: "100%",
-          overflowX: "0px",
-          height: "100vh",
-          maxHeight: "100vh",
-          marginBottom: 12
-        }}
-      >
-        <Box
-          sx={{
-            display: "flex",
-            justifyContent: "stretch",
-            alignItems: "start",
-            flexDirection: "column",
-            position: "relative",
-            width: "60%",
-            height: "65%",
-            margin: "0 20vw 0 20vw"
-          }}
-        >
-          <Box
-            id="client-avatar-container"
-            sx={{ display: "flex", gap: 2, marginBottom: 2 }}
-          >
-            <Box id="client-photo-container">
-              <Avatar
-                alt="bachir-rzama"
-                src={salahAvatar}
-                variant="rounded"
-                sx={{
-                  width: "4.375rem",
-                  height: "4.375rem",
-                  flexShrink: "0"
-                }}
-              />
-            </Box>
-            <Box id="client-name-container">
-              <p id="name">SALAH MOUTAOUAKIL</p>
-              <Typography
-                variant="workPosition"
-                component="p"
-                sx={{ margin: 0 }}
-              >
-                CEO & Founder
-              </Typography>
-            </Box>
-          </Box>
-          <Typography
-            variant="text"
-            component="p"
-            sx={{
-              color: "#fff",
-              fontFamily: "Urbanist",
-              fontSize: "2.61244rem",
-              fontStyle: "normal",
-              fontWeight: "400",
-              lineHeight: "150%"
-            }}
-          >
-            &quot;As CEO, I see our path much like navigating the vast ocean,
-            constantly adjusting to the winds of market trends and technological
-            shifts. Our collaboration with Zoero has been pivotal in developing
-            our innovative digital product, blending their tech prowess with our
-            industry insights to forge ahead into new waters of opportunity and
-            growth.&quot;
-          </Typography>
-        </Box>
-      </Box> */}
       <ButtonArea />
       {/* BINARY STRIPE */}
       <Box
         id="binary-stripe-container"
         sx={{
+          background: "plum",
           display: "flex",
           justifyContent: "start",
           alignItems: "center",
@@ -932,7 +858,23 @@ const Seafena = () => {
           backgroundRepeat: "no-repeat",
           width: "auto",
           height: "20vh",
-          marginBottom: "15vh"
+          marginBottom: "15vh",
+          [theme.breakpoints.down("md")]:{
+            height: "12vh",
+            marginBottom: 4
+          },
+          [theme.breakpoints.down("xs")]:{
+            height: "7vh",
+            
+          },
+          [theme.breakpoints.down("xxs")]:{
+            height: "6vh",
+            
+          },
+          [theme.breakpoints.down("xxxs")]:{
+            height: "5vh",
+            
+          }
         }}
       />
       {/* HERO TWO */}
