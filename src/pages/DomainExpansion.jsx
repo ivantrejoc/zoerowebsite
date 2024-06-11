@@ -202,17 +202,18 @@ const DomainExpansion = () => {
           </Box>
           <Box
             sx={{
+              marginTop: 7,
               width: "30%",
-              height: "5vh",
+              height: "10vh",
               display: "flex",
               gap: 6,
               [theme.breakpoints.down("xxl")]: {
                 width: "40%",
-                height: "6vh"
+                height: "12vh"
               },
               [theme.breakpoints.down("md")]: {
                 width: "100%",
-                height: "9vh"
+                height: "15vh"
               },
               [theme.breakpoints.down("sm")]: {
                 gap: 10
@@ -532,7 +533,7 @@ const DomainExpansion = () => {
             alignItems: "start",
             flexDirection: "column",
             position: "relative",
-            width: "86%",
+            width: "100%",
             height: "100%",
             margin: "0 7vw 0 7vw"
           }}
@@ -663,15 +664,15 @@ const DomainExpansion = () => {
           position: "relative",
           width: "100%",
           overflowX: "hidden",
-          height: "64vh",
-          maxHeight: "64vh",
+          height: "80vh",
+          maxHeight: "80vh",
           marginBottom: 12,
           [theme.breakpoints.down("xxl")]: {
-            height: "62vh",
-            maxHeight: "62vh"
+            height: "75vh",
+            maxHeight: "75vh"
           },
           [theme.breakpoints.down("md")]: {
-            height: "50vh",
+            height: "vh",
             maxHeight: "50vh",
             marginBottom: 4
           },
@@ -824,7 +825,6 @@ const DomainExpansion = () => {
       <Box
         id="binary-stripe-container"
         sx={{
-          background: "plum",
           display: "flex",
           justifyContent: "start",
           alignItems: "center",
