@@ -102,6 +102,7 @@ const LeadsForge = () => {
                 fontStyle: "normal",
                 fontWeight: "700",
                 lineHeight: "100%",
+                whiteSpace: "nowrap",
                 [theme.breakpoints.down("md")]: {
                   width: "45%",
                   fontSize: "2.825rem"
@@ -187,17 +188,18 @@ const LeadsForge = () => {
           </Box>
           <Box
             sx={{
+              marginTop: 5,
               width: "30%",
-              height: "5vh",
+              height: "15vh",
               display: "flex",
               gap: 6,
               [theme.breakpoints.down("xxl")]: {
                 width: "40%",
-                height: "6vh"
+                height: "18vh"
               },
               [theme.breakpoints.down("md")]: {
                 width: "100%",
-                height: "9vh"
+                height: "15vh"
               },
               [theme.breakpoints.down("sm")]: {
                 gap: 10
