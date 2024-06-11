@@ -571,7 +571,7 @@ const Seafena = () => {
             alignItems: "start",
             flexDirection: "column",
             position: "relative",
-            width: "86%",
+            width: "100%",
             height: "100%",
             margin: "0 7vw 0 7vw"
           }}
@@ -848,7 +848,6 @@ const Seafena = () => {
       <Box
         id="binary-stripe-container"
         sx={{
-          background: "plum",
           display: "flex",
           justifyContent: "start",
           alignItems: "center",
