@@ -18,7 +18,7 @@ const CoefficientsSection = () => {
         position: "relative",
         marginBottom: "15vh",
         width: "100vw",
-        height: "100vh",
+        height: "80vh",
         [theme.breakpoints.down("xs")]: {
           marginBottom: 4
         }

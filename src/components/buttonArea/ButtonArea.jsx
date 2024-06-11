@@ -20,8 +20,8 @@ const ButtonArea = () => {
         backgroundPosition: "center",
         paddingTop: "2vh",
         width: "100%",
-        height: "33vh",
-        marginBottom: "20vh",
+        height: "22vh",
+        marginBottom: "12vh",
         [theme.breakpoints.down("md")]: {
           height: "30vh",
           marginBottom: 4

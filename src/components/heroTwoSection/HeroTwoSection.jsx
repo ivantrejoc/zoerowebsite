@@ -18,7 +18,7 @@ const HeroTwoSection = () => {
         height: "40vh",
         maxHeight: "40vh",
         paddingLeft: "8.25vw",
-        marginBottom: "5vh",
+        marginBottom: "3vh",
         [theme.breakpoints.down("xxl")]: {
           height: "50vh",
           maxHeight: "50vh",
@@ -112,6 +112,8 @@ const HeroTwoSection = () => {
         <Box
           id="avatar-container"
           sx={{
+            width: "38%",
+            height: "100vh",
             display: "flex",
             justifyContent: "center",
             alignItems: "center",
@@ -191,4 +193,5 @@ const HeroTwoSection = () => {
     </Box>
   );
 };
+
 export default HeroTwoSection;
