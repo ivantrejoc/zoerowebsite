@@ -37,8 +37,8 @@ const Contact = () => {
           position: "relative",
           width: "100%",
           overflow: "hidden",
-          height: "43vh",
-          maxHeight: "43vh",
+          height: "35vh",
+          maxHeight: "35vh",
           marginBottom: 12,
           [theme.breakpoints.down("xxl")]: {
             height: "80vh",
@@ -86,7 +86,7 @@ const Contact = () => {
                 fontSize: "9rem"
               },
               [theme.breakpoints.down("xl")]: {
-                fontSize: "7rem"
+                fontSize: "6.5rem"
               },
               [theme.breakpoints.down("md")]: {
                 fontSize: "5.4375rem"
@@ -121,7 +121,7 @@ const Contact = () => {
           marginBottom: 10,
           [theme.breakpoints.down("xxl")]: {
             height: "135vh",
-            marginBottom: 15
+            marginBottom: 20
           },
           [theme.breakpoints.down("md")]: {
             height: "165vh",
@@ -192,7 +192,7 @@ const Contact = () => {
             columnGap={2}
             sx={{
               width: "100%",
-              height: "25vh",
+              height: "40vh",
               padding: 0,
               overflowX: "hidden",
               marginBottom: 10,
@@ -211,7 +211,7 @@ const Contact = () => {
             <Grid
               item
               xxxs={12}
-              lg={5.91}
+              lg={5.50}
               xxxl={5.93}
               sx={{
                 height: "fit-content",
@@ -266,7 +266,7 @@ const Contact = () => {
             <Grid
               item
               xxxs={12}
-              lg={5.91}
+              lg={5.50}
               xxxl={5.93}
               sx={{
                 height: "fit-content",
@@ -315,7 +315,7 @@ const Contact = () => {
             <Grid
               item
               xxxs={12}
-              lg={5.91}
+              lg={5.50}
               xxxl={5.93}
               sx={{
                 height: "fit-content",
@@ -364,7 +364,7 @@ const Contact = () => {
             <Grid
               item
               xxxs={12}
-              lg={5.91}
+              lg={5.50}
               xxxl={5.93}
               sx={{
                 height: "fit-content",
