@@ -17,7 +17,7 @@ const HeroSection = () => {
         margin: "0 5vw 0 5vw",
         maxHeight: "120vh",
         [theme.breakpoints.down("xxl")]: {
-          height: "80vh",
+          height: "120vh",
           justifyContent: "center"
         }
       }}
@@ -26,7 +26,7 @@ const HeroSection = () => {
         variant="h1"
         component="h1"
         sx={{
-          width: "100%",
+          textAlign: "center",
           marginTop: "2vh",
           whiteSpace: "pre-line",
           [theme.breakpoints.down("xxxl")]: {
@@ -37,7 +37,7 @@ const HeroSection = () => {
             fontSize: "9rem"
           },
           [theme.breakpoints.down("xl")]: {
-            fontSize: "8.5rem"
+            fontSize: "6rem"
           },
           [theme.breakpoints.down("lg")]: {
             fontSize: "5.3375rem"

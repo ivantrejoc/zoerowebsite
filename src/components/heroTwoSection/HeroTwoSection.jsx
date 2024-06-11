@@ -112,7 +112,7 @@ const HeroTwoSection = () => {
         <Box
           id="avatar-container"
           sx={{
-            width: "38%",
+            width: "auto",
             height: "100vh",
             display: "flex",
             justifyContent: "center",
@@ -158,6 +158,7 @@ const HeroTwoSection = () => {
                 letterSpacing: "0.15rem",
                 textTransform: "uppercase",
                 marginBottom: "0.5rem",
+                whiteSpace: "nowrap",
                 [theme.breakpoints.down("md")]: {
                   fontSize: "0.7738rem !important"
                 },
@@ -165,7 +166,6 @@ const HeroTwoSection = () => {
                   fontSize: "0.638rem !important"
                 },
                 [theme.breakpoints.down("xs")]: {
-                  fontSize: "0.36175rem !important",
                   marginBottom: "0.2rem"
                 }
               }}

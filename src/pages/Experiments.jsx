@@ -140,25 +140,25 @@ const Experiments = () => {
           <Box
             sx={{
               width: "60%",
-              height: "12vh",
+              height: "24vh",
               display: "flex",
               flexDirection: "column",
               marginBottom: 2,
               [theme.breakpoints.down("xxl")]: {
                 width: "80%",
-                height: "14vh",
+                height: "20vh",
                 marginBottom: 2
               },
               [theme.breakpoints.down("md")]: {
                 width: "100%",
-                height: "15vh"
+                height: "21vh"
               },
               [theme.breakpoints.down("sm")]: {
                 width: "100%",
-                height: "10vh"
+                height: "16vh"
               },
               [theme.breakpoints.down("xs")]: {
-                height: "12vh",
+                height: "18vh",
                 marginBottom: 1
               }
             }}
@@ -466,7 +466,7 @@ const Experiments = () => {
           backgroundSize: "100%",
           backgroundRepeat: "no-repeat",
           backgroundPosition: "center",
-          marginBottom: 12,
+          marginBottom: 2,
           [theme.breakpoints.down("md")]: {
             height: "39vh",
             marginBottom: 4
@@ -493,13 +493,12 @@ const Experiments = () => {
           position: "relative",
           width: "100%",
           overflowX: "0px",
-          height: "130vh",
-          maxHeight: "130vh",
-          marginBottom: 12,
+          height: "120vh",
+          maxHeight: "120vh",
+          marginBottom: 6,
           [theme.breakpoints.down("xxl")]: {
-            height: "110vh"
+            height: "120vh"
           },
-
           [theme.breakpoints.down("md")]: {
             height: "341vh",
             maxHeight: "341vh",
@@ -524,7 +523,7 @@ const Experiments = () => {
             alignItems: "start",
             flexDirection: "column",
             position: "relative",
-            width: "86%",
+            width: "100%",
             height: "100%",
             margin: "0 7vw 0 7vw"
           }}
@@ -544,48 +543,48 @@ const Experiments = () => {
           >
             <Grid
               item
-              xxxxs={12}
+              xs={12}
               lg={5.87}
               xxl={5.838}
               sx={{
                 backgroundImage: `url(${exeGrid1})`,
-                backgroundSize: "100%",
+                backgroundSize: "cover",
                 backgroundRepeat: "no-repeat",
                 backgroundPosition: "center"
               }}
             />
             <Grid
               item
-              xxxxs={12}
+              xs={12}
               lg={5.87}
               xxl={5.838}
               sx={{
                 backgroundImage: `url(${exeGrid2})`,
-                backgroundSize: "100%",
+                backgroundSize: "cover",
                 backgroundRepeat: "no-repeat",
                 backgroundPosition: "center"
               }}
             />
             <Grid
               item
-              xxxxs={12}
+              xs={12}
               lg={5.87}
               xxl={5.838}
               sx={{
                 backgroundImage: `url(${exeGrid3})`,
-                backgroundSize: "100%",
+                backgroundSize: "cover",
                 backgroundRepeat: "no-repeat",
                 backgroundPosition: "center"
               }}
             />
             <Grid
               item
-              xxxxs={12}
+              xs={12}
               lg={5.87}
               xxl={5.838}
               sx={{
                 backgroundImage: `url(${exeGrid4})`,
-                backgroundSize: "100%",
+                backgroundSize: "cover",
                 backgroundRepeat: "no-repeat",
                 backgroundPosition: "center"
               }}
@@ -593,6 +592,7 @@ const Experiments = () => {
           </Grid>
         </Box>
       </Box>
+
       {/* SCREENSHOTS SECTION */}
       <Box
         id="screenshots-container"
@@ -606,7 +606,7 @@ const Experiments = () => {
           overflowX: "0px",
           height: "135vh",
           maxHeight: "135vh",
-          marginBottom: 12,
+          marginBottom: 14,
           [theme.breakpoints.down("xxl")]: {
             height: "128vh",
             maxHeight: "128vh"
@@ -660,7 +660,7 @@ const Experiments = () => {
           overflowX: "0px",
           height: "65vh",
           maxHeight: "65vh",
-          marginBottom: 12,
+          marginBottom: 30,
           [theme.breakpoints.down("xxl")]: {
             height: "62vh",
             maxHeight: "62vh"
@@ -818,7 +818,6 @@ const Experiments = () => {
       <Box
         id="binary-stripe-container"
         sx={{
-          background: "plum",
           display: "flex",
           justifyContent: "start",
           alignItems: "center",
