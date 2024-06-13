@@ -1,5 +1,6 @@
-import "../assets/css/_default.css";
+import { useEffect, useRef, useState } from "react";
 import { Box, useTheme } from "@mui/material";
+import { gsap } from "gsap";
 import mainBackground from "../assets/img/vector-103-stroke.png";
 import HeroSection from "../components/heroSection/HeroSection.jsx";
 import ReasoningSection from "../components/reasoningSection/ReasoningSection.jsx";
@@ -12,6 +13,31 @@ import HeroTwoSection from "../components/heroTwoSection/HeroTwoSection.jsx";
 
 const Landing = () => {
   const theme = useTheme();
+
+  const boxRef = useRef(null);
+
+  useEffect(() => {
+      const boxElement = boxRef.current;
+
+      gsap.fromTo(boxElement, {
+          opacity: 0,
+          scale: 0.9
+      }, {
+          opacity: 1,
+          scale: 1,
+          duration: 1.5,
+          ease: "power2.out"
+      });
+      
+      return () => {
+          gsap.to(boxElement, {
+              opacity: 0,
+              scale: 0.9,
+              duration: 1.5,
+              ease: "power2.in"
+          });
+      };
+  }, []); 
 
   return (
     <Box
@@ -27,34 +53,28 @@ const Landing = () => {
     >
       {/* Hero Section */}
       <Box
+        ref={boxRef}
         id="hero-container"
-        sx={{
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-          flexDirection: "column",
-          backgroundImage: `url(${mainBackground})`,
-          backgroundRepeat: "no-repeat",
-          backgroundPosition: "center",
-          backgroundSize: "cover",
-          width: "100%",
-          height: {
-            xs: "30vh",
-            sm: "30vh",
-            md: "70vh",
-            lg: "30vh",
-            xl: "85vh",
-            xxl: "90vh",
-          },
-          maxHeight: "100vh",
-          marginBottom: {
-            md: 4,
-          },
+        style={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            flexDirection: "column",
+            backgroundImage: `url(${mainBackground})`,
+            backgroundRepeat: "no-repeat",
+            backgroundPosition: "center",
+            backgroundSize: "cover",
+            width: "100%",
+            height: "70vh",
+            maxHeight: "100vh",
+            marginBottom: "2rem", 
+            opacity: 0
         }}
       >
         <HeroSection />
       </Box>
 
+      {/* Reasoning Section */}
       <Box sx={{ width: "100%", marginBottom: 4 }}>
         <ReasoningSection />
       </Box>
