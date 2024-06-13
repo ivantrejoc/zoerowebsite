@@ -1,12 +1,35 @@
+import React, {useEffect} from "react";
 import { Box, Typography, Link } from "@mui/material";
 import DropdownMenu from "../dropdownMenu/DropdownMenu";
 import { useMediaQuery } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
 import zoeroLogo from "../../assets/img/zoero-logo.svg";
+import { gsap } from 'gsap';
 
 const Header = () => {
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("md"));
+
+  useEffect(() => {
+    const logo = document.getElementById('logo');
+
+    logo.addEventListener('mouseenter', () => {
+      gsap.to(logo, { scale: 1.2, duration: 0.3, ease: "power1.out" });
+    });
+
+    logo.addEventListener('mouseleave', () => {
+      gsap.to(logo, { scale: 1, duration: 0.3, ease: "power1.out" });
+    });
+
+    return () => {
+      logo.removeEventListener('mouseenter', () => {
+        gsap.to(logo, { scale: 1.2, duration: 0.3, ease: "power1.out" });
+      });
+      logo.removeEventListener('mouseleave', () => {
+        gsap.to(logo, { scale: 1, duration: 0.3, ease: "power1.out" });
+      });
+    };
+  }, []);
   return (
     <Box
       id="header"
@@ -25,7 +48,7 @@ const Header = () => {
         }
       }}
     >
-      <Box
+       <Box
         id="logo-container"
         sx={{
           display: "flex",
@@ -35,13 +58,13 @@ const Header = () => {
           width: "20%",
           height: "100%",
           maxHeight: "100%",
-          [theme.breakpoints.down("xxl")]: {
+          ['@media (max-width: 1920px)']: {
             paddingLeft: "5vw",
             paddingBottom: 4
           },
-          [theme.breakpoints.down("md")]: {
+          ['@media (max-width: 960px)']: {
             width: "35%",
-            paddingLeft: "10"
+            paddingLeft: 10
           }
         }}
       >

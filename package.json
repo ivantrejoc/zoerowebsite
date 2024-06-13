@@ -23,6 +23,7 @@
     "axios": "^1.4.0",
     "buffer": "^6.0.3",
     "color": "^4.2.3",
+    "gsap": "^3.12.5",
     "material-react-table": "^2.12.1",
     "mui-one-time-password-input": "^1.1.2",
     "next-base64": "^1.1.0",
