@@ -1,5 +1,7 @@
 import { Box, Typography } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
+import { useEffect, useRef } from "react";
+import { gsap } from "gsap";
 import diamond from "../../assets/icons/diamond.svg";
 import brands from "../../assets/img/brands1.jpg";
 import brandsTwo from "../../assets/img/brands2.png";
@@ -9,6 +11,45 @@ import expirementsBrand from "../../assets/img/frame-300.png";
 
 const ExperimentsSection = () => {
   const theme = useTheme();
+  const titleRef = useRef(null);
+  const diamondRef = useRef(null);
+  const leftSideImgRef = useRef(null);
+  const rightImagesRef = useRef(null);
+
+  useEffect(() => {
+    const tl = gsap.timeline({ defaults: { ease: "power1.out" } });
+
+    // Animation for title
+    tl.fromTo(
+      titleRef.current,
+      { opacity: 0, y: -50 },
+      { opacity: 1, y: 0, duration: 1 }
+    );
+
+    // Animation for diamond
+    tl.fromTo(
+      diamondRef.current,
+      { opacity: 0, scale: 0 },
+      { opacity: 1, scale: 1, duration: 1 },
+      "-=0.5"
+    );
+
+    // Animation for left side image
+    tl.fromTo(
+      leftSideImgRef.current,
+      { opacity: 0, x: -50 },
+      { opacity: 1, x: 0, duration: 1 },
+      "-=0.5"
+    );
+
+    // Animation for right images container
+    tl.fromTo(
+      rightImagesRef.current.children,
+      { opacity: 0, y: 50 },
+      { opacity: 1, y: 0, stagger: 0.2, duration: 1 },
+      "-=0.5"
+    );
+  }, []);
 
   return (
     <Box
@@ -24,24 +65,24 @@ const ExperimentsSection = () => {
         width: "100%",
         height: "120vh",
         [theme.breakpoints.down("xxl")]: {
-          height: "120vh"
+          height: "120vh",
         },
         [theme.breakpoints.down("md")]: {
           height: "221vh",
-          marginBottom: 4
+          marginBottom: 4,
         },
         [theme.breakpoints.down("sm")]: {
-          height: "173vh"
+          height: "173vh",
         },
         [theme.breakpoints.down("xs")]: {
-          height: "142vh"
+          height: "142vh",
         },
         [theme.breakpoints.down("xxs")]: {
-          height: "124vh"
+          height: "124vh",
         },
         [theme.breakpoints.down("xxxs")]: {
-          height: "113.5vh"
-        }
+          height: "113.5vh",
+        },
       }}
     >
       <Box
@@ -57,43 +98,44 @@ const ExperimentsSection = () => {
           gap: "55vw",
           maxHeight: "100vh",
           [theme.breakpoints.down("xxl")]: {
-            gap: "45vw"
+            gap: "45vw",
           },
           [theme.breakpoints.down("md")]: {
-            gap: "20vw"
+            gap: "20vw",
           },
           [theme.breakpoints.down("sm")]: {
-            padding: "5vh 0 5vh 0"
+            padding: "5vh 0 5vh 0",
           },
           [theme.breakpoints.down("xs")]: {
-            gap: "27vw"
-          }
+            gap: "27vw",
+          },
         }}
       >
         <Typography
           variant="h2"
           component="h2"
+          ref={titleRef}
           sx={{
             marginLeft: "8vw",
             [theme.breakpoints.down("xxl")]: {
-              width: "34%"
+              width: "34%",
             },
             [theme.breakpoints.down("md")]: {
-              width: "57%"
+              width: "57%",
             },
             [theme.breakpoints.down("sm")]: {
               fontSize: "1.375rem",
-              marginLeft: "6vw"
+              marginLeft: "6vw",
             },
             [theme.breakpoints.down("xxs")]: {
-              fontSize: "1.175rem"
-            }
+              fontSize: "1.175rem",
+            },
           }}
         >
           THE EXPERIMENTS
         </Typography>
 
-        <img id="diamond" src={diamond} alt="diamond" />
+        <img id="diamond" src={diamond} alt="diamond" ref={diamondRef} />
       </Box>
       <Box
         id="experiments-container"
@@ -105,15 +147,15 @@ const ExperimentsSection = () => {
           width: "83%",
           height: "99.1vh",
           [theme.breakpoints.down("xxl")]: {
-            height: "100vh"
+            height: "100vh",
           },
           [theme.breakpoints.down("md")]: {
-            height: "200vh"
+            height: "200vh",
           },
           [theme.breakpoints.down("sm")]: {
             justifyContent: "center",
-            width: "90%"
-          }
+            width: "90%",
+          },
         }}
       >
         <Box
@@ -128,21 +170,21 @@ const ExperimentsSection = () => {
             boxSizing: "border-box",
             gap: 4,
             [theme.breakpoints.down("xxl")]: {
-              gap: 4
+              gap: 4,
             },
             [theme.breakpoints.down("md")]: {
               flexDirection: "column",
-              gap: 1
+              gap: 1,
             },
             [theme.breakpoints.down("sm")]: {
-              gap: 2
+              gap: 2,
             },
             [theme.breakpoints.down("xs")]: {
-              gap: 7
+              gap: 7,
             },
             [theme.breakpoints.down("xxxs")]: {
-              gap: 1
-            }
+              gap: 1,
+            },
           }}
         >
           <Box
@@ -154,30 +196,36 @@ const ExperimentsSection = () => {
               boxSizing: "border-box",
               [theme.breakpoints.down("xxl")]: {
                 width: "40.425rem",
-                height: "40.425rem"
+                height: "40.425rem",
               },
               [theme.breakpoints.down("md")]: {
-                width: "39.825rem"
+                width: "39.825rem",
               },
               [theme.breakpoints.down("sm")]: {
                 width: "100%",
-                height: "32rem"
+                height: "32rem",
               },
               [theme.breakpoints.down("xs")]: {
                 width: "100%",
-                height: "21rem"
+                height: "21rem",
               },
               [theme.breakpoints.down("xxs")]: {
-                height: "18rem"
-              }
+                height: "18rem",
+              },
             }}
           >
             <a href="/domain-expansion">
-              <img id="left-side-img" src={brands} alt="brands-1" />
+              <img
+                id="left-side-img"
+                src={brands}
+                alt="brands-1"
+                ref={leftSideImgRef}
+              />
             </a>
           </Box>
           <Box
             id="right-images"
+            ref={rightImagesRef}
             sx={{
               width: "37.2rem",
               height: "100%",
@@ -188,24 +236,24 @@ const ExperimentsSection = () => {
               alignItems: "start",
               gap: 4,
               [theme.breakpoints.down("xxl")]: {
-                gap: 3
+                gap: 3,
               },
               [theme.breakpoints.down("md")]: {
                 flexDirection: "row",
                 width: "100%",
                 height: "18.65rem",
-                gap: 1
+                gap: 1,
               },
               [theme.breakpoints.down("sm")]: {
                 height: "12rem",
-                gap: "0.5rem"
+                gap: "0.5rem",
               },
               [theme.breakpoints.down("xs")]: {
-                height: "12rem"
+                height: "12rem",
               },
               [theme.breakpoints.down("xxs")]: {
-                height: "10rem"
-              }
+                height: "10rem",
+              },
             }}
           >
             <Box
@@ -216,24 +264,24 @@ const ExperimentsSection = () => {
                 flexShrink: 0,
                 boxSizing: "border-box",
                 [theme.breakpoints.down("xxl")]: {
-                  height: "23.38215rem"
+                  height: "23.38215rem",
                 },
                 [theme.breakpoints.down("md")]: {
                   width: "18.65rem",
-                  height: "18.65rem"
+                  height: "18.65rem",
                 },
                 [theme.breakpoints.down("sm")]: {
                   width: "16rem",
-                  height: "12rem"
+                  height: "12rem",
                 },
                 [theme.breakpoints.down("xs")]: {
                   width: "12rem",
-                  height: "12rem"
+                  height: "12rem",
                 },
                 [theme.breakpoints.down("xxs")]: {
                   width: "10rem",
-                  height: "10rem"
-                }
+                  height: "10rem",
+                },
               }}
             >
               <a href="/seafena">
@@ -253,14 +301,14 @@ const ExperimentsSection = () => {
                 boxSizing: "border-box",
                 [theme.breakpoints.down("xxl")]: {
                   height: "15.6rem",
-                  gap: 2
+                  gap: 2,
                 },
                 [theme.breakpoints.down("md")]: {
-                  flexDirection: "column"
+                  flexDirection: "column",
                 },
                 [theme.breakpoints.down("sm")]: {
-                  gap: 1
-                }
+                  gap: 1,
+                },
               }}
             >
               <Box
@@ -273,26 +321,26 @@ const ExperimentsSection = () => {
                   gap: 4,
                   [theme.breakpoints.down("xxl")]: {
                     height: "15.6rem",
-                    gap: 2
+                    gap: 2,
                   },
                   [theme.breakpoints.down("md")]: {
                     flexDirection: "row",
                     width: "52%",
-                    height: "7rem"
+                    height: "7rem",
                   },
                   [theme.breakpoints.down("sm")]: {
                     height: "6rem",
                     width: "49%",
-                    gap: 1
+                    gap: 1,
                   },
                   [theme.breakpoints.down("xs")]: {
                     width: "47.9%",
-                    height: "5rem"
+                    height: "5rem",
                   },
                   [theme.breakpoints.down("xxs")]: {
                     width: "50.3%",
-                    height: "4rem"
-                  }
+                    height: "4rem",
+                  },
                 }}
               >
                 <Box
@@ -301,25 +349,25 @@ const ExperimentsSection = () => {
                     width: "100%",
                     height: "35%",
                     [theme.breakpoints.down("xxl")]: {
-                      height: "6.1rem"
+                      height: "6.1rem",
                     },
                     [theme.breakpoints.down("md")]: {
-                      height: "7rem"
+                      height: "7rem",
                     },
                     [theme.breakpoints.down("sm")]: {
                       height: "6rem",
-                      width: "8rem"
+                      width: "8rem",
                     },
                     [theme.breakpoints.down("xs")]: {
                       width: "7rem",
-                      height: "5rem"
+                      height: "5rem",
                     },
                     [theme.breakpoints.down("xxs")]: {
-                      height: "4rem"
+                      height: "4rem",
                     },
                     [theme.breakpoints.down("xxxs")]: {
-                      width: "3.5rem"
-                    }
+                      width: "3.5rem",
+                    },
                   }}
                 >
                   <a href="/leads-forge">
@@ -336,25 +384,25 @@ const ExperimentsSection = () => {
                     width: "100%",
                     height: "60%",
                     [theme.breakpoints.down("xxl")]: {
-                      height: "9.45rem"
+                      height: "9.45rem",
                     },
                     [theme.breakpoints.down("md")]: {
-                      height: "7rem"
+                      height: "7rem",
                     },
                     [theme.breakpoints.down("sm")]: {
                       height: "6rem",
-                      width: "8rem"
+                      width: "8rem",
                     },
                     [theme.breakpoints.down("xs")]: {
                       width: "7rem",
-                      height: "5rem"
+                      height: "5rem",
                     },
                     [theme.breakpoints.down("xxs")]: {
-                      height: "4rem"
+                      height: "4rem",
                     },
                     [theme.breakpoints.down("xxxs")]: {
-                      width: "3.5rem"
-                    }
+                      width: "3.5rem",
+                    },
                   }}
                 >
                   <a href="/teuser">
@@ -369,20 +417,20 @@ const ExperimentsSection = () => {
                   height: "100%",
                   [theme.breakpoints.down("md")]: {
                     width: "20.67rem",
-                    height: "7.7rem"
+                    height: "7.7rem",
                   },
                   [theme.breakpoints.down("sm")]: {
                     width: "15.9rem",
-                    height: "5.5rem"
+                    height: "5.5rem",
                   },
                   [theme.breakpoints.down("xs")]: {
                     width: "11.49rem",
-                    height: "6.5rem"
+                    height: "6.5rem",
                   },
                   [theme.breakpoints.down("xxs")]: {
                     width: "50.3%",
-                    height: "5.5rem"
-                  }
+                    height: "5.5rem",
+                  },
                 }}
               >
                 <a href="/experiments">
