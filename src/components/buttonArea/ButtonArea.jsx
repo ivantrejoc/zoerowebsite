@@ -1,9 +1,30 @@
 import { Box, Button } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
+import { useState } from "react";
+import gsap from "gsap";
 import buttonBackground from "../../assets/img/vector-104-stroke.png";
 
 const ButtonArea = () => {
   const theme = useTheme();
+  const [isHovered, setIsHovered] = useState(false);
+
+  const handleHover = () => {
+    setIsHovered(true);
+    gsap.to("#button-container", {
+      scale: 1.1,
+      duration: 0.3,
+      ease: "power3.out"
+    });
+  };
+
+  const handleHoverExit = () => {
+    setIsHovered(false);
+    gsap.to("#button-container", {
+      scale: 1,
+      duration: 0.3,
+      ease: "power3.out"
+    });
+  };
 
   return (
     <Box
@@ -47,7 +68,13 @@ const ButtonArea = () => {
             height: "3.19375rem !important",
             fontSize: "0.682rem !important",
             strokeWidth: "2.194px !important",
-            border: "solid 5px #22505D !important"
+            border: "solid 5px #22505D !important",
+            color: isHovered ? "#ffffff !important" : "#22505D !important",
+            bgcolor: "transparent !important",
+            "&:hover": {
+              bgcolor: "#22505D !important",
+              color: "#ffffff !important"
+            }
           },
           [theme.breakpoints.down("xs")]: {
             border: "solid 4px #22505D !important"
@@ -56,10 +83,13 @@ const ButtonArea = () => {
             border: "solid 3.5px #22505D !important"
           }
         }}
+        onMouseEnter={handleHover}
+        onMouseLeave={handleHoverExit}
       >
         SEND US YOUR EQUATION
       </Button>
     </Box>
   );
 };
+
 export default ButtonArea;
