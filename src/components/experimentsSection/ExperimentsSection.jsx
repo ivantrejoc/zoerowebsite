@@ -1,7 +1,8 @@
 import { Box, Typography } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import { gsap } from "gsap";
+import { useInView } from "react-intersection-observer";
 import diamond from "../../assets/icons/diamond.svg";
 import brands from "../../assets/img/brands1.jpg";
 import brandsTwo from "../../assets/img/brands2.png";
@@ -15,48 +16,62 @@ const ExperimentsSection = () => {
   const diamondRef = useRef(null);
   const leftSideImgRef = useRef(null);
   const rightImagesRef = useRef(null);
+  const { ref, inView } = useInView({
+    triggerOnce: true, // Solo activar una vez
+    threshold: 0.5, // Ajusta según necesites
+  });
+  const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
-    const tl = gsap.timeline({ defaults: { ease: "power1.out" } });
+    if (isVisible) {
+      const tl = gsap.timeline({ defaults: { ease: "power1.out" } });
 
-    // Animation for title
-    tl.fromTo(
-      titleRef.current,
-      { opacity: 0, y: -50 },
-      { opacity: 1, y: 0, duration: 1 }
-    );
+      // Animation for title
+      tl.fromTo(
+        titleRef.current,
+        { opacity: 0, y: -50 },
+        { opacity: 1, y: 0, duration: 1 }
+      );
 
-    // Animation for diamond
-    tl.fromTo(
-      diamondRef.current,
-      { opacity: 0, scale: 0 },
-      { opacity: 1, scale: 1, duration: 1 },
-      "-=0.5"
-    );
+      // Animation for diamond
+      tl.fromTo(
+        diamondRef.current,
+        { opacity: 0, scale: 0 },
+        { opacity: 1, scale: 1, duration: 1 },
+        "-=0.5"
+      );
 
-    // Animation for left side image
-    tl.fromTo(
-      leftSideImgRef.current,
-      { opacity: 0, x: -50 },
-      { opacity: 1, x: 0, duration: 1 },
-      "-=0.5"
-    );
+      // Animation for left side image
+      tl.fromTo(
+        leftSideImgRef.current,
+        { opacity: 0, x: -50 },
+        { opacity: 1, x: 0, duration: 1 },
+        "-=0.5"
+      );
 
-    // Animation for right images container
-    tl.fromTo(
-      rightImagesRef.current.children,
-      { opacity: 0, y: 50 },
-      { opacity: 1, y: 0, stagger: 0.2, duration: 1 },
-      "-=0.5"
-    );
-  }, []);
+      // Animation for right images container
+      tl.fromTo(
+        rightImagesRef.current.children,
+        { opacity: 0, y: 50 },
+        { opacity: 1, y: 0, stagger: 0.2, duration: 1 },
+        "-=0.5"
+      );
+    }
+  }, [isVisible]);
+
+  useEffect(() => {
+    if (inView) {
+      setIsVisible(true);
+    }
+  }, [inView]);
 
   return (
     <Box
       id="experiments"
+      ref={ref}
       sx={{
         display: "flex",
-        justifyContent: "start",
+        justifyContent: "center",
         alignItems: "center",
         flexDirection: "column",
         position: "relative",
@@ -139,6 +154,7 @@ const ExperimentsSection = () => {
       </Box>
       <Box
         id="experiments-container"
+        ref={ref}
         sx={{
           display: "flex",
           justifyContent: "start",
@@ -160,6 +176,7 @@ const ExperimentsSection = () => {
       >
         <Box
           id="experiments-image-container"
+          ref={rightImagesRef}
           sx={{
             width: "100%",
             height: "100%",
@@ -189,6 +206,7 @@ const ExperimentsSection = () => {
         >
           <Box
             id="left-images"
+            ref={leftSideImgRef}
             sx={{
               width: "50.225rem",
               height: "50.225rem",
@@ -215,17 +233,11 @@ const ExperimentsSection = () => {
             }}
           >
             <a href="/domain-expansion">
-              <img
-                id="left-side-img"
-                src={brands}
-                alt="brands-1"
-                ref={leftSideImgRef}
-              />
+              <img id="left-side-img" src={brands} alt="brands-1" />
             </a>
           </Box>
           <Box
             id="right-images"
-            ref={rightImagesRef}
             sx={{
               width: "37.2rem",
               height: "100%",
@@ -365,9 +377,6 @@ const ExperimentsSection = () => {
                     [theme.breakpoints.down("xxs")]: {
                       height: "4rem",
                     },
-                    [theme.breakpoints.down("xxxs")]: {
-                      width: "3.5rem",
-                    },
                   }}
                 >
                   <a href="/leads-forge">
@@ -399,9 +408,6 @@ const ExperimentsSection = () => {
                     },
                     [theme.breakpoints.down("xxs")]: {
                       height: "4rem",
-                    },
-                    [theme.breakpoints.down("xxxs")]: {
-                      width: "3.5rem",
                     },
                   }}
                 >
@@ -448,4 +454,5 @@ const ExperimentsSection = () => {
     </Box>
   );
 };
+
 export default ExperimentsSection;
