@@ -41,6 +41,7 @@ const CoefficientsSection = () => {
           component="h2"
           sx={{
             marginLeft: "8vw",
+            fontSize: "2.5rem",
             [theme.breakpoints.down("sm")]: {
               fontSize: "1.375rem"
             }
@@ -56,8 +57,8 @@ const CoefficientsSection = () => {
           justifyContent: "start",
           alignItems: "start",
           position: "relative",
-          width: "74vw",
-          height: "70vh",
+          width: "70vw",
+          height: "66vh",
           margin: "0 auto 0 12vw",
           [theme.breakpoints.down("sm")]: {
             margin: "0 auto 0 15vw"

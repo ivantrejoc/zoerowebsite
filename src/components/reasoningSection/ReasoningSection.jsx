@@ -13,8 +13,8 @@ const ReasoningSection = () => {
         flexDirection: "column",
         position: "relative",
         width: "100vw",
-        height: "100vh",
-        maxHeight: "100vh",
+        height: "90vh",
+        maxHeight: "90vh",
         marginTop: "1vh",
         [theme.breakpoints.down("lg")]: {
           height: "60vh"
@@ -25,7 +25,7 @@ const ReasoningSection = () => {
           marginBottom: 4
         },
         [theme.breakpoints.down("sm")]: {
-          height: "80vh",
+          height: "60vh",
           marginBottom: 3
         }
       }}
@@ -53,6 +53,7 @@ const ReasoningSection = () => {
           component="h2"
           sx={{
             marginLeft: "8vw",
+            fontSize: "2.375rem",
             [theme.breakpoints.down("sm")]: {
               fontSize: "1.375rem",
               marginLeft: "5vw"
@@ -71,7 +72,7 @@ const ReasoningSection = () => {
           alignItems: "center",
           position: "relative",
           width: "100vw",
-          height: "90vh",
+          height: "70vh",
           padding: "0 30vw 0 30vw",
           gap: "3vw",
           maxHeight: "100vh",
@@ -117,7 +118,7 @@ const ReasoningSection = () => {
             }
           }}
         >
-          <img id="reasoning-image" src={ellipse} alt="ellipse" />
+          <img id="reasoning-image" src={ellipse} alt="ellipse"  />
         </Box>
         <Box
           id="reasoning-text"

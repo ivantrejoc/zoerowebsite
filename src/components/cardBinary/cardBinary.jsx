@@ -102,7 +102,6 @@ const BinaryFlickerAnimation = () => {
         width: "85%",
         height: "auto",
         margin: "auto",
-        marginTop: 4,
         background: "#3C3C3C",
         [theme.breakpoints.down("sm")]: {
           maxWidth: 300,

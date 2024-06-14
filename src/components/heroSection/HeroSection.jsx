@@ -43,10 +43,10 @@ const HeroSection = () => {
           marginTop: "2vh",
           whiteSpace: "pre-line",
           [theme.breakpoints.down("xxxl")]: {
-            fontSize: "10.275rem",
+            fontSize: "8rem",
           },
           [theme.breakpoints.down("xxl")]: {
-            fontSize: "9rem",
+            fontSize: "8rem",
           },
           [theme.breakpoints.down("xl")]: {
             fontSize: "6rem",

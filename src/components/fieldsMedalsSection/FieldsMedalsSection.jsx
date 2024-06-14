@@ -23,7 +23,7 @@ const FieldsMedalsSection = () => {
           marginBottom: "25vh",
         },
         [theme.breakpoints.down("md")]: {
-          height: "183vh",
+          height: "13vh",
           marginBottom: 4,
         },
         [theme.breakpoints.down("xs")]: {
@@ -77,16 +77,16 @@ const FieldsMedalsSection = () => {
           height: "56.5vh",
           margin: "0 1vw 0 0",
           [theme.breakpoints.down("md")]: {
-            height: "200vh",
+            height: "20vh",
             justifyContent: "center",
             alignItems: "center",
           },
         }}
       >
         {isMobile ? (
-          <div id="grid-container">
-            {Array.from({ length: 5 }).map((_, index) => (
-              <div className="item" key={index}>
+          <div id="grid-container" style={{height: "50%"}}>
+            {Array.from({ length: 4 }).map((_, index) => (
+              <Box className="item" key={index} sx={{height: "50%"}}>
                 <CardBinary />
                 <Box
                   sx={{
@@ -100,7 +100,6 @@ const FieldsMedalsSection = () => {
                     variant="h4"
                     component="h4"
                     sx={{
-                      marginTop: "1.25rem",
                       [theme.breakpoints.down("xs")]: {
                         fontSize: "1.55106rem",
                       },
@@ -125,7 +124,7 @@ const FieldsMedalsSection = () => {
                     Coming Soon
                   </Typography>
                 </Box>
-              </div>
+              </Box>
             ))}
           </div>
         ) : (

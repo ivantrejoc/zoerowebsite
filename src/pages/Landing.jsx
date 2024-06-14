@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import { Box, useTheme } from "@mui/material";
 import { gsap } from "gsap";
+import { useMediaQuery } from "@mui/material";
 import mainBackground from "../assets/img/vector-103-stroke.png";
 import HeroSection from "../components/heroSection/HeroSection.jsx";
 import ReasoningSection from "../components/reasoningSection/ReasoningSection.jsx";
@@ -13,6 +14,8 @@ import HeroTwoSection from "../components/heroTwoSection/HeroTwoSection.jsx";
 
 const Landing = () => {
   const theme = useTheme();
+  const isMobile = useMediaQuery(theme.breakpoints.down("md"));
+  console.log(isMobile);
 
   const boxRef = useRef(null);
   const heroRef = useRef(null);
@@ -99,11 +102,11 @@ const Landing = () => {
           opacity: isImageLoaded ? 0 : 1,
         }}
       >
-        {!isImageLoaded && (
+         {!isImageLoaded && isMobile && (
           <img
             src={mainBackground}
             alt="Main Background"
-            style={{ display: "none" }}
+            style={{ display: 'none' }}
             onLoad={handleImageLoad}
           />
         )}
@@ -113,37 +116,37 @@ const Landing = () => {
       </Box>
 
       {/* Reasoning Section */}
-      <Box sx={{ width: "100%", marginBottom: 4 }}>
+      <Box sx={{ width: "100%", marginBottom: 0 }}>
         <ReasoningSection />
       </Box>
 
       {/* Button Area */}
-      <Box sx={{ width: "100%", marginBottom: 4 }}>
+      <Box sx={{ width: "100%", marginBottom:  isMobile ? 0 : 10 }}>
         <ButtonArea />
       </Box>
 
       {/* Experiment Section */}
-      <Box sx={{ width: "100%", marginBottom: 4 }}>
+      <Box sx={{ width: "100%", marginBottom: isMobile ? 0 : 15 }}>
         <ExperimentsSection />
       </Box>
 
       {/* Binary Stripe */}
-      <Box sx={{ width: "100%", marginBottom: 4 }}>
+      <Box sx={{ width: "100%", marginBottom: 0 }}>
         <BinaryBanner />
       </Box>
 
       {/* Coefficients Section */}
-      <Box sx={{ width: "100%", marginBottom: 4 }}>
+      <Box sx={{ width: "100%", marginBottom: 0 }}>
         <CoefficientsSection />
       </Box>
 
       {/* Fields Medals Section */}
-      <Box sx={{ width: "100%", marginBottom: 4 }}>
+      <Box sx={{ width: "100%", marginBottom: 0 }}>
         <FieldsMedalsSection />
       </Box>
 
       {/* Button Area 2 */}
-      <Box sx={{ width: "100%", marginBottom: 4 }}>
+      <Box sx={{ width: "100%", marginBottom: 0 }}>
         <ButtonArea />
       </Box>
 
