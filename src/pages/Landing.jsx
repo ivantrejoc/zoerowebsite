@@ -15,8 +15,7 @@ import HeroTwoSection from "../components/heroTwoSection/HeroTwoSection.jsx";
 const Landing = () => {
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("md"));
-  console.log(isMobile);
-
+  
   const boxRef = useRef(null);
   const heroRef = useRef(null);
   const [isImageLoaded, setIsImageLoaded] = useState(false);

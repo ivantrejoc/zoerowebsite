@@ -5,7 +5,7 @@ import HeroTwoSection from "../components/heroTwoSection/HeroTwoSection";
 import CheckIcon from "@mui/icons-material/Check";
 import coefficientsImage from "../assets/img/coefficients-image.png";
 import buttonBackground from "../assets/img/vector-104-stroke.png";
-import binaryStripe from "../assets/img/binary-stripe.png";
+import BinaryBanner from "../components/binaryBanner/binaryBanner.jsx";
 import coefficientsMobile from "../assets/img/coefficientes-mobile.png";
 
 const Contact = () => {
@@ -82,20 +82,23 @@ const Contact = () => {
               width: "100%",
               marginTop: "2vh",
               whiteSpace: "pre-line",
+              [theme.breakpoints.down("xxxl")]: {
+                fontSize: "8rem"
+              },
               [theme.breakpoints.down("xxl")]: {
-                fontSize: "9rem"
+                fontSize: "7rem"
               },
               [theme.breakpoints.down("xl")]: {
-                fontSize: "6.5rem"
+                fontSize: "5.5rem"
               },
               [theme.breakpoints.down("md")]: {
-                fontSize: "5.4375rem"
+                fontSize: "3.4375rem"
               },
               [theme.breakpoints.down("sm")]: {
-                fontSize: "2.9375rem"
+                fontSize: "3.9375rem"
               },
               [theme.breakpoints.down("xs")]: {
-                fontSize: "2.5375rem"
+                fontSize: "3.5375rem"
               },
               [theme.breakpoints.down("xxs")]: {
                 fontSize: "2.2375rem"
@@ -478,35 +481,7 @@ const Contact = () => {
         </Box>
       </Box>
       {/* BINARY STRIPE */}
-      <Box
-        id="binary-stripe-container"
-        sx={{
-          display: "flex",
-          justifyContent: "start",
-          alignItems: "center",
-          position: "relative",
-          backgroundImage: `url(${binaryStripe})`,
-          backgroundSize: "100%",
-          backgroundRepeat: "no-repeat",
-          width: "100%",
-          overflowX: "hidden",
-          height: "20vh",
-          marginBottom: "15vh",
-          [theme.breakpoints.down("md")]: {
-            height: "12vh",
-            marginBottom: 4
-          },
-          [theme.breakpoints.down("xs")]: {
-            height: "7vh"
-          },
-          [theme.breakpoints.down("xxs")]: {
-            height: "6vh"
-          },
-          [theme.breakpoints.down("xxxs")]: {
-            height: "5vh"
-          }
-        }}
-      />
+      <BinaryBanner />
       {/* BUTTON AREA */}
       <Box
         id="button-container"
