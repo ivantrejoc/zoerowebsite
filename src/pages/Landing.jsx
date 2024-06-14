@@ -13,41 +13,59 @@ import HeroTwoSection from "../components/heroTwoSection/HeroTwoSection.jsx";
 
 const Landing = () => {
   const theme = useTheme();
-  const [isImageLoaded, setIsImageLoaded] = useState(false);
+
   const boxRef = useRef(null);
-
-  useEffect(() => {
-    const boxElement = boxRef.current;
-
-    if (isImageLoaded) {
-      gsap.fromTo(
-        boxElement,
-        {
-          opacity: 0,
-          scale: 0.9,
-        },
-        {
-          opacity: 1,
-          scale: 1,
-          duration: 1.5,
-          ease: "power2.out",
-        }
-      );
-
-      return () => {
-        gsap.to(boxElement, {
-          opacity: 0,
-          scale: 0.9,
-          duration: 1.5,
-          ease: "power2.in",
-        });
-      };
-    }
-  }, [isImageLoaded]);
+  const heroRef = useRef(null);
+  const [isImageLoaded, setIsImageLoaded] = useState(false);
+  const [shouldAnimateImage, setShouldAnimateImage] = useState(false);
 
   const handleImageLoad = () => {
     setIsImageLoaded(true);
   };
+
+  useEffect(() => {
+    const boxElement = boxRef.current;
+    const heroElement = heroRef.current;
+
+    const imageAnimationTimeout = setTimeout(() => {
+      setShouldAnimateImage(true);
+    }, 2000);
+
+    if (isImageLoaded && shouldAnimateImage) {
+      gsap.fromTo(
+        boxElement,
+        {
+          x: "-100%",
+          opacity: 0,
+        },
+        {
+          x: "0%",
+          opacity: 1,
+          duration: 1.5,
+          ease: "power2.out",
+          onComplete: () => {
+            gsap.fromTo(
+              heroElement,
+              {
+                opacity: 0,
+                scale: 0.9,
+              },
+              {
+                opacity: 1,
+                scale: 1,
+                duration: 1.5,
+                ease: "power2.out",
+              }
+            );
+          },
+        }
+      );
+    }
+
+    return () => {
+      clearTimeout(imageAnimationTimeout);
+    };
+  }, [isImageLoaded, shouldAnimateImage]);
 
   return (
     <Box
@@ -78,7 +96,7 @@ const Landing = () => {
           height: "70vh",
           maxHeight: "100vh",
           marginBottom: "2rem",
-          opacity: isImageLoaded ? 1 : 0,
+          opacity: isImageLoaded ? 0 : 1,
         }}
       >
         {!isImageLoaded && (
@@ -89,7 +107,9 @@ const Landing = () => {
             onLoad={handleImageLoad}
           />
         )}
-        <HeroSection />
+        <div ref={heroRef} style={{ opacity: 0 }}>
+          <HeroSection />
+        </div>
       </Box>
 
       {/* Reasoning Section */}
