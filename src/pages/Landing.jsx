@@ -6,7 +6,7 @@ import HeroSection from "../components/heroSection/HeroSection.jsx";
 import ReasoningSection from "../components/reasoningSection/ReasoningSection.jsx";
 import ButtonArea from "../components/buttonArea/ButtonArea.jsx";
 import ExperimentsSection from "../components/experimentsSection/ExperimentsSection.jsx";
-import binaryStripe from "../assets/img/binary-stripe.png";
+import BinaryBanner from "../components/binaryBanner/binaryBanner.jsx";
 import CoefficientsSection from "../components/coefficientsSection/CoefficientsSection.jsx";
 import FieldsMedalsSection from "../components/fieldsMedalsSection/FieldsMedalsSection.jsx";
 import HeroTwoSection from "../components/heroTwoSection/HeroTwoSection.jsx";
@@ -90,7 +90,7 @@ const Landing = () => {
       </Box>
 
       {/* Binary Stripe */}
-      <Box
+      {/* <Box
         id="binary-stripe-container"
         sx={{
           display: "flex",
@@ -117,7 +117,11 @@ const Landing = () => {
             lg: "15vh",
           },
         }}
-      />
+      /> */}
+
+      <Box sx={{ width: "100%", marginBottom: 4 }}>
+        <BinaryBanner />
+      </Box>
 
       {/* Coefficients Section */}
       <Box sx={{ width: "100%", marginBottom: 4 }}>

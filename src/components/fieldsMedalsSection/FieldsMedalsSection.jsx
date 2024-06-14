@@ -2,6 +2,7 @@ import { Box, Typography } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
 import { useMediaQuery } from "@mui/material";
 import binaryFrame from "../../assets/img/bynary-frame.png";
+import CardBinary from "../cardBinary/cardBinary";
 
 const FieldsMedalsSection = () => {
   const theme = useTheme();
@@ -86,39 +87,44 @@ const FieldsMedalsSection = () => {
           <div id="grid-container">
             {Array.from({ length: 5 }).map((_, index) => (
               <div className="item" key={index}>
-                <img
-                  className="binary-frame"
-                  src={binaryFrame}
-                  alt="binary-frame"
-                />
-                <Typography
-                  variant="h4"
-                  component="h4"
+                <CardBinary />
+                <Box
                   sx={{
-                    marginTop: "1.25rem",
-                    [theme.breakpoints.down("xs")]: {
-                      fontSize: "1.55106rem",
-                    },
-                    [theme.breakpoints.down("xxs")]: {
-                      fontSize: "1.375rem",
-                    },
+                    display: "flex",
+                    flexDirection: "column",
+                    justifyContent: "center",
+                    marginLeft: 2,
                   }}
                 >
-                  Award One
-                </Typography>
-                <Typography
-                  variant="body1"
-                  component="p"
-                  sx={{
-                    color: "#7C7C7C",
-                    fontWeight: "600",
-                    [theme.breakpoints.down("xs")]: {
-                      fontSize: "1.1744rem",
-                    },
-                  }}
-                >
-                  Coming Soon
-                </Typography>
+                  <Typography
+                    variant="h4"
+                    component="h4"
+                    sx={{
+                      marginTop: "1.25rem",
+                      [theme.breakpoints.down("xs")]: {
+                        fontSize: "1.55106rem",
+                      },
+                      [theme.breakpoints.down("xxs")]: {
+                        fontSize: "1.375rem",
+                      },
+                    }}
+                  >
+                    Award One
+                  </Typography>
+                  <Typography
+                    variant="body1"
+                    component="p"
+                    sx={{
+                      color: "#7C7C7C",
+                      fontWeight: "600",
+                      [theme.breakpoints.down("xs")]: {
+                        fontSize: "1.1744rem",
+                      },
+                    }}
+                  >
+                    Coming Soon
+                  </Typography>
+                </Box>
               </div>
             ))}
           </div>
@@ -133,31 +139,35 @@ const FieldsMedalsSection = () => {
                   flexDirection: "column",
                 }}
               >
-                <img
-                  className="binary-frame"
-                  src={binaryFrame}
-                  alt="binary-frame"
-                  style={{ width: "85%", height: "63%" }}
-                />
-                <Typography
-                  variant="h4"
-                  component="h4"
+                <CardBinary />
+                <Box
                   sx={{
-                    marginTop: "1.25rem",
+                    display: "flex",
+                    flexDirection: "column",
+                    justifyContent: "center",
+                    marginLeft: 2,
                   }}
                 >
-                  Award One
-                </Typography>
-                <Typography
-                  variant="body1"
-                  component="p"
-                  sx={{
-                    color: "#7C7C7C",
-                    fontWeight: "600",
-                  }}
-                >
-                  Coming Soon
-                </Typography>
+                  <Typography
+                    variant="h4"
+                    component="h4"
+                    sx={{
+                      marginTop: "1.25rem",
+                    }}
+                  >
+                    Award One
+                  </Typography>
+                  <Typography
+                    variant="body1"
+                    component="p"
+                    sx={{
+                      color: "#7C7C7C",
+                      fontWeight: "600",
+                    }}
+                  >
+                    Coming Soon
+                  </Typography>
+                </Box>
               </div>
             ))}
           </div>
