@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import { Box, useTheme } from "@mui/material";
 import { gsap } from "gsap";
 import mainBackground from "../assets/img/vector-103-stroke.png";
@@ -13,31 +13,41 @@ import HeroTwoSection from "../components/heroTwoSection/HeroTwoSection.jsx";
 
 const Landing = () => {
   const theme = useTheme();
-
+  const [isImageLoaded, setIsImageLoaded] = useState(false);
   const boxRef = useRef(null);
 
   useEffect(() => {
-      const boxElement = boxRef.current;
+    const boxElement = boxRef.current;
 
-      gsap.fromTo(boxElement, {
+    if (isImageLoaded) {
+      gsap.fromTo(
+        boxElement,
+        {
           opacity: 0,
-          scale: 0.9
-      }, {
+          scale: 0.9,
+        },
+        {
           opacity: 1,
           scale: 1,
           duration: 1.5,
-          ease: "power2.out"
-      });
-      
+          ease: "power2.out",
+        }
+      );
+
       return () => {
-          gsap.to(boxElement, {
-              opacity: 0,
-              scale: 0.9,
-              duration: 1.5,
-              ease: "power2.in"
-          });
+        gsap.to(boxElement, {
+          opacity: 0,
+          scale: 0.9,
+          duration: 1.5,
+          ease: "power2.in",
+        });
       };
-  }, []); 
+    }
+  }, [isImageLoaded]);
+
+  const handleImageLoad = () => {
+    setIsImageLoaded(true);
+  };
 
   return (
     <Box
@@ -56,21 +66,29 @@ const Landing = () => {
         ref={boxRef}
         id="hero-container"
         style={{
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-            flexDirection: "column",
-            backgroundImage: `url(${mainBackground})`,
-            backgroundRepeat: "no-repeat",
-            backgroundPosition: "center",
-            backgroundSize: "cover",
-            width: "100%",
-            height: "70vh",
-            maxHeight: "100vh",
-            marginBottom: "2rem", 
-            opacity: 0
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          flexDirection: "column",
+          backgroundImage: `url(${mainBackground})`,
+          backgroundRepeat: "no-repeat",
+          backgroundPosition: "center",
+          backgroundSize: "cover",
+          width: "100%",
+          height: "70vh",
+          maxHeight: "100vh",
+          marginBottom: "2rem",
+          opacity: isImageLoaded ? 1 : 0,
         }}
       >
+        {!isImageLoaded && (
+          <img
+            src={mainBackground}
+            alt="Main Background"
+            style={{ display: "none" }}
+            onLoad={handleImageLoad}
+          />
+        )}
         <HeroSection />
       </Box>
 
@@ -90,35 +108,6 @@ const Landing = () => {
       </Box>
 
       {/* Binary Stripe */}
-      {/* <Box
-        id="binary-stripe-container"
-        sx={{
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-          backgroundImage: `url(${binaryStripe})`,
-          backgroundSize: "100%",
-          backgroundRepeat: "no-repeat",
-          width: "100%",
-          height: {
-            xxxs: "7vh",
-            xxs: "8vh",
-            xs: "9vh",
-            sm: "13vh",
-            md: "17vh",
-            lg: "20vh",
-          },
-          marginBottom: {
-            xxxs: 4,
-            xxs: 4,
-            xs: 4,
-            sm: 4,
-            md: 4,
-            lg: "15vh",
-          },
-        }}
-      /> */}
-
       <Box sx={{ width: "100%", marginBottom: 4 }}>
         <BinaryBanner />
       </Box>
