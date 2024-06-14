@@ -49,22 +49,21 @@ const Teuser = () => {
             maxHeight: "36vh"
           },
           [theme.breakpoints.down("md")]: {
-            height: "40vh",
-            maxHeight: "40vh",
-            marginBottom: 6
-          },
-          [theme.breakpoints.down("sm")]: {
-            height: "35vh",
-            maxHeight: "35vh",
+            height: "30vh",
+            maxHeight: "30vh",
             marginBottom: 4
           },
           [theme.breakpoints.down("xs")]: {
-            height: "33vh",
-            maxHeight: "33vh"
+            height: "24vh",
+            maxHeight: "24vh"
           },
           [theme.breakpoints.down("xxs")]: {
-            height: "36vh",
-            maxHeight: "36vh"
+            height: "25vh",
+            maxHeight: "25vh"
+          },
+          [theme.breakpoints.down("xxxs")]: {
+            height: "26vh",
+            maxHeight: "26vh"
           }
         }}
       >
@@ -305,20 +304,21 @@ const Teuser = () => {
             maxHeight: "127vh"
           },
           [theme.breakpoints.down("md")]: {
-            height: "112vh",
-            maxHeight: "112vh"
-          },
-          [theme.breakpoints.down("sm")]: {
-            height: "84vh",
-            maxHeight: "84vh"
+            height: "81vh",
+            maxHeight: "81vh",
+            marginBottom: 4
           },
           [theme.breakpoints.down("xs")]: {
-            height: "54vh",
-            maxHeight: "54vh"
+            height: "45vh",
+            maxHeight: "45vh"
           },
           [theme.breakpoints.down("xxs")]: {
-            height: "46vh",
-            maxHeight: "46vh"
+            height: "40vh",
+            maxHeight: "40vh"
+          },
+          [theme.breakpoints.down("xxxs")]: {
+            height: "34vh",
+            maxHeight: "34vh"
           }
         }}
       >
@@ -359,23 +359,21 @@ const Teuser = () => {
             maxHeight: "69vh"
           },
           [theme.breakpoints.down("md")]: {
-            height: "120vh",
-            maxHeight: "120vh",
-            marginBottom: 16
-          },
-          [theme.breakpoints.down("sm")]: {
-            height: "60vh",
-            maxHeight: "60vh",
-            marginBottom: 10
+            height: "90vh",
+            maxHeight: "90vh",
+            marginBottom: 6
           },
           [theme.breakpoints.down("xs")]: {
-            height: "39vh",
-            maxHeight: "39vh",
-            marginBottom: 10
+            height: "30vh",
+            maxHeight: "30vh"
           },
           [theme.breakpoints.down("xxs")]: {
-            height: "52vh",
-            maxHeight: "52vh"
+            height: "34vh",
+            maxHeight: "34vh"
+          },
+          [theme.breakpoints.down("xxxs")]: {
+            height: "38vh",
+            maxHeight: "38vh"
           }
         }}
       >
@@ -474,6 +472,7 @@ const Teuser = () => {
       <Box
         id="banner-container"
         sx={{
+          background: "plum",
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
@@ -490,7 +489,8 @@ const Teuser = () => {
           marginBottom: 12,
           [theme.breakpoints.down("md")]: {
             height: "90vh",
-            maxHeight: "90vh"
+            maxHeight: "90vh",
+            marginBottom: 4
           },
           [theme.breakpoints.down("xs")]: {
             height: "60vh",
@@ -525,6 +525,7 @@ const Teuser = () => {
       <Box
         id="grid-image-container"
         sx={{
+          background: "plum",
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
@@ -542,17 +543,15 @@ const Teuser = () => {
           [theme.breakpoints.down("md")]: {
             height: "390vh",
             maxHeight: "390vh",
-            marginBottom: 6
+            marginBottom: 4
           },
           [theme.breakpoints.down("sm")]: {
             height: "360vh",
-            maxHeight: "360vh",
-            marginBottom: 6
+            maxHeight: "360vh"
           },
           [theme.breakpoints.down("xs")]: {
             height: "230vh",
-            maxHeight: "230vh",
-            marginBottom: 6
+            maxHeight: "230vh"
           },
           [theme.breakpoints.down("xxs")]: {
             height: "250vh"
@@ -561,6 +560,7 @@ const Teuser = () => {
       >
         <Box
           sx={{
+            background: "gold",
             display: "flex",
             justifyContent: "stretch",
             alignItems: "start",
