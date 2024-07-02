@@ -2,6 +2,7 @@ import { Box, Typography } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
 import { useMediaQuery } from "@mui/material";
 import binaryFrame from "../../assets/img/bynary-frame.png";
+import CardBinary from "../cardBinary/cardBinary";
 
 const FieldsMedalsSection = () => {
   const theme = useTheme();
@@ -10,7 +11,7 @@ const FieldsMedalsSection = () => {
   return (
     <Box
       id="fields-medals-container"
-      sx={{        
+      sx={{
         display: "flex",
         justifyContent: "start",
         alignItems: "center",
@@ -18,29 +19,27 @@ const FieldsMedalsSection = () => {
         position: "relative",
         marginBottom: "15vh",
         width: "100vw",
-        height: "90vh",
         [theme.breakpoints.down("xl")]: {
           marginBottom: "25vh",
         },
         [theme.breakpoints.down("md")]: {
-          height: "183vh",
-          marginBottom: 4
+          height: "13vh",
+          marginBottom: 4,
         },
         [theme.breakpoints.down("xs")]: {
-          height: "180vh"
+          height: "180vh",
         },
         [theme.breakpoints.down("xxs")]: {
-          height: "150vh"
+          height: "150vh",
         },
         [theme.breakpoints.down("xxxs")]: {
-          height: "130vh"
+          height: "130vh",
         },
-        
       }}
     >
       <Box
         id="title-container"
-        sx={{          
+        sx={{
           display: "flex",
           justifyContent: "start",
           alignItems: "center",
@@ -48,10 +47,10 @@ const FieldsMedalsSection = () => {
           width: "100vw",
           height: "5vh",
           padding: "10vh 0 10vh 0",
-          [theme.breakpoints.down("md")]:{
+          [theme.breakpoints.down("md")]: {
             padding: "5vh 0 5vh 0",
-            marginBottom: 2
-          }
+            marginBottom: 2,
+          },
         }}
       >
         <Typography
@@ -60,8 +59,8 @@ const FieldsMedalsSection = () => {
           sx={{
             marginLeft: "8vw",
             [theme.breakpoints.down("sm")]: {
-              fontSize: "1.375rem"
-            }
+              fontSize: "1.375rem",
+            },
           }}
         >
           FIELDS MEDALS
@@ -69,7 +68,7 @@ const FieldsMedalsSection = () => {
       </Box>
       <Box
         id="data-container"
-        sx={{          
+        sx={{
           display: "flex",
           justifyContent: "start",
           alignItems: "start",
@@ -78,422 +77,100 @@ const FieldsMedalsSection = () => {
           height: "56.5vh",
           margin: "0 1vw 0 0",
           [theme.breakpoints.down("md")]: {
-            height: "200vh",
+            height: "20vh",
             justifyContent: "center",
-            alignItems: "center"
-          }
+            alignItems: "center",
+          },
         }}
       >
-        {isMobile && (
+        {isMobile ? (
+          <div id="grid-container" style={{height: "50%"}}>
+            {Array.from({ length: 4 }).map((_, index) => (
+              <Box className="item" key={index} sx={{height: "50%"}}>
+                <CardBinary />
+                <Box
+                  sx={{
+                    display: "flex",
+                    flexDirection: "column",
+                    justifyContent: "center",
+                    marginLeft: 2,
+                  }}
+                >
+                  <Typography
+                    variant="h4"
+                    component="h4"
+                    sx={{
+                      [theme.breakpoints.down("xs")]: {
+                        fontSize: "1.55106rem",
+                      },
+                      [theme.breakpoints.down("xxs")]: {
+                        fontSize: "1.375rem",
+                      },
+                    }}
+                  >
+                    Award One
+                  </Typography>
+                  <Typography
+                    variant="body1"
+                    component="p"
+                    sx={{
+                      color: "#7C7C7C",
+                      fontWeight: "600",
+                      [theme.breakpoints.down("xs")]: {
+                        fontSize: "1.1744rem",
+                      },
+                    }}
+                  >
+                    Coming Soon
+                  </Typography>
+                </Box>
+              </Box>
+            ))}
+          </div>
+        ) : (
           <div id="grid-container">
-            <div className="item">
-              <img
-                className="binary-frame"
-                src={binaryFrame}
-                alt="binary-frame"
-              />
-              <Typography
-                variant="h4"
-                component="h4"
-                sx={{
-                  marginTop: "1.25rem",
-                  [theme.breakpoints.down("xs")]: {
-                    fontSize: "1.55106rem"
-                  },
-                  [theme.breakpoints.down("xxs")]: {
-                    fontSize: "1.375rem"
-                  }
+            {Array.from({ length: 5 }).map((_, index) => (
+              <div
+                className="item"
+                key={index}
+                style={{
+                  width: "100%",
+                  flexDirection: "column",
                 }}
               >
-                Award One
-              </Typography>
-              <Typography
-                variant="text"
-                component="p"
-                sx={{
-                  color: "#7C7C7C",
-                  fontWeight: "600",
-                  [theme.breakpoints.down("xs")]: {
-                    fontSize: "1.1744rem"
-                  }
-                }}
-              >
-                Coming Soon
-              </Typography>
-            </div>
-            <div className="item">
-              <img
-                className="binary-frame"
-                src={binaryFrame}
-                alt="binary-frame"
-              />
-              <Typography
-                variant="h4"
-                component="h4"
-                sx={{
-                  marginTop: "1.25rem",
-                  [theme.breakpoints.down("xs")]: {
-                    fontSize: "1.55106rem"
-                  },
-                  [theme.breakpoints.down("xxs")]: {
-                    fontSize: "1.375rem"
-                  }
-                }}
-              >
-                Award One
-              </Typography>
-              <Typography
-                variant="text"
-                component="p"
-                sx={{
-                  color: "#7C7C7C",
-                  fontWeight: "600",
-                  [theme.breakpoints.down("xs")]: {
-                    fontSize: "1.1744rem"
-                  }
-                }}
-              >
-                Coming Soon
-              </Typography>
-            </div>
-            <div className="item">
-              <img
-                className="binary-frame"
-                src={binaryFrame}
-                alt="binary-frame"
-              />
-              <Typography
-                variant="h4"
-                component="h4"
-                sx={{
-                  marginTop: "1.25rem",
-                  [theme.breakpoints.down("xs")]: {
-                    fontSize: "1.55106rem"
-                  },
-                  [theme.breakpoints.down("xxs")]: {
-                    fontSize: "1.375rem"
-                  }
-                }}
-              >
-                Award One
-              </Typography>
-              <Typography
-                variant="text"
-                component="p"
-                sx={{
-                  color: "#7C7C7C",
-                  fontWeight: "600",
-                  [theme.breakpoints.down("xs")]: {
-                    fontSize: "1.1744rem"
-                  }
-                }}
-              >
-                Coming Soon
-              </Typography>
-            </div>
-            <div className="item">
-              <img
-                className="binary-frame"
-                src={binaryFrame}
-                alt="binary-frame"
-              />
-              <Typography
-                variant="h4"
-                component="h4"
-                sx={{
-                  marginTop: "1.25rem",
-                  [theme.breakpoints.down("xs")]: {
-                    fontSize: "1.55106rem"
-                  },
-                  [theme.breakpoints.down("xxs")]: {
-                    fontSize: "1.375rem"
-                  }
-                }}
-              >
-                Award One
-              </Typography>
-              <Typography
-                variant="text"
-                component="p"
-                sx={{
-                  color: "#7C7C7C",
-                  fontWeight: "600",
-                  [theme.breakpoints.down("xs")]: {
-                    fontSize: "1.1744rem"
-                  }
-                }}
-              >
-                Coming Soon
-              </Typography>
-            </div>
+                <CardBinary />
+                <Box
+                  sx={{
+                    display: "flex",
+                    flexDirection: "column",
+                    justifyContent: "center",
+                    marginLeft: 2,
+                  }}
+                >
+                  <Typography
+                    variant="h4"
+                    component="h4"
+                    sx={{
+                      marginTop: "1.25rem",
+                    }}
+                  >
+                    Award One
+                  </Typography>
+                  <Typography
+                    variant="body1"
+                    component="p"
+                    sx={{
+                      color: "#7C7C7C",
+                      fontWeight: "600",
+                    }}
+                  >
+                    Coming Soon
+                  </Typography>
+                </Box>
+              </div>
+            ))}
           </div>
         )}
-        {!isMobile && (
-          <div id="grid-container">
-            <div className="item">
-              <img
-                className="binary-frame"
-                src={binaryFrame}
-                alt="binary-frame"
-              />
-              <Typography
-                variant="h4"
-                component="h4"
-                sx={{
-                  marginTop: "1.25rem"
-                }}
-              >
-                Award One
-              </Typography>
-              <Typography
-                variant="text"
-                component="p"
-                sx={{
-                  color: "#7C7C7C",
-                  fontWeight: "600"
-                }}
-              >
-                Coming Soon
-              </Typography>
-            </div>
-            <div className="item">
-              <img
-                className="binary-frame"
-                src={binaryFrame}
-                alt="binary-frame"
-              />
-              <Typography
-                variant="h4"
-                component="h4"
-                sx={{
-                  marginTop: "1.25rem"
-                }}
-              >
-                Award One
-              </Typography>
-              <Typography
-                variant="text"
-                component="p"
-                sx={{
-                  color: "#7C7C7C",
-                  fontWeight: "600"
-                }}
-              >
-                Coming Soon
-              </Typography>
-            </div>
-            <div className="item">
-              <img
-                className="binary-frame"
-                src={binaryFrame}
-                alt="binary-frame"
-              />
-              <Typography
-                variant="h4"
-                component="h4"
-                sx={{
-                  marginTop: "1.25rem"
-                }}
-              >
-                Award One
-              </Typography>
-              <Typography
-                variant="text"
-                component="p"
-                sx={{
-                  color: "#7C7C7C",
-                  fontWeight: "600"
-                }}
-              >
-                Coming Soon
-              </Typography>
-            </div>
-            <div className="item">
-              <img
-                className="binary-frame"
-                src={binaryFrame}
-                alt="binary-frame"
-              />
-              <Typography
-                variant="h4"
-                component="h4"
-                sx={{
-                  marginTop: "1.25rem"
-                }}
-              >
-                Award One
-              </Typography>
-              <Typography
-                variant="text"
-                component="p"
-                sx={{
-                  color: "#7C7C7C",
-                  fontWeight: "600"
-                }}
-              >
-                Coming Soon
-              </Typography>
-            </div>
-            <div className="item">
-              <img
-                className="binary-frame"
-                src={binaryFrame}
-                alt="binary-frame"
-              />
-              <Typography
-                variant="h4"
-                component="h4"
-                sx={{
-                  marginTop: "1.25rem"
-                }}
-              >
-                Award One
-              </Typography>
-              <Typography
-                variant="text"
-                component="p"
-                sx={{
-                  color: "#7C7C7C",
-                  fontWeight: "600"
-                }}
-              >
-                Coming Soon
-              </Typography>
-            </div>
-          </div>
-        )}
-        {/* <div id="grid-container">
-        <div className="item">
-          <img
-            className="binary-frame"
-            src={binaryFrame}
-            alt="binary-frame"
-          />
-          <Typography
-            variant="h4"
-            component="h4"
-            sx={{
-              marginTop: "1.25rem"
-            }}
-          >
-            Award One
-          </Typography>
-          <Typography
-            variant="text"
-            component="p"
-            sx={{
-              color: "#7C7C7C",
-              fontWeight: "600"
-            }}
-          >
-            Coming Soon
-          </Typography>
-        </div>
-        <div className="item">
-          <img
-            className="binary-frame"
-            src={binaryFrame}
-            alt="binary-frame"
-          />
-          <Typography
-            variant="h4"
-            component="h4"
-            sx={{
-              marginTop: "1.25rem"
-            }}
-          >
-            Award One
-          </Typography>
-          <Typography
-            variant="text"
-            component="p"
-            sx={{
-              color: "#7C7C7C",
-              fontWeight: "600"
-            }}
-          >
-            Coming Soon
-          </Typography>
-        </div>
-        <div className="item">
-          <img
-            className="binary-frame"
-            src={binaryFrame}
-            alt="binary-frame"
-          />
-          <Typography
-            variant="h4"
-            component="h4"
-            sx={{
-              marginTop: "1.25rem"
-            }}
-          >
-            Award One
-          </Typography>
-          <Typography
-            variant="text"
-            component="p"
-            sx={{
-              color: "#7C7C7C",
-              fontWeight: "600"
-            }}
-          >
-            Coming Soon
-          </Typography>
-        </div>
-        <div className="item">
-          <img
-            className="binary-frame"
-            src={binaryFrame}
-            alt="binary-frame"
-          />
-          <Typography
-            variant="h4"
-            component="h4"
-            sx={{
-              marginTop: "1.25rem"
-            }}
-          >
-            Award One
-          </Typography>
-          <Typography
-            variant="text"
-            component="p"
-            sx={{
-              color: "#7C7C7C",
-              fontWeight: "600"
-            }}
-          >
-            Coming Soon
-          </Typography>
-        </div>
-        <div className="item">
-          <img
-            className="binary-frame"
-            src={binaryFrame}
-            alt="binary-frame"
-          />
-          <Typography
-            variant="h4"
-            component="h4"
-            sx={{
-              marginTop: "1.25rem"
-            }}
-          >
-            Award One
-          </Typography>
-          <Typography
-            variant="text"
-            component="p"
-            sx={{
-              color: "#7C7C7C",
-              fontWeight: "600"
-            }}
-          >
-            Coming Soon
-          </Typography>
-        </div>
-      </div> */}
       </Box>
     </Box>
   );

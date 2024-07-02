@@ -161,24 +161,24 @@ const Teuser = () => {
           <Box
             sx={{
               width: "60%",
-              height: "12vh",
+              height: "18vh",
               display: "flex",
               flexDirection: "column",
               marginBottom: 2,
               [theme.breakpoints.down("xxl")]: {
                 width: "70%",
-                height: "14vh"
+                height: "26vh"
               },
               [theme.breakpoints.down("md")]: {
                 width: "82%"
               },
               [theme.breakpoints.down("sm")]: {
                 width: "100%",
-                height: "10vh"
+                height: "22vh"
               },
               [theme.breakpoints.down("xxs")]: {
                 width: "100%",
-                height: "20vh"
+                height: "32vh"
               }
             }}
           >
@@ -532,29 +532,27 @@ const Teuser = () => {
           flexDirection: "column",
           position: "relative",
           width: "100%",
-          overflowX: "hidden",
-          height: "140vh",
-          maxHeight: "140vh",
-          marginBottom: 12,
+          overflowX: "0px",
+          height: "120vh",
+          maxHeight: "120vh",
+          marginBottom: 6,
           [theme.breakpoints.down("xxl")]: {
-            height: "110vh"
+            height: "120vh"
           },
-
           [theme.breakpoints.down("md")]: {
-            height: "390vh",
-            maxHeight: "390vh",
+            height: "341vh",
+            maxHeight: "341vh",
             marginBottom: 4
           },
-          [theme.breakpoints.down("sm")]: {
-            height: "360vh",
-            maxHeight: "360vh"
-          },
           [theme.breakpoints.down("xs")]: {
-            height: "230vh",
-            maxHeight: "230vh"
+            height: "180vh",
+            maxHeight: "180vh"
           },
           [theme.breakpoints.down("xxs")]: {
-            height: "250vh"
+            height: "160vh"
+          },
+          [theme.breakpoints.down("xxxs")]: {
+            height: "140vh"
           }
         }}
       >
@@ -562,16 +560,28 @@ const Teuser = () => {
           sx={{
             background: "gold",
             display: "flex",
-            justifyContent: "stretch",
+            justifyContent: "start",
             alignItems: "start",
             flexDirection: "column",
             position: "relative",
-            width: "86%",
+            width: "100%",
             height: "100%",
             margin: "0 7vw 0 7vw"
           }}
         >
-          <Grid container gap={5} sx={{ height: "100%" }}>
+           <Grid
+            container
+            gap={5}
+            sx={{
+              height: "100%",
+              [theme.breakpoints.down("xxl")]: {
+                gap: 3
+              },
+              [theme.breakpoints.down("xs")]: {
+                gap: 1
+              }
+            }}
+          >
             <Grid
               item
               xxs={12}

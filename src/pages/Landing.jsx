@@ -1,122 +1,158 @@
-import "../assets/css/_default.css";
+import { useState, useEffect, useRef } from "react";
 import { Box, useTheme } from "@mui/material";
+import { gsap } from "gsap";
+import { useMediaQuery } from "@mui/material";
 import mainBackground from "../assets/img/vector-103-stroke.png";
 import HeroSection from "../components/heroSection/HeroSection.jsx";
 import ReasoningSection from "../components/reasoningSection/ReasoningSection.jsx";
 import ButtonArea from "../components/buttonArea/ButtonArea.jsx";
 import ExperimentsSection from "../components/experimentsSection/ExperimentsSection.jsx";
-import binaryStripe from "../assets/img/binary-stripe.png";
+import BinaryBanner from "../components/binaryBanner/binaryBanner.jsx";
 import CoefficientsSection from "../components/coefficientsSection/CoefficientsSection.jsx";
 import FieldsMedalsSection from "../components/fieldsMedalsSection/FieldsMedalsSection.jsx";
 import HeroTwoSection from "../components/heroTwoSection/HeroTwoSection.jsx";
 
 const Landing = () => {
   const theme = useTheme();
+  const isMobile = useMediaQuery(theme.breakpoints.down("md"));
+  
+  const boxRef = useRef(null);
+  const heroRef = useRef(null);
+  const [isImageLoaded, setIsImageLoaded] = useState(false);
+  const [shouldAnimateImage, setShouldAnimateImage] = useState(false);
+
+  const handleImageLoad = () => {
+    setIsImageLoaded(true);
+  };
+
+  useEffect(() => {
+    const boxElement = boxRef.current;
+    const heroElement = heroRef.current;
+
+    const imageAnimationTimeout = setTimeout(() => {
+      setShouldAnimateImage(true);
+    }, 2000);
+
+    if (isImageLoaded && shouldAnimateImage) {
+      gsap.fromTo(
+        boxElement,
+        {
+          x: "-100%",
+          opacity: 0,
+        },
+        {
+          x: "0%",
+          opacity: 1,
+          duration: 1.5,
+          ease: "power2.out",
+          onComplete: () => {
+            gsap.fromTo(
+              heroElement,
+              {
+                opacity: 0,
+                scale: 0.9,
+              },
+              {
+                opacity: 1,
+                scale: 1,
+                duration: 1.5,
+                ease: "power2.out",
+              }
+            );
+          },
+        }
+      );
+    }
+
+    return () => {
+      clearTimeout(imageAnimationTimeout);
+    };
+  }, [isImageLoaded, shouldAnimateImage]);
 
   return (
     <Box
       id="main-body"
       sx={{
         display: "flex",
-        justifyContent: "center",
-        alignItems: "stretch",
         flexDirection: "column",
         position: "relative",
         width: "100%",
-        maxWidth: "100%",
         overflowX: "hidden",
         backgroundColor: theme.palette.background.default,
-        backgroundSize: "cover"
       }}
     >
-      {/* Main area */}
+      {/* Hero Section */}
       <Box
+        ref={boxRef}
         id="hero-container"
-        sx={{
+        style={{
           display: "flex",
-          justifyContent: "start",
+          justifyContent: "center",
           alignItems: "center",
           flexDirection: "column",
-          position: "relative",
           backgroundImage: `url(${mainBackground})`,
           backgroundRepeat: "no-repeat",
           backgroundPosition: "center",
           backgroundSize: "cover",
-          width: "100vw",
+          width: "100%",
           height: "70vh",
           maxHeight: "100vh",
-          [theme.breakpoints.down("xxl")]: {
-            height: "90vh"
-          },
-          [theme.breakpoints.down("xl")]: {
-            height: "85vh"
-          },
-          [theme.breakpoints.down("lg")]: {
-            height: "30vh"
-          },
-          [theme.breakpoints.down("md")]: {
-            height: "70vh",
-            marginBottom: 4
-          },
-          [theme.breakpoints.down("sm")]: {
-            height: "30vh"
-          },
-          [theme.breakpoints.down("xs")]: {
-            height: "30vh"
-          }
+          marginBottom: "2rem",
+          opacity: isImageLoaded ? 0 : 1,
         }}
       >
-        <HeroSection />
+         {!isImageLoaded && isMobile && (
+          <img
+            src={mainBackground}
+            alt="Main Background"
+            style={{ display: 'none' }}
+            onLoad={handleImageLoad}
+          />
+        )}
+        <div ref={heroRef} style={{ opacity: 0 }}>
+          <HeroSection />
+        </div>
       </Box>
-      <ReasoningSection />
+
+      {/* Reasoning Section */}
+      <Box sx={{ width: "100%", marginBottom: 0 }}>
+        <ReasoningSection />
+      </Box>
+
       {/* Button Area */}
-      <ButtonArea />
-      {/* Experiment section */}
-      <ExperimentsSection />
+      <Box sx={{ width: "100%", marginBottom:  isMobile ? 0 : 10 }}>
+        <ButtonArea />
+      </Box>
+
+      {/* Experiment Section */}
+      <Box sx={{ width: "100%", marginBottom: isMobile ? 0 : 15 }}>
+        <ExperimentsSection />
+      </Box>
+
       {/* Binary Stripe */}
-      <Box
-        id="binary-stripe-container"
-        sx={{          
-          display: "flex",
-          justifyContent: "start",
-          alignItems: "center",
-          position: "relative",
-          backgroundImage: `url(${binaryStripe})`,
-          backgroundSize: "100%",
-          backgroundRepeat: "no-repeat",
-          width: "100vw",
-          height: "20vh",
-          marginBottom: "15vh",
-          [theme.breakpoints.down("md")]:{
-            marginBottom: 4,
-         height: "17vh"
-          },
-          [theme.breakpoints.down("sm")]:{
-            marginBottom: 4,
-         height: "13vh"
-          },
-          [theme.breakpoints.down("xs")]:{
-            marginBottom: 4,
-         height: "9vh"
-          },
-          [theme.breakpoints.down("xxs")]:{
-            marginBottom: 4,
-         height: "8vh"
-          },
-          [theme.breakpoints.down("xxxs")]:{
-            marginBottom: 4,
-         height: "7vh"
-          }
-        }}
-      />
-      {/* Coeficients Section */}
-      <CoefficientsSection />
+      <Box sx={{ width: "100%", marginBottom: 0 }}>
+        <BinaryBanner />
+      </Box>
+
+      {/* Coefficients Section */}
+      <Box sx={{ width: "100%", marginBottom: 0 }}>
+        <CoefficientsSection />
+      </Box>
+
       {/* Fields Medals Section */}
-      <FieldsMedalsSection />
+      <Box sx={{ width: "100%", marginBottom: 0 }}>
+        <FieldsMedalsSection />
+      </Box>
+
       {/* Button Area 2 */}
-      <ButtonArea />
+      <Box sx={{ width: "100%", marginBottom: 0 }}>
+        <ButtonArea />
+      </Box>
+
       {/* Hero-2 */}
-      <HeroTwoSection />
+      <Box sx={{ width: "100%", marginBottom: 4 }}>
+        <HeroTwoSection />
+      </Box>
     </Box>
   );
 };
