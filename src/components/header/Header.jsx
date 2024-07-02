@@ -1,4 +1,4 @@
-import React, {useEffect} from "react";
+import {useEffect} from "react";
 import { Box, Typography, Link } from "@mui/material";
 import DropdownMenu from "../dropdownMenu/DropdownMenu";
 import { useMediaQuery } from "@mui/material";
@@ -109,7 +109,10 @@ const Header = () => {
             <Typography
               variant="navLinks"
               sx={{
-                marginBottom: 0.5
+                marginBottom: 0.5,
+                "&:hover":{
+                  color: "#FFFFFF"
+                }
               }}
               component="a"
               href="/#reasoning"
@@ -119,7 +122,10 @@ const Header = () => {
             <Typography
               variant="navLinks"
               sx={{
-                marginBottom: 0.5
+                marginBottom: 0.5,
+                "&:hover":{
+                  color: "#FFFFFF"
+                }
               }}
               component="a"
               href="/#experiments"
@@ -129,14 +135,23 @@ const Header = () => {
             <Typography
               variant="navLinks"
               sx={{
-                marginBottom: 0.5
+                marginBottom: 0.5,
+                "&:hover":{
+                  color: "#FFFFFF" 
+                }
               }}
               component="a"
               href="/#coefficients"
             >
               COEFFICIENTS
             </Typography>
-            <Typography variant="navLinks" component="a" href="/contact">
+            <Typography variant="navLinks" component="a" href="/contact"
+            sx={{              
+              "&:hover":{
+                color: "#FFFFFF" 
+              }
+            }}
+            >
               LET’S SOLVE
             </Typography>
           </Box>
