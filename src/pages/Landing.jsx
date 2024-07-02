@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from "react";
+import { useEffect, useRef } from "react";
 import { Box, useTheme } from "@mui/material";
 import { gsap } from "gsap";
 import { useMediaQuery } from "@mui/material";
@@ -15,59 +15,44 @@ import HeroTwoSection from "../components/heroTwoSection/HeroTwoSection.jsx";
 const Landing = () => {
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("md"));
-  
   const boxRef = useRef(null);
   const heroRef = useRef(null);
-  const [isImageLoaded, setIsImageLoaded] = useState(false);
-  const [shouldAnimateImage, setShouldAnimateImage] = useState(false);
-
-  const handleImageLoad = () => {
-    setIsImageLoaded(true);
-  };
 
   useEffect(() => {
     const boxElement = boxRef.current;
     const heroElement = heroRef.current;
 
-    const imageAnimationTimeout = setTimeout(() => {
-      setShouldAnimateImage(true);
-    }, 2000);
-
-    if (isImageLoaded && shouldAnimateImage) {
-      gsap.fromTo(
-        boxElement,
-        {
-          x: "-100%",
-          opacity: 0,
-        },
-        {
-          x: "0%",
-          opacity: 1,
-          duration: 1.5,
-          ease: "power2.out",
-          onComplete: () => {
-            gsap.fromTo(
-              heroElement,
-              {
-                opacity: 0,
-                scale: 0.9,
-              },
-              {
-                opacity: 1,
-                scale: 1,
-                duration: 1.5,
-                ease: "power2.out",
-              }
-            );
-          },
+    gsap.fromTo(
+      boxElement,
+      {
+        x: "-100%",
+        opacity: 0
+      },
+      {
+        x: "0%",
+        opacity: 1,
+        duration: 3,
+        ease: "power1.inOut",
+        onComplete: () => {
+          gsap.fromTo(
+            heroElement,
+            {
+              opacity: 0,
+              scale: 0.9
+            },
+            {
+              opacity: 1,
+              scale: 1,
+              duration: 2.5,
+              ease: "power1.inOut"
+            }
+          );
         }
-      );
-    }
+      }
+    );
 
-    return () => {
-      clearTimeout(imageAnimationTimeout);
-    };
-  }, [isImageLoaded, shouldAnimateImage]);
+    return () => {};
+  }, []);
 
   return (
     <Box
@@ -78,7 +63,7 @@ const Landing = () => {
         position: "relative",
         width: "100%",
         overflowX: "hidden",
-        backgroundColor: theme.palette.background.default,
+        backgroundColor: theme.palette.background.default
       }}
     >
       {/* Hero Section */}
@@ -98,17 +83,9 @@ const Landing = () => {
           height: "70vh",
           maxHeight: "100vh",
           marginBottom: "2rem",
-          opacity: isImageLoaded ? 0 : 1,
+         
         }}
       >
-         {!isImageLoaded && isMobile && (
-          <img
-            src={mainBackground}
-            alt="Main Background"
-            style={{ display: 'none' }}
-            onLoad={handleImageLoad}
-          />
-        )}
         <div ref={heroRef} style={{ opacity: 0 }}>
           <HeroSection />
         </div>
@@ -120,7 +97,7 @@ const Landing = () => {
       </Box>
 
       {/* Button Area */}
-      <Box sx={{ width: "100%", marginBottom:  isMobile ? 0 : 10 }}>
+      <Box sx={{ width: "100%", marginBottom: isMobile ? 0 : 10 }}>
         <ButtonArea />
       </Box>
 
